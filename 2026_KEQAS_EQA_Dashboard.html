@@ -1415,6 +1415,12 @@ function renderCommTreemap() {
 
   const COMM_COLORS = { commutable: '#27ae60', partial: '#8bc34a', not: '#e57373', noSample: '#bdbdbd' };
   const COMM_LABELS = { commutable: 'Commutable', partial: 'Partially Commutable', not: 'Not Commutable', noSample: 'No Sample' };
+  const COMM_DESC   = {
+    commutable: 'Human Blood Donation,<br>made by CLSI EP37-A etc.',
+    partial:    'Residual serum pooling etc.',
+    not:        'Commercial QC materials etc.',
+    noSample:   'Laboratory management index etc.'
+  };
 
   // ── KPI summary cards ──────────────────────────────────────────────────────
   const kpiEl = document.getElementById('comm-kpi-row');
@@ -1430,8 +1436,9 @@ function renderCommTreemap() {
       const tests = sumTests(groups[c.key]);
       const pct  = (progs / total * 100).toFixed(0);
       const pctT = (tests / totalTests * 100).toFixed(0);
-      return `<div style="flex:1;min-width:150px;background:${c.bg};border:2px solid ${c.border};border-radius:12px;padding:16px 20px;">
-        <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.6px;color:${c.text};margin-bottom:8px;">${COMM_LABELS[c.key]}</div>
+      return `<div style="flex:1;min-width:180px;background:${c.bg};border:2px solid ${c.border};border-radius:12px;padding:16px 20px;">
+        <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.6px;color:${c.text};margin-bottom:4px;">${COMM_LABELS[c.key]}</div>
+        <div style="font-size:11px;color:${c.text};opacity:0.75;margin-bottom:8px;line-height:1.5;">${COMM_DESC[c.key]}</div>
         <div style="display:flex;align-items:flex-end;gap:8px;">
           <span style="font-size:34px;font-weight:900;color:${COMM_COLORS[c.key]};line-height:1;">${progs}</span>
           <span style="font-size:13px;color:${c.text};padding-bottom:4px;">programs (${pct}%)</span>
