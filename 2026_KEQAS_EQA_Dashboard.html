@@ -562,13 +562,69 @@ body {
 }
 
 @media (max-width: 768px) {
-  .header { padding: 16px 16px; }
-  .kpi-bar { padding: 12px 16px; }
-  .tabs { padding: 0 16px; }
-  .tab-content { padding: 16px; }
+  /* Header */
+  .header { padding: 14px 16px; gap: 12px; }
+  .header h1 { font-size: 18px; }
+  .header .subtitle { font-size: 11px; }
+  .header-actions { gap: 6px; }
+  .share-btn, .github-link { padding: 6px 10px; font-size: 11px; }
+
+  /* KPI bar */
+  .kpi-bar { padding: 10px 14px; gap: 8px; }
+  .kpi { min-width: 90px; padding: 10px 14px; }
+  .kpi .value { font-size: 20px; }
+  .kpi .label { font-size: 10px; }
+
+  /* Navigation */
+  .tabs { padding: 0 4px; }
+  .tab { padding: 10px 10px; font-size: 12px; }
+
+  /* Content */
+  .tab-content { padding: 12px; }
+  .section-title { font-size: 14px; flex-wrap: wrap; }
+
+  /* Treemap: full width on mobile */
+  .treemap-container { width: 100% !important; max-width: 100% !important; }
+
+  /* Program cards */
   .program-grid { grid-template-columns: 1fr; }
-  .kpi { min-width: 100px; }
-  .kpi .value { font-size: 22px; }
+
+  /* Charts: stack vertically on mobile */
+  .charts-row { flex-direction: column !important; }
+  .chart-main { min-width: 0 !important; }
+  .chart-side { flex: 1 1 auto !important; }
+
+  /* Modal: slide up from bottom on mobile */
+  .modal-overlay { padding: 0; align-items: flex-end; }
+  .modal { border-radius: 14px 14px 0 0; max-height: 95vh; }
+  .info-grid { grid-template-columns: 100px 1fr; }
+  .modal-body { padding: 14px 16px; }
+  .modal-header { padding: 14px 16px; }
+
+  /* Tables */
+  #comm-summary-table { overflow-x: auto; display: block; }
+
+  /* Misc */
+  .legend { gap: 8px; padding: 10px 12px; }
+  .legend-item { font-size: 11px; }
+  .source-note { font-size: 11px; }
+  .detail-body { padding: 14px; }
+  .filter-chips { gap: 6px; }
+  .chip { padding: 6px 12px; font-size: 12px; }
+}
+
+@media (max-width: 480px) {
+  .header h1 { font-size: 15px; }
+  .header-actions { display: none; }
+  .kpi-bar { gap: 6px; padding: 8px 10px; }
+  .kpi { min-width: 70px; padding: 8px 10px; }
+  .kpi .value { font-size: 17px; }
+  .tab { padding: 9px 8px; font-size: 11px; }
+  .tab-content { padding: 10px; }
+  .program-card { padding: 14px; }
+  .prog-tag { font-size: 10px; padding: 3px 8px; }
+  .treemap-cell .cell-value { font-size: 26px; }
+  .treemap-cell .cell-name { font-size: 13px; }
 }
 </style>
 </head>
@@ -651,14 +707,14 @@ body {
   <div id="sample-kpi-row" style="display:flex;gap:16px;flex-wrap:wrap;margin-bottom:28px;"></div>
 
   <!-- Charts row -->
-  <div style="display:flex;gap:24px;align-items:flex-start;flex-wrap:wrap;margin-bottom:28px;">
-    <div style="flex:1;min-width:440px;background:var(--surface);border:2px solid var(--border);border-radius:12px;padding:20px 24px;box-shadow:0 2px 8px rgba(0,0,0,0.06);">
+  <div class="charts-row" style="display:flex;gap:24px;align-items:flex-start;flex-wrap:wrap;margin-bottom:28px;">
+    <div class="chart-main" style="flex:1;min-width:440px;background:var(--surface);border:2px solid var(--border);border-radius:12px;padding:20px 24px;box-shadow:0 2px 8px rgba(0,0,0,0.06);">
       <div style="font-size:14px;font-weight:700;color:var(--text);margin-bottom:4px;">Sample Type by Discipline</div>
       <div style="font-size:12px;color:var(--text2);margin-bottom:14px;">Number of programs per discipline &mdash; bar width reflects sample type composition</div>
       <div id="sample-stacked-chart"></div>
       <div id="sample-stacked-legend" style="display:flex;gap:16px;flex-wrap:wrap;margin-top:14px;"></div>
     </div>
-    <div style="flex:0 0 300px;background:var(--surface);border:2px solid var(--border);border-radius:12px;padding:20px 24px;box-shadow:0 2px 8px rgba(0,0,0,0.06);">
+    <div class="chart-side" style="flex:0 0 300px;background:var(--surface);border:2px solid var(--border);border-radius:12px;padding:20px 24px;box-shadow:0 2px 8px rgba(0,0,0,0.06);">
       <div style="font-size:14px;font-weight:700;color:var(--text);margin-bottom:4px;">Overall Distribution</div>
       <div style="font-size:12px;color:var(--text2);margin-bottom:6px;">Programs (left) &nbsp;&middot;&nbsp; Test items (right)</div>
       <div id="sample-donut-chart"></div>
@@ -682,14 +738,14 @@ body {
   <div id="comm-kpi-row" style="display:flex;gap:16px;flex-wrap:wrap;margin-bottom:28px;"></div>
 
   <!-- Charts row -->
-  <div style="display:flex;gap:24px;align-items:flex-start;flex-wrap:wrap;margin-bottom:28px;">
-    <div style="flex:1;min-width:440px;background:var(--surface);border:2px solid var(--border);border-radius:12px;padding:20px 24px;box-shadow:0 2px 8px rgba(0,0,0,0.06);">
+  <div class="charts-row" style="display:flex;gap:24px;align-items:flex-start;flex-wrap:wrap;margin-bottom:28px;">
+    <div class="chart-main" style="flex:1;min-width:440px;background:var(--surface);border:2px solid var(--border);border-radius:12px;padding:20px 24px;box-shadow:0 2px 8px rgba(0,0,0,0.06);">
       <div style="font-size:14px;font-weight:700;color:var(--text);margin-bottom:4px;">Commutability Status by Discipline</div>
       <div style="font-size:12px;color:var(--text2);margin-bottom:14px;">Number of programs per discipline &mdash; bar width reflects commutability composition</div>
       <div id="comm-stacked-chart"></div>
       <div id="comm-stacked-legend" style="display:flex;gap:16px;flex-wrap:wrap;margin-top:14px;"></div>
     </div>
-    <div style="flex:0 0 300px;background:var(--surface);border:2px solid var(--border);border-radius:12px;padding:20px 24px;box-shadow:0 2px 8px rgba(0,0,0,0.06);">
+    <div class="chart-side" style="flex:0 0 300px;background:var(--surface);border:2px solid var(--border);border-radius:12px;padding:20px 24px;box-shadow:0 2px 8px rgba(0,0,0,0.06);">
       <div style="font-size:14px;font-weight:700;color:var(--text);margin-bottom:4px;">Overall Distribution</div>
       <div style="font-size:12px;color:var(--text2);margin-bottom:6px;">Programs (left) &nbsp;&middot;&nbsp; Test items (right)</div>
       <div id="comm-donut-chart"></div>
