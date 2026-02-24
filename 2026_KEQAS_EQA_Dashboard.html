@@ -583,7 +583,7 @@ body {
     <button class="share-btn" onclick="shareOnGitHub()">
       <span>🔗</span> Share on GitHub
     </button>
-    <a href="https://github.com" class="github-link" target="_blank" rel="noopener noreferrer">
+    <a href="https://github.com/yun7640/2026-keqas-eqa-dashboard" class="github-link" target="_blank" rel="noopener noreferrer">
       <span>⭐</span> View on GitHub
     </a>
   </div>
@@ -1005,7 +1005,7 @@ function renderProgramCard(p) {
 
   return `<div class="program-card" onclick='showProgramModal(${JSON.stringify(p).replace(/'/g, "&#39;")})'>
     <div class="prog-name">${p.nameEn}</div>
-    <div class="prog-name-kr">${p.name}</div>
+    <div class="prog-name-kr">${p.sub}</div>
     <div class="prog-meta">
       <span class="prog-tag">${p.numTests} tests</span>
       <span class="prog-tag green">Level ${p.level}</span>
@@ -1037,7 +1037,6 @@ function showProgramModal(p) {
 
   let body = `
     <div class="info-grid">
-      <div class="label">Korean Name</div><div class="val">${p.name}</div>
       <div class="label">Discipline</div><div class="val">${p.cat}</div>
       <div class="label">Classification</div><div class="val">${p.sub}</div>
       <div class="label">Sample Type</div><div class="val">${p.sampleType}</div>
@@ -1579,30 +1578,21 @@ document.addEventListener('keydown', (e) => {
 
 // ===================== GITHUB SHARE =====================
 function shareOnGitHub() {
-  const shareUrl = 'https://github.com/new';
-  const message = `
-2026 KEQAS EQA Dashboard를 GitHub에서 호스팅하려면:
+  const repoUrl = 'https://github.com/yun7640/2026-keqas-eqa-dashboard';
+  const pagesUrl = 'https://yun7640.github.io/2026-keqas-eqa-dashboard/';
+  const message = `2026 KEQAS EQA Dashboard — GitHub
 
-1. GitHub 저장소 생성
-   - 저장소명: 2026-keqas-eqa-dashboard
-   - 설정: Public
-   - URL: ${window.location.href}
+Repository: ${repoUrl}
+Live Dashboard: ${pagesUrl}
 
-2. GitHub Pages 활성화
-   - Settings > Pages > Build and deployment
-   - Source: Deploy from a branch
-   - Branch: main, Folder: / (root)
-
-3. 배포 완료 후 이용 가능:
-   - https://username.github.io/2026-keqas-eqa-dashboard/
-
-자세한 방법은 DEPLOYMENT.md 파일을 참고하세요.
-  `;
+To share this dashboard, copy and send the URL above.`;
   
-  alert(message);
-  
-  // GitHub 저장소 생성 페이지로 이동
-  window.open(shareUrl, '_blank');
+  if (navigator.clipboard) {
+    navigator.clipboard.writeText(pagesUrl).then(() => alert('Dashboard URL copied to clipboard!\n\n' + pagesUrl));
+  } else {
+    alert(message);
+  }
+  window.open(repoUrl, '_blank');
 }
 
 // ===================== INIT =====================
