@@ -954,12 +954,12 @@ function cellContent(cat, value, tests, pctProg, heightPx) {
   // Returns inner HTML with appropriate sizing based on available height
   const txtStyle = 'color:white;text-shadow:0 1px 3px rgba(0,0,0,0.4);white-space:nowrap;text-align:center;';
   if (heightPx >= 130) {
-    return `<div class="cell-name" style="font-size:15px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:95%;">${cat}</div>
-            <div class="cell-value" style="font-size:36px;">${value} programs</div>
+    return `<div class="cell-name" style="font-size:28px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:95%;">${cat}</div>
+            <div class="cell-value" style="font-size:28px;">${value} programs</div>
             <div class="cell-pct">${tests} test items (${pctProg}%)</div>`;
   } else if (heightPx >= 90) {
-    return `<div class="cell-name" style="font-size:14px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:95%;">${cat}</div>
-            <div class="cell-value" style="font-size:28px;margin:2px 0;">${value} programs</div>
+    return `<div class="cell-name" style="font-size:20px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:95%;">${cat}</div>
+            <div class="cell-value" style="font-size:20px;margin:2px 0;">${value} programs</div>
             <div class="cell-pct" style="font-size:12px;">${tests} items (${pctProg}%)</div>`;
   } else {
     return `<div style="display:flex;flex-direction:column;align-items:center;justify-content:center;width:100%;gap:2px;">
@@ -1573,20 +1573,21 @@ function renderCommTreemap() {
         <td><span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:${cfg.color};margin-right:6px;vertical-align:middle;"></span>
           <span style="font-size:11px;color:var(--text2);">${p.cat}</span></td>
         <td style="font-weight:600;">${p.nameEn}</td>
+        <td style="font-size:12px;color:var(--text2);max-width:260px;">${testList}</td>
         <td style="text-align:center;"><span style="display:inline-block;padding:2px 8px;border-radius:12px;font-size:11px;font-weight:700;color:white;background:${badgeColor};white-space:nowrap;">${badgeLabel}</span></td>
         <td style="font-size:12px;color:var(--text2);">${commDetail}</td>
         <td style="font-size:12px;">${p.origin}</td>
         <td style="text-align:center;font-weight:600;">${p.numTests}</td>
         <td style="text-align:center;color:var(--text2);font-size:12px;">${p.numLabs > 0 ? p.numLabs.toLocaleString() : '—'}</td>
-        <td style="font-size:12px;color:var(--text2);max-width:260px;">${testList}</td>
       </tr>`;
     }).join('');
     tableEl.innerHTML = `<table class="tests-table" style="width:100%;font-size:13px;">
       <thead><tr>
         <th style="width:36px;">#</th><th>Discipline</th><th>Program Name</th>
+        <th>Key Test Items</th>
         <th style="width:90px;">Status</th><th>Commutability Basis</th>
         <th>Material Origin</th><th style="width:60px;">Tests</th>
-        <th style="width:70px;">Labs (N)</th><th>Key Test Items</th>
+        <th style="width:70px;">Labs (N)</th>
       </tr></thead>
       <tbody>${rows}</tbody>
     </table>`;
