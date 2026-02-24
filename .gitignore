@@ -1,0 +1,68 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+venv/
+ENV/
+env/
+.venv
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Excel/Data files (large files, not version controlled)
+*.xlsx
+*.xls
+*.csv
+*.pdf
+*.docx
+*.doc
+*.exe
+
+# Allow essential JSON data files
+!data/dashboard_data.json
+!data/dashboard_embed.json
+!data/guidebook_pages.json
+
+# Temp files
+*.tmp
+*.temp
+*.log
+temp/
+
+# OS
+Thumbs.db
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Node modules (if using JavaScript)
+node_modules/
+npm-debug.log

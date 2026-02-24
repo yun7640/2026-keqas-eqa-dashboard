@@ -1,0 +1,1617 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026 KEQAS EQA Schemes Dashboard</title>
+<style>
+:root {
+  --bg: #f8f9fb;
+  --surface: #ffffff;
+  --surface2: #f5f7fa;
+  --border: #e1e4eb;
+  --text: #1a1f36;
+  --text2: #6b7280;
+  --accent: #2563eb;
+  --accent2: #7c3aed;
+  --green: #059669;
+  --orange: #d97706;
+  --red: #dc2626;
+  --pink: #ec4899;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif;
+  background: #ffffff;
+  color: var(--text);
+  line-height: 1.5;
+  min-height: 100vh;
+}
+.header {
+  background: linear-gradient(135deg, #2563eb 0%, #7c3aed 50%, #1e40af 100%);
+  padding: 24px 32px;
+  border-bottom: 2px solid var(--border);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.header-content {
+  flex: 1;
+}
+.header h1 {
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  color: white;
+}
+.header .subtitle {
+  color: rgba(255,255,255,0.9);
+  font-size: 13px;
+  margin-top: 4px;
+}
+.header-actions {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.share-btn {
+  background: rgba(255,255,255,0.2);
+  color: white;
+  border: 1px solid rgba(255,255,255,0.3);
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 600;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.share-btn:hover {
+  background: rgba(255,255,255,0.3);
+  border-color: rgba(255,255,255,0.5);
+}
+.github-link {
+  background: rgba(0,0,0,0.2);
+  color: white;
+  padding: 8px 14px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 600;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  border: 1px solid rgba(255,255,255,0.3);
+}
+.github-link:hover {
+  background: rgba(0,0,0,0.3);
+}
+.kpi-bar {
+  display: flex;
+  gap: 16px;
+  padding: 20px 32px;
+  background: var(--surface);
+  border-bottom: 2px solid var(--border);
+  flex-wrap: wrap;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+}
+.kpi {
+  background: var(--surface2);
+  border-radius: 10px;
+  padding: 14px 20px;
+  min-width: 140px;
+  flex: 1;
+  border: 2px solid var(--border);
+}
+.kpi .label { 
+  color: var(--text2); 
+  font-size: 12px; 
+  text-transform: uppercase; 
+  letter-spacing: 0.6px;
+  font-weight: 600; 
+}
+.kpi .value { 
+  font-size: 30px; 
+  font-weight: 900; 
+  color: var(--accent);
+  margin-top: 4px; 
+}
+.kpi .value span { 
+  font-size: 14px; 
+  color: var(--text2); 
+  font-weight: 500; 
+}
+
+.tabs {
+  display: flex;
+  background: var(--surface);
+  border-bottom: 2px solid var(--border);
+  padding: 0 32px;
+  gap: 0;
+  overflow-x: auto;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+.tab {
+  padding: 14px 20px;
+  cursor: pointer;
+  color: var(--text2);
+  font-size: 14px;
+  font-weight: 600;
+  border-bottom: 3px solid transparent;
+  transition: all 0.2s;
+  white-space: nowrap;
+  user-select: none;
+}
+.tab:hover { color: var(--text); background: var(--surface2); }
+.tab.active { color: var(--accent); border-bottom-color: var(--accent); }
+
+.tab-content { display: none; padding: 32px; }
+.tab-content.active { display: block; }
+
+/* Treemap styles */
+.treemap-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 2px solid var(--border);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  width: 50%;
+  max-width: 50%;
+}
+.treemap-row {
+  display: flex;
+  position: relative;
+  transition: all 0.2s;
+}
+.treemap-cell {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 10px;
+  min-height: 65px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  transition: filter 0.2s;
+  border-right: 1px solid rgba(0,0,0,0.15);
+}
+.treemap-cell:last-child { border-right: none; }
+.treemap-cell:hover { filter: brightness(1.15); }
+.treemap-cell .cell-name {
+  font-weight: 700;
+  font-size: 15px;
+  text-align: center;
+  color: white;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+  line-height: 1.2;
+  word-break: break-word;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  max-height: 2.4em;
+}
+.treemap-cell .cell-value {
+  font-size: 36px;
+  font-weight: 900;
+  color: white;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+  margin: 4px 0;
+  line-height: 1;
+}
+.treemap-cell .cell-pct {
+  font-size: 13px;
+  color: rgba(255,255,255,0.95);
+  font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 95%;
+  line-height: 1.2;
+}
+.treemap-row-label {
+  position: absolute;
+  left: -4px;
+  top: 50%;
+  transform: translateY(-50%) rotate(-90deg);
+  font-size: 11px;
+  color: var(--text2);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  z-index: 2;
+  white-space: nowrap;
+  font-weight: 600;
+}
+.treemap-row-right {
+  position: absolute;
+  right: 6px;
+  top: 6px;
+  font-size: 14px;
+  color: white;
+  z-index: 2;
+  font-weight: 700;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+.treemap-row-right-bottom {
+  position: absolute;
+  right: 6px;
+  bottom: 6px;
+  font-size: 13px;
+  color: rgba(255,255,255,0.9);
+  z-index: 2;
+  font-weight: 600;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.3);
+}
+
+/* Category colors */
+.color-chemistry { background: linear-gradient(135deg, #2d73d4, #1a5fb4); }
+.color-genetics { background: linear-gradient(135deg, #8b5cf6, #6d28d9); }
+.color-immunology { background: linear-gradient(135deg, #059669, #047857); }
+.color-hematology { background: linear-gradient(135deg, #0891b2, #0e7490); }
+.color-transfusion { background: linear-gradient(135deg, #dc2626, #b91c1c); }
+.color-microbiology { background: linear-gradient(135deg, #d97706, #b45309); }
+.color-operations { background: linear-gradient(135deg, #6b7280, #4b5563); }
+
+/* Institution colors matching the attached image */
+.color-tertiary { background: linear-gradient(135deg, #c0392b, #e74c3c); }
+.color-reflab { background: linear-gradient(135deg, #2c3e50, #34495e); }
+.color-secondary-100 { background: linear-gradient(135deg, #1a5276, #2980b9); }
+.color-secondary-gen { background: linear-gradient(135deg, #1abc9c, #16a085); }
+.color-specialty { background: linear-gradient(135deg, #27ae60, #2ecc71); }
+.color-public { background: linear-gradient(135deg, #f39c12, #e67e22); }
+.color-military { background: linear-gradient(135deg, #e74c3c, #c0392b); }
+.color-primary { background: linear-gradient(135deg, #8e44ad, #9b59b6); }
+.color-nonmed-pub { background: linear-gradient(135deg, #7f8c8d, #95a5a6); }
+.color-nonmed-res { background: linear-gradient(135deg, #576574, #636e72); }
+
+/* Sample type treemap */
+.color-inhouse { background: linear-gradient(135deg, #e67e22, #d35400); }
+.color-commercial { background: linear-gradient(135deg, #3498db, #2980b9); }
+.color-nosample { background: linear-gradient(135deg, #7f8c8d, #95a5a6); }
+
+/* Commutability */
+.color-notcomm { background: linear-gradient(135deg, #e74c3c, #c0392b); }
+.color-partcomm { background: linear-gradient(135deg, #f39c12, #e67e22); }
+.color-comm { background: linear-gradient(135deg, #27ae60, #2ecc71); }
+.color-nosamp { background: linear-gradient(135deg, #7f8c8d, #95a5a6); }
+
+/* Detail panel */
+.detail-panel {
+  margin-top: 24px;
+  background: var(--surface);
+  border-radius: 12px;
+  border: 2px solid var(--border);
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+.detail-header {
+  padding: 16px 20px;
+  background: var(--surface2);
+  border-bottom: 2px solid var(--border);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.detail-header h3 { font-size: 16px; font-weight: 700; color: var(--text); }
+.detail-header .badge {
+  background: var(--accent);
+  color: white;
+  padding: 4px 12px;
+  border-radius: 16px;
+  font-size: 12px;
+  font-weight: 700;
+}
+.detail-body { padding: 20px; }
+
+/* Program cards */
+.program-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+  gap: 16px;
+  margin-top: 16px;
+}
+.program-card {
+  background: var(--surface);
+  border-radius: 10px;
+  border: 2px solid var(--border);
+  padding: 18px;
+  cursor: pointer;
+  transition: all 0.2s;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+}
+.program-card:hover {
+  border-color: var(--accent);
+  background: rgba(37, 99, 235, 0.02);
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.1);
+  transform: translateY(-2px);
+}
+.program-card .prog-name {
+  font-weight: 700;
+  font-size: 15px;
+  margin-bottom: 8px;
+  color: var(--accent);
+}
+.program-card .prog-name-kr {
+  font-size: 13px;
+  color: var(--text2);
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+.program-card .prog-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  font-size: 11px;
+}
+.prog-tag {
+  background: rgba(37, 99, 235, 0.12);
+  color: var(--accent);
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 11px;
+  font-weight: 600;
+}
+.prog-tag.green { background: rgba(5, 150, 105, 0.12); color: var(--green); }
+.prog-tag.orange { background: rgba(217, 119, 6, 0.12); color: var(--orange); }
+.prog-tag.red { background: rgba(220, 38, 38, 0.12); color: var(--red); }
+.prog-tag.pink { background: rgba(236, 72, 153, 0.12); color: var(--pink); }
+
+/* Modal */
+.modal-overlay {
+  display: none;
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.4);
+  z-index: 1000;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px 20px;
+  overflow-y: auto;
+}
+.modal-overlay.active { display: flex; }
+.modal {
+  background: var(--surface);
+  border-radius: 12px;
+  border: 2px solid var(--border);
+  max-width: 800px;
+  width: 100%;
+  max-height: 85vh;
+  overflow-y: auto;
+  box-shadow: 0 20px 25px rgba(0,0,0,0.15);
+}
+.modal-header {
+  padding: 20px 24px;
+  border-bottom: 2px solid var(--border);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: sticky;
+  top: 0;
+  background: var(--surface2);
+  z-index: 2;
+}
+.modal-header h2 { font-size: 18px; color: var(--text); }
+.modal-header .close-btn {
+  cursor: pointer;
+  color: var(--text2);
+  font-size: 24px;
+  line-height: 1;
+  padding: 0 4px;
+}
+.modal-header .close-btn:hover { color: var(--text); }
+.modal-body { padding: 20px 24px; }
+
+/* Program detail table */
+.info-grid {
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  gap: 0;
+  margin-bottom: 20px;
+}
+.info-grid .label {
+  padding: 10px 12px;
+  color: var(--text2);
+  font-size: 12px;
+  border-bottom: 1px solid var(--border);
+  border-right: 1px solid var(--border);
+  font-weight: 600;
+  background: var(--surface2);
+}
+.info-grid .val {
+  padding: 10px 12px;
+  font-size: 14px;
+  border-bottom: 1px solid var(--border);
+  color: var(--text);
+  font-weight: 500;
+}
+
+/* Test items table */
+.tests-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+  margin-top: 16px;
+}
+.tests-table th {
+  background: var(--surface2);
+  padding: 10px 12px;
+  text-align: left;
+  font-weight: 700;
+  color: var(--text);
+  border-bottom: 2px solid var(--border);
+}
+.tests-table td {
+  padding: 8px 12px;
+  border-bottom: 1px solid var(--border);
+  color: var(--text);
+}
+.tests-table tr:hover td { background: rgba(37, 99, 235, 0.03); }
+
+/* Category filter chips */
+.filter-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.chip {
+  padding: 8px 16px;
+  border-radius: 24px;
+  font-size: 13px;
+  cursor: pointer;
+  border: 2px solid var(--border);
+  background: var(--surface);
+  color: var(--text);
+  transition: all 0.2s;
+  user-select: none;
+  font-weight: 600;
+}
+.chip:hover { 
+  border-color: var(--accent); 
+  color: var(--accent);
+  background: rgba(37, 99, 235, 0.05);
+}
+.chip.active { 
+  background: var(--accent); 
+  color: white; 
+  border-color: var(--accent); 
+}
+
+.section-title {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--text);
+}
+.section-title .count {
+  font-size: 13px;
+  color: var(--text2);
+  font-weight: 500;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: var(--text2); }
+
+/* Legend */
+.legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 20px;
+  padding: 16px 20px;
+  background: var(--surface2);
+  border-radius: 10px;
+  border: 2px solid var(--border);
+}
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: var(--text);
+  font-weight: 500;
+}
+.legend-color {
+  width: 16px;
+  height: 16px;
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+.source-note {
+  margin-top: 20px;
+  padding: 14px 18px;
+  background: var(--surface2);
+  border-radius: 10px;
+  border: 2px solid var(--border);
+  font-size: 12px;
+  color: var(--text2);
+  line-height: 1.6;
+}
+
+/* Tooltip */
+.tooltip {
+  position: fixed;
+  background: var(--surface);
+  border: 2px solid var(--border);
+  border-radius: 8px;
+  padding: 10px 14px;
+  font-size: 13px;
+  color: var(--text);
+  pointer-events: none;
+  z-index: 2000;
+  display: none;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.12);
+  max-width: 300px;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .header { padding: 16px 16px; }
+  .kpi-bar { padding: 12px 16px; }
+  .tabs { padding: 0 16px; }
+  .tab-content { padding: 16px; }
+  .program-grid { grid-template-columns: 1fr; }
+  .kpi { min-width: 100px; }
+  .kpi .value { font-size: 22px; }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="header-content">
+    <h1>2026 KEQAS EQA Schemes Dashboard</h1>
+    <div class="subtitle">Korean Association of External Quality Assessment Service &middot; Proficiency Testing Program Overview</div>
+  </div>
+  <div class="header-actions">
+    <button class="share-btn" onclick="shareOnGitHub()">
+      <span>🔗</span> Share on GitHub
+    </button>
+    <a href="https://github.com" class="github-link" target="_blank" rel="noopener noreferrer">
+      <span>⭐</span> View on GitHub
+    </a>
+  </div>
+</div>
+
+<div class="kpi-bar">
+  <div class="kpi">
+    <div class="label">Disciplines</div>
+    <div class="value">7</div>
+  </div>
+  <div class="kpi">
+    <div class="label">Programs</div>
+    <div class="value">103</div>
+  </div>
+  <div class="kpi">
+    <div class="label">Test Items</div>
+    <div class="value">548</div>
+  </div>
+  <div class="kpi">
+    <div class="label">Participating Labs</div>
+    <div class="value">2,119</div>
+  </div>
+  <div class="kpi">
+    <div class="label">Sample Types</div>
+    <div class="value">3</div>
+  </div>
+</div>
+
+<div class="tabs">
+  <div class="tab active" data-tab="overview">Programs Overview</div>
+  <div class="tab" data-tab="details">Program Details</div>
+  <div class="tab" data-tab="labs">Participating Institutions</div>
+  <div class="tab" data-tab="sample">Sample Types</div>
+  <div class="tab" data-tab="commutability">Commutability</div>
+</div>
+
+<!-- TAB 1: Programs Overview Treemap -->
+<div class="tab-content active" id="tab-overview">
+  <div class="section-title">Programs & Test Items by Discipline <span class="count">(Sorted by number of programs, descending)</span></div>
+  <div class="treemap-container" id="overview-treemap"></div>
+  <div class="legend" id="overview-legend"></div>
+  <div class="source-note">Source: 2026 KEQAS EQA Program Guidebook Extended Edition &middot; Korean Association of External Quality Assessment Service (KEQAS) &middot; 2026</div>
+</div>
+
+<!-- TAB 2: Program Details -->
+<div class="tab-content" id="tab-details">
+  <div class="section-title">Program Details by Discipline</div>
+  <div class="filter-chips" id="category-filters"></div>
+  <div id="programs-container"></div>
+</div>
+
+<!-- TAB 3: Participating Institutions -->
+<div class="tab-content" id="tab-labs">
+  <div class="section-title">Participating Institutions by Institution Scale <span class="count">N = 2,119</span></div>
+  <div class="treemap-container" id="labs-treemap"></div>
+  <div class="legend" id="labs-legend"></div>
+  <div class="source-note">Source: 2026 KEQAS EQA Labs Registry &middot; Institution classification based on Korean healthcare facility categories &middot; 2026</div>
+</div>
+
+<!-- TAB 4: Sample Types -->
+<div class="tab-content" id="tab-sample">
+  <div class="section-title">Programs by Sample Type <span class="count">103 programs total</span></div>
+
+  <!-- KPI cards -->
+  <div id="sample-kpi-row" style="display:flex;gap:16px;flex-wrap:wrap;margin-bottom:28px;"></div>
+
+  <!-- Charts row -->
+  <div style="display:flex;gap:24px;align-items:flex-start;flex-wrap:wrap;margin-bottom:28px;">
+    <div style="flex:1;min-width:440px;background:var(--surface);border:2px solid var(--border);border-radius:12px;padding:20px 24px;box-shadow:0 2px 8px rgba(0,0,0,0.06);">
+      <div style="font-size:14px;font-weight:700;color:var(--text);margin-bottom:4px;">Sample Type by Discipline</div>
+      <div style="font-size:12px;color:var(--text2);margin-bottom:14px;">Number of programs per discipline &mdash; bar width reflects sample type composition</div>
+      <div id="sample-stacked-chart"></div>
+      <div id="sample-stacked-legend" style="display:flex;gap:16px;flex-wrap:wrap;margin-top:14px;"></div>
+    </div>
+    <div style="flex:0 0 300px;background:var(--surface);border:2px solid var(--border);border-radius:12px;padding:20px 24px;box-shadow:0 2px 8px rgba(0,0,0,0.06);">
+      <div style="font-size:14px;font-weight:700;color:var(--text);margin-bottom:4px;">Overall Distribution</div>
+      <div style="font-size:12px;color:var(--text2);margin-bottom:6px;">Programs (left) &nbsp;&middot;&nbsp; Test items (right)</div>
+      <div id="sample-donut-chart"></div>
+      <div id="sample-donut-legend" style="margin-top:10px;"></div>
+    </div>
+  </div>
+
+  <!-- Program list per sample type -->
+  <div id="sample-detail-section" style="display:flex;flex-direction:column;gap:20px;"></div>
+
+  <div class="legend" id="sample-legend" style="display:none;"></div>
+  <div class="source-note">Source: 2026 KEQAS EQA Program Guidebook Extended Edition &middot; KEQAS &middot; 2026</div>
+</div>
+
+
+<!-- TAB 5: Commutability -->
+<div class="tab-content" id="tab-commutability">
+  <div class="section-title">Commutability of EQA Materials <span class="count">103 programs total</span></div>
+
+  <!-- KPI summary cards -->
+  <div id="comm-kpi-row" style="display:flex;gap:16px;flex-wrap:wrap;margin-bottom:28px;"></div>
+
+  <!-- Charts row -->
+  <div style="display:flex;gap:24px;align-items:flex-start;flex-wrap:wrap;margin-bottom:28px;">
+    <div style="flex:1;min-width:440px;background:var(--surface);border:2px solid var(--border);border-radius:12px;padding:20px 24px;box-shadow:0 2px 8px rgba(0,0,0,0.06);">
+      <div style="font-size:14px;font-weight:700;color:var(--text);margin-bottom:4px;">Commutability Status by Discipline</div>
+      <div style="font-size:12px;color:var(--text2);margin-bottom:14px;">Number of programs per discipline &mdash; bar width reflects commutability composition</div>
+      <div id="comm-stacked-chart"></div>
+      <div id="comm-stacked-legend" style="display:flex;gap:16px;flex-wrap:wrap;margin-top:14px;"></div>
+    </div>
+    <div style="flex:0 0 300px;background:var(--surface);border:2px solid var(--border);border-radius:12px;padding:20px 24px;box-shadow:0 2px 8px rgba(0,0,0,0.06);">
+      <div style="font-size:14px;font-weight:700;color:var(--text);margin-bottom:4px;">Overall Distribution</div>
+      <div style="font-size:12px;color:var(--text2);margin-bottom:6px;">Programs (left) &nbsp;&middot;&nbsp; Test items (right)</div>
+      <div id="comm-donut-chart"></div>
+      <div id="comm-donut-legend" style="margin-top:10px;"></div>
+    </div>
+  </div>
+
+  <div class="legend" id="comm-legend" style="display:none;"></div>
+
+  <!-- Summary table -->
+  <div style="background:var(--surface);border:2px solid var(--border);border-radius:12px;padding:20px 24px;box-shadow:0 2px 8px rgba(0,0,0,0.06);">
+    <div style="font-size:16px;font-weight:700;color:var(--text);margin-bottom:4px;">Commutable &amp; Partially Commutable Programs</div>
+    <div style="font-size:13px;color:var(--text2);margin-bottom:16px;">Programs using commutable EQA materials &mdash; human-based or certified reference materials that reflect native patient sample behavior.</div>
+    <div id="comm-summary-table"></div>
+  </div>
+
+  <div class="source-note">Source: 2026 KEQAS EQA Program Guidebook Extended Edition &middot; KEQAS &middot; 2026</div>
+</div>
+
+<!-- Modal for program detail -->
+<div class="modal-overlay" id="modal-overlay">
+  <div class="modal">
+    <div class="modal-header">
+      <div>
+        <h2 id="modal-title"></h2>
+        <div id="modal-subtitle" style="color:var(--text2);font-size:13px;margin-top:4px;"></div>
+      </div>
+      <span class="close-btn" id="modal-close">&times;</span>
+    </div>
+    <div class="modal-body" id="modal-body"></div>
+  </div>
+</div>
+
+<!-- Tooltip -->
+<div class="tooltip" id="tooltip"></div>
+
+<script>
+// ===================== DATA =====================
+const PROGRAMS = [
+  // Clinical Chemistry (38 programs, 277 tests)
+  {cat:"Clinical Chemistry",catKr:"임상화학",sub:"Urinalysis & Stool Occult Blood etc.",subKr:"소변·대변·체액·결석검사",name:"소변검사",nameEn:"Urinalysis",sampleType:"Commercial materials",level:3,dist:3,shipping:"Ambient",lypo:"Lyophilized",comm:"Not commutable",sourcing:"Bio-Rad",origin:"N/A",numLabs:1966,numTests:11,tests:[{n:"Specific gravity",c:"나-293"},{n:"pH",c:"나-293"},{n:"Glucose (urine)",c:"나-293"},{n:"Protein (urine)",c:"나-293"},{n:"Bilirubin (urine)",c:"나-293"},{n:"Urobilinogen (urine)",c:"나-293"},{n:"Ketone (urine)",c:"나-293"},{n:"Blood (urine)",c:"나-293"},{n:"Nitrite (urine)",c:"나-293"},{n:"Leukocyte esterase (urine)",c:"나-293"},{n:"Color clarity (urine)",c:"나-293"}]},
+  {cat:"Clinical Chemistry",catKr:"임상화학",sub:"Urinalysis & Stool Occult Blood etc.",subKr:"소변·대변·체액·결석검사",name:"대변검사",nameEn:"Stool occult blood",sampleType:"Commercial materials",level:3,dist:2,shipping:"Ambient",lypo:"Lyophilized",comm:"Not commutable",sourcing:"Bio-Rad",origin:"N/A",numLabs:997,numTests:2,tests:[{n:"Occult blood (stool, chemical)",c:"나-295"},{n:"Occult blood (stool, immunological)",c:"나-296"}]},
+  {cat:"Clinical Chemistry",catKr:"임상화학",sub:"Blood Gas Analysis",subKr:"혈액가스·전해질이온검사",name:"혈액가스검사",nameEn:"Blood gas analysis",sampleType:"Commercial materials",level:3,dist:2,shipping:"Ambient",lypo:"Liquid",comm:"Not commutable",sourcing:"Radiometer",origin:"N/A",numLabs:429,numTests:9,tests:[{n:"pH (blood gas)",c:""},{n:"pCO2",c:""},{n:"pO2",c:""},{n:"Na",c:""},{n:"K",c:""},{n:"Cl",c:""},{n:"iCa",c:""},{n:"Glucose (BGA)",c:""},{n:"Lactate",c:""}]},
+  {cat:"Clinical Chemistry",catKr:"임상화학",sub:"Blood Gas Analysis",subKr:"혈액가스·전해질이온검사",name:"혈액가스 현장검사",nameEn:"Blood gas analysis, POCT",sampleType:"Commercial materials",level:3,dist:2,shipping:"Ambient",lypo:"Liquid",comm:"Not commutable",sourcing:"Radiometer",origin:"N/A",numLabs:197,numTests:3,tests:[{n:"pH (POCT BGA)",c:""},{n:"pCO2 (POCT)",c:""},{n:"pO2 (POCT)",c:""}]},
+  {cat:"Clinical Chemistry",catKr:"임상화학",sub:"General Chemistry",subKr:"일반화학검사",name:"일반화학검사",nameEn:"Routine chemistry",sampleType:"Commercial materials",level:3,dist:4,shipping:"Ambient",lypo:"Lyophilized",comm:"Not commutable",sourcing:"Bio-Rad / Randox",origin:"Bovine",numLabs:2023,numTests:29,tests:[{n:"Glucose",c:""},{n:"BUN",c:""},{n:"Creatinine",c:""},{n:"Uric acid",c:""},{n:"Total cholesterol",c:""},{n:"Triglyceride",c:""},{n:"HDL-cholesterol",c:""},{n:"LDL-cholesterol",c:""},{n:"Total protein",c:""},{n:"Albumin",c:""},{n:"Total bilirubin",c:""},{n:"Direct bilirubin",c:""},{n:"AST",c:""},{n:"ALT",c:""},{n:"ALP",c:""},{n:"GGT",c:""},{n:"LD",c:""},{n:"CK",c:""},{n:"Amylase",c:""},{n:"Lipase",c:""},{n:"Calcium",c:""},{n:"Phosphorus",c:""},{n:"Magnesium",c:""},{n:"Iron",c:""},{n:"TIBC",c:""},{n:"UIBC",c:""},{n:"Sodium",c:""},{n:"Potassium",c:""},{n:"Chloride",c:""}]},
+  {cat:"Clinical Chemistry",catKr:"임상화학",sub:"General Chemistry",subKr:"일반화학검사",name:"요화학검사",nameEn:"Urine chemistry",sampleType:"Commercial materials",level:3,dist:2,shipping:"Ambient",lypo:"Lyophilized",comm:"Not commutable",sourcing:"Bio-Rad",origin:"N/A",numLabs:347,numTests:13,tests:[{n:"Urine total protein",c:""},{n:"Urine albumin(Microalbumin)",c:""},{n:"Urine creatinine",c:""},{n:"Urine calcium",c:""},{n:"Urine phosphorus",c:""},{n:"Urine uric acid",c:""},{n:"Urine sodium",c:""},{n:"Urine potassium",c:""},{n:"Urine chloride",c:""},{n:"Urine magnesium",c:""},{n:"Urine glucose",c:""},{n:"Urine amylase",c:""},{n:"Urine osmolality",c:""}]},
+  {cat:"Clinical Chemistry",catKr:"임상화학",sub:"General Chemistry",subKr:"일반화학검사",name:"ICG검사",nameEn:"ICG test",sampleType:"In-house made",level:4,dist:2,shipping:"Refrigerated",lypo:"Liquid",comm:"Not commutable",sourcing:"In-house preparation",origin:"Synthetic",numLabs:50,numTests:3,tests:[{n:"ICG R15",c:""},{n:"ICG plasma disappearance rate",c:""},{n:"ICG retention rate",c:""}]},
+  {cat:"Clinical Chemistry",catKr:"임상화학",sub:"General Chemistry",subKr:"일반화학검사",name:"당화알부민검사",nameEn:"Glycated albumin",sampleType:"Commercial materials",level:3,dist:2,shipping:"Ambient",lypo:"Lyophilized",comm:"Not commutable",sourcing:"Commercial",origin:"N/A",numLabs:78,numTests:1,tests:[{n:"Glycated albumin",c:""}]},
+  {cat:"Clinical Chemistry",catKr:"임상화학",sub:"General Chemistry",subKr:"일반화학검사",name:"Cystatin C 검사",nameEn:"Cystatin C",sampleType:"Commercial materials",level:3,dist:2,shipping:"Ambient",lypo:"Lyophilized",comm:"Not commutable",sourcing:"Commercial",origin:"N/A",numLabs:130,numTests:1,tests:[{n:"Cystatin C",c:""}]},
+  {cat:"Clinical Chemistry",catKr:"임상화학",sub:"General Chemistry",subKr:"일반화학검사",name:"암모니아 검사",nameEn:"Ammonia (pilot project)",sampleType:"Commercial materials",level:3,dist:2,shipping:"Ambient",lypo:"Lyophilized",comm:"Not commutable",sourcing:"Commercial",origin:"N/A",numLabs:0,numTests:1,tests:[{n:"Ammonia",c:""}]},
+  {cat:"Clinical Chemistry",catKr:"임상화학",sub:"Special proteins",subKr:"단백면역검사",name:"단백면역검사",nameEn:"Special proteins",sampleType:"Commercial materials",level:3,dist:2,shipping:"Ambient",lypo:"Lyophilized",comm:"Not commutable",sourcing:"Bio-Rad",origin:"N/A",numLabs:673,numTests:12,tests:[{n:"IgG",c:""},{n:"IgA",c:""},{n:"IgM",c:""},{n:"C3",c:""},{n:"C4",c:""},{n:"CRP",c:""},{n:"hs-CRP",c:""},{n:"ASO",c:""},{n:"RF",c:""},{n:"Transferrin",c:""},{n:"Ceruloplasmin",c:""},{n:"Haptoglobin",c:""}]},
+  {cat:"Clinical Chemistry",catKr:"임상화학",sub:"Carbohydrates, Lipids, Proteins & Vitamins",subKr:"탄수화물·지질·단백질·비타민검사",name:"Glucose 현장검사",nameEn:"Glucose, POCT",sampleType:"Commercial materials",level:3,dist:2,shipping:"Ambient",lypo:"Lyophilized",comm:"Not commutable",sourcing:"Commercial",origin:"N/A",numLabs:408,numTests:1,tests:[{n:"Glucose (POCT)",c:""}]},
+  {cat:"Clinical Chemistry",catKr:"임상화학",sub:"Carbohydrates, Lipids, Proteins & Vitamins",subKr:"탄수화물·지질·단백질·비타민검사",name:"심장표지자단백검사(정량)",nameEn:"Cardiac markers",sampleType:"In-house made",level:3,dist:2,shipping:"Frozen",lypo:"Liquid",comm:"Partially commutable (human serum pooling)",sourcing:"In-house preparation",origin:"Human",numLabs:545,numTests:11,tests:[{n:"Troponin I",c:""},{n:"Troponin T",c:""},{n:"hs-Troponin I",c:""},{n:"hs-Troponin T",c:""},{n:"CK-MB (mass)",c:""},{n:"Myoglobin",c:""},{n:"NT-proBNP",c:""},{n:"BNP",c:""},{n:"D-dimer",c:""},{n:"Procalcitonin",c:""},{n:"hs-CRP (cardiac)",c:""}]},
+  {cat:"Clinical Chemistry",catKr:"임상화학",sub:"Heavy metals & trace elements",subKr:"중금속∙미량원소",name:"미량원소검사",nameEn:"Trace elements (pilot project)",sampleType:"In-house made",level:3,dist:2,shipping:"Frozen",lypo:"Liquid",comm:"Partially commutable (human serum pooling)",sourcing:"In-house preparation",origin:"Human",numLabs:0,numTests:4,tests:[{n:"Zinc",c:""},{n:"Copper",c:""},{n:"Selenium",c:""},{n:"Manganese",c:""}]},
+  {cat:"Clinical Chemistry",catKr:"임상화학",sub:"Metabolic Diseases",subKr:"대사물질검사",name:"신생아대사이상선별검사 1",nameEn:"Newborn screening 1",sampleType:"In-house made",level:6,dist:2,shipping:"Ambient",lypo:"Dried blood spot",comm:"Not commutable",sourcing:"In-house/CDC",origin:"Human",numLabs:14,numTests:40,tests:[{n:"Phenylalanine (NBS)",c:""},{n:"TSH (NBS)",c:""},{n:"17-OHP (NBS)",c:""},{n:"Galactose (NBS)",c:""},{n:"IRT (NBS)",c:""},{n:"+ 35 acylcarnitines/amino acids",c:""}]},
+  {cat:"Clinical Chemistry",catKr:"임상화학",sub:"Metabolic Diseases",subKr:"대사물질검사",name:"신생아대사이상선별검사 2",nameEn:"Newborn screening 2",sampleType:"In-house made",level:6,dist:2,shipping:"Ambient",lypo:"Dried blood spot",comm:"Not commutable",sourcing:"In-house/CDC",origin:"Human",numLabs:11,numTests:6,tests:[{n:"Biotinidase",c:""},{n:"G6PD",c:""},{n:"CAH (2nd tier)",c:""},{n:"Lysosphingolipids",c:""},{n:"SCID (TREC)",c:""},{n:"SMA (SMN1)",c:""}]},
+  {cat:"Clinical Chemistry",catKr:"임상화학",sub:"Metabolic Diseases",subKr:"대사물질검사",name:"아미노산검사",nameEn:"Amino acid profile",sampleType:"In-house made",level:3,dist:2,shipping:"Frozen",lypo:"Liquid",comm:"Partially commutable (human serum pooling)",sourcing:"In-house preparation",origin:"Human",numLabs:5,numTests:1,tests:[{n:"Amino acid profile",c:""}]},
+  {cat:"Clinical Chemistry",catKr:"임상화학",sub:"Metabolic Diseases",subKr:"대사물질검사",name:"특수대사산물검사",nameEn:"Special metabolites",sampleType:"In-house made",level:3,dist:2,shipping:"Frozen",lypo:"Liquid",comm:"Partially commutable (human serum pooling)",sourcing:"In-house preparation",origin:"Human",numLabs:12,numTests:11,tests:[{n:"VMA",c:""},{n:"HVA",c:""},{n:"5-HIAA",c:""},{n:"Metanephrine",c:""},{n:"Normetanephrine",c:""},{n:"Catecholamines",c:""},{n:"Cortisol (urine)",c:""},{n:"Porphyrins",c:""},{n:"Organic acids",c:""},{n:"Methylmalonic acid",c:""},{n:"Homocysteine",c:""}]},
+  {cat:"Clinical Chemistry",catKr:"임상화학",sub:"Hormones",subKr:"호르몬검사",name:"호르몬검사 1",nameEn:"Hormones 1",sampleType:"Commercial materials",level:3,dist:2,shipping:"Ambient",lypo:"Lyophilized",comm:"Not commutable",sourcing:"Bio-Rad",origin:"N/A",numLabs:299,numTests:10,tests:[{n:"TSH",c:""},{n:"Free T4",c:""},{n:"Free T3",c:""},{n:"T4",c:""},{n:"T3",c:""},{n:"Cortisol",c:""},{n:"Insulin",c:""},{n:"C-peptide",c:""},{n:"PTH (intact)",c:""},{n:"Growth hormone",c:""}]},
+  {cat:"Clinical Chemistry",catKr:"임상화학",sub:"Hormones",subKr:"호르몬검사",name:"호르몬검사 2",nameEn:"Hormones 2",sampleType:"Commercial materials",level:3,dist:2,shipping:"Ambient",lypo:"Lyophilized",comm:"Not commutable",sourcing:"Bio-Rad",origin:"N/A",numLabs:389,numTests:4,tests:[{n:"Estradiol",c:""},{n:"Testosterone",c:""},{n:"Progesterone",c:""},{n:"DHEA-S",c:""}]},
+  {cat:"Clinical Chemistry",catKr:"임상화학",sub:"Hormones",subKr:"호르몬검사",name:"호르몬검사 3",nameEn:"Hormones 3",sampleType:"In-house made",level:3,dist:2,shipping:"Frozen",lypo:"Liquid",comm:"Partially commutable (human serum pooling)",sourcing:"In-house preparation",origin:"Human",numLabs:48,numTests:1,tests:[{n:"Aldosterone",c:""}]},
+  {cat:"Clinical Chemistry",catKr:"임상화학",sub:"Hormones",subKr:"호르몬검사",name:"호르몬검사 4",nameEn:"Hormones 4",sampleType:"Commercial materials",level:3,dist:2,shipping:"Ambient",lypo:"Lyophilized",comm:"Not commutable",sourcing:"Bio-Rad",origin:"N/A",numLabs:166,numTests:4,tests:[{n:"LH",c:""},{n:"FSH",c:""},{n:"Prolactin",c:""},{n:"hCG (quantitative)",c:""}]},
+  {cat:"Clinical Chemistry",catKr:"임상화학",sub:"Hormones",subKr:"호르몬검사",name:"호르몬검사 5",nameEn:"Hormones 5",sampleType:"In-house made",level:3,dist:2,shipping:"Frozen",lypo:"Liquid",comm:"Partially commutable (human serum pooling)",sourcing:"In-house preparation",origin:"Human",numLabs:724,numTests:5,tests:[{n:"Vitamin D (25-OH)",c:""},{n:"Ferritin",c:""},{n:"Folate",c:""},{n:"Vitamin B12",c:""},{n:"Homocysteine",c:""}]},
+  {cat:"Clinical Chemistry",catKr:"임상화학",sub:"Hormones",subKr:"호르몬검사",name:"호르몬검사 6",nameEn:"Hormones 6",sampleType:"In-house made",level:3,dist:2,shipping:"Frozen",lypo:"Liquid",comm:"Partially commutable (human serum pooling)",sourcing:"In-house preparation",origin:"Human",numLabs:244,numTests:2,tests:[{n:"Procalcitonin",c:""},{n:"Presepsin",c:""}]},
+  {cat:"Clinical Chemistry",catKr:"임상화학",sub:"Hormones",subKr:"호르몬검사",name:"호르몬검사 7",nameEn:"Hormones 7 (pilot project)",sampleType:"In-house made",level:3,dist:2,shipping:"Frozen",lypo:"Liquid",comm:"Partially commutable (human serum pooling)",sourcing:"In-house preparation",origin:"Human",numLabs:13,numTests:2,tests:[{n:"Erythropoietin",c:""},{n:"Renin",c:""}]},
+  {cat:"Clinical Chemistry",catKr:"임상화학",sub:"Tumor Markers",subKr:"종양표지자검사",name:"종양표지자검사 1",nameEn:"Tumor markers 1",sampleType:"In-house made",level:3,dist:2,shipping:"Frozen",lypo:"Liquid",comm:"Partially commutable (human serum pooling)",sourcing:"In-house preparation",origin:"Human",numLabs:765,numTests:8,tests:[{n:"AFP",c:""},{n:"CEA",c:""},{n:"CA 19-9",c:""},{n:"CA 125",c:""},{n:"CA 15-3",c:""},{n:"PSA (total)",c:""},{n:"PSA (free)",c:""},{n:"CA 72-4",c:""}]},
+  {cat:"Clinical Chemistry",catKr:"임상화학",sub:"Tumor Markers",subKr:"종양표지자검사",name:"종양표지자검사 2",nameEn:"Tumor markers 2",sampleType:"Commercial materials",level:3,dist:2,shipping:"Ambient",lypo:"Lyophilized",comm:"Not commutable",sourcing:"Bio-Rad",origin:"N/A",numLabs:35,numTests:5,tests:[{n:"CYFRA 21-1",c:""},{n:"SCC",c:""},{n:"NSE",c:""},{n:"ProGRP",c:""},{n:"HE4",c:""}]},
+  {cat:"Clinical Chemistry",catKr:"임상화학",sub:"Therapeutic Drug Monitoring & Toxicology",subKr:"약물검사",name:"일반치료적약물검사",nameEn:"Therapeutic drug monitoring, general",sampleType:"Commercial materials",level:2,dist:2,shipping:"Ambient",lypo:"Lyophilized",comm:"Not commutable",sourcing:"Bio-Rad",origin:"N/A",numLabs:104,numTests:28,tests:[{n:"Valproic acid",c:""},{n:"Phenytoin",c:""},{n:"Carbamazepine",c:""},{n:"Phenobarbital",c:""},{n:"Lithium",c:""},{n:"Digoxin",c:""},{n:"Theophylline",c:""},{n:"Vancomycin",c:""},{n:"Gentamicin",c:""},{n:"Amikacin",c:""},{n:"Methotrexate",c:""},{n:"+ 17 more drugs",c:""}]},
+  {cat:"Clinical Chemistry",catKr:"임상화학",sub:"Therapeutic Drug Monitoring & Toxicology",subKr:"약물검사",name:"특수치료적약물검사",nameEn:"Therapeutic drug monitoring, Special",sampleType:"In-house made",level:2,dist:2,shipping:"Frozen",lypo:"Liquid",comm:"Partially commutable (human serum pooling)",sourcing:"In-house preparation",origin:"Human",numLabs:15,numTests:4,tests:[{n:"Voriconazole",c:""},{n:"Posaconazole",c:""},{n:"Itraconazole",c:""},{n:"Hydroxy-itraconazole",c:""}]},
+  {cat:"Clinical Chemistry",catKr:"임상화학",sub:"Therapeutic Drug Monitoring & Toxicology",subKr:"약물검사",name:"면역억제제치료적약물검사",nameEn:"Immunosuppressants therapeutic drug monitoring",sampleType:"Commercial materials",level:2,dist:2,shipping:"Ambient",lypo:"Lyophilized",comm:"Not commutable",sourcing:"Bio-Rad",origin:"N/A",numLabs:81,numTests:4,tests:[{n:"Cyclosporine",c:""},{n:"Tacrolimus",c:""},{n:"Sirolimus",c:""},{n:"Everolimus",c:""}]},
+  {cat:"Clinical Chemistry",catKr:"임상화학",sub:"Therapeutic Drug Monitoring & Toxicology",subKr:"약물검사",name:"마약성약물검사",nameEn:"Drug of abuse (QL)",sampleType:"Commercial materials",level:2,dist:2,shipping:"Ambient",lypo:"Lyophilized",comm:"Not commutable",sourcing:"Bio-Rad",origin:"N/A",numLabs:188,numTests:16,tests:[{n:"Amphetamine",c:""},{n:"Methamphetamine",c:""},{n:"Cannabis",c:""},{n:"Cocaine",c:""},{n:"Opiate",c:""},{n:"Barbiturate",c:""},{n:"Benzodiazepine",c:""},{n:"Methadone",c:""},{n:"PCP",c:""},{n:"+ 7 more",c:""}]},
+  {cat:"Clinical Chemistry",catKr:"임상화학",sub:"Therapeutic Drug Monitoring & Toxicology",subKr:"약물검사",name:"항경련제 약물검사",nameEn:"Drug anti-Epileptic drug (pilot project)",sampleType:"In-house made",level:3,dist:2,shipping:"Frozen",lypo:"Liquid",comm:"Partially commutable (human serum pooling)",sourcing:"In-house preparation",origin:"Human",numLabs:15,numTests:12,tests:[{n:"Levetiracetam",c:""},{n:"Lacosamide",c:""},{n:"Zonisamide",c:""},{n:"Topiramate",c:""},{n:"Lamotrigine",c:""},{n:"Oxcarbazepine (MHD)",c:""},{n:"+ 6 more",c:""}]},
+  {cat:"Clinical Chemistry",catKr:"임상화학",sub:"Harmonization Chemistry",subKr:"일치화기반",name:"지단백검사",nameEn:"Apolipoproteins & lipoprotein (a)",sampleType:"In-house made",level:3,dist:2,shipping:"Frozen",lypo:"Liquid",comm:"Partially commutable (human serum pooling)",sourcing:"In-house preparation",origin:"Human",numLabs:129,numTests:3,tests:[{n:"Apolipoprotein A-I",c:""},{n:"Apolipoprotein B",c:""},{n:"Lipoprotein(a)",c:""}]},
+  {cat:"Clinical Chemistry",catKr:"임상화학",sub:"Accuracy-Based Chemistry",subKr:"정확도기반검사",name:"정확도기반 지질검사",nameEn:"Accuracy-based lipids",sampleType:"In-house made",level:3,dist:2,shipping:"Frozen",lypo:"Liquid",comm:"Commutable (Human Blood donation, CLSI 46-A)",sourcing:"In-house preparation",origin:"Human",numLabs:404,numTests:5,tests:[{n:"Total cholesterol (AB)",c:""},{n:"HDL-cholesterol (AB)",c:""},{n:"LDL-cholesterol (AB)",c:""},{n:"Triglyceride (AB)",c:""},{n:"Non-HDL cholesterol (AB)",c:""}]},
+  {cat:"Clinical Chemistry",catKr:"임상화학",sub:"Accuracy-Based Chemistry",subKr:"정확도기반검사",name:"정확도기반 Creatinine검사",nameEn:"Accuracy-based Creatinine",sampleType:"In-house made",level:3,dist:2,shipping:"Frozen",lypo:"Liquid",comm:"Commutable (Human Blood donation, CLSI 37-A)",sourcing:"In-house preparation",origin:"Human",numLabs:2001,numTests:2,tests:[{n:"Creatinine (AB)",c:""},{n:"Creatinine eGFR (AB)",c:""}]},
+  {cat:"Clinical Chemistry",catKr:"임상화학",sub:"Accuracy-Based Chemistry",subKr:"정확도기반검사",name:"정확도기반 HbA1c검사",nameEn:"Accuracy-based HbA1c",sampleType:"In-house made",level:3,dist:2,shipping:"Refrigerated",lypo:"Liquid",comm:"Commutable (Human Blood donation, CLSI 42-A)",sourcing:"In-house preparation",origin:"Human",numLabs:764,numTests:1,tests:[{n:"HbA1c (AB)",c:""}]},
+  {cat:"Clinical Chemistry",catKr:"임상화학",sub:"Accuracy-Based Chemistry",subKr:"정확도기반검사",name:"정확도기반 Glucose검사",nameEn:"Accuracy-based Glucose",sampleType:"In-house made",level:3,dist:2,shipping:"Frozen",lypo:"Liquid",comm:"Commutable (Human Blood donation, CLSI 44-A)",sourcing:"In-house preparation",origin:"Human",numLabs:1993,numTests:1,tests:[{n:"Glucose (AB)",c:""}]},
+  {cat:"Clinical Chemistry",catKr:"임상화학",sub:"Accuracy-Based Chemistry",subKr:"정확도기반검사",name:"Creatinine 데이터 품질평가검사",nameEn:"Creatinine data quality assessment (pilot project)",sampleType:"In-house made",level:12,dist:1,shipping:"Frozen",lypo:"Liquid",comm:"Commutable (Human Blood donation, CLSI 45-A)",sourcing:"In-house preparation",origin:"Human",numLabs:137,numTests:1,tests:[{n:"Creatinine (DQA)",c:""}]},
+
+  // Diagnostic Genetics (22 programs, 79 tests)
+  {cat:"Diagnostic Genetics",catKr:"진단유전학",sub:"Molecular Microbiology",subKr:"미생물분자검사",name:"항산균 분자검사",nameEn:"Molecular microbiology, mycobacteria",sampleType:"In-house made",level:3,dist:3,shipping:"Ambient",lypo:"Liquid",comm:"Not commutable",sourcing:"In-house preparation",origin:"Microbial",numLabs:167,numTests:3,tests:[{n:"MTB PCR",c:""},{n:"NTM PCR",c:""},{n:"MTB species identification",c:""}]},
+  {cat:"Diagnostic Genetics",catKr:"진단유전학",sub:"Molecular Microbiology",subKr:"미생물분자검사",name:"간염바이러스 분자검사 1",nameEn:"Molecular microbiology, hepatitis viruses 1",sampleType:"In-house made",level:2,dist:2,shipping:"Frozen",lypo:"Liquid",comm:"Not commutable",sourcing:"In-house preparation",origin:"Viral",numLabs:126,numTests:5,tests:[{n:"HBV DNA (quantitative)",c:""},{n:"HCV RNA (quantitative)",c:""},{n:"HBV genotyping",c:""},{n:"HCV genotyping",c:""},{n:"HBV drug resistance",c:""}]},
+  {cat:"Diagnostic Genetics",catKr:"진단유전학",sub:"Molecular Microbiology",subKr:"미생물분자검사",name:"간염바이러스 분자검사 2",nameEn:"Molecular microbiology, hepatitis viruses 2",sampleType:"In-house made",level:3,dist:2,shipping:"Frozen",lypo:"Liquid",comm:"Not commutable",sourcing:"In-house preparation",origin:"Viral",numLabs:15,numTests:1,tests:[{n:"HDV RNA",c:""}]},
+  {cat:"Diagnostic Genetics",catKr:"진단유전학",sub:"Molecular Microbiology",subKr:"미생물분자검사",name:"바이러스 분자검사 1",nameEn:"Molecular microbiology, viruses 1",sampleType:"In-house made",level:3,dist:2,shipping:"Frozen",lypo:"Liquid",comm:"Not commutable",sourcing:"In-house preparation",origin:"Viral",numLabs:68,numTests:7,tests:[{n:"HIV-1 RNA (quantitative)",c:""},{n:"CMV DNA (quantitative)",c:""},{n:"EBV DNA (quantitative)",c:""},{n:"BKV DNA (quantitative)",c:""},{n:"Adenovirus DNA",c:""},{n:"HPV genotyping",c:""},{n:"HPV (high-risk)",c:""}]},
+  {cat:"Diagnostic Genetics",catKr:"진단유전학",sub:"Molecular Microbiology",subKr:"미생물분자검사",name:"바이러스 분자검사 2",nameEn:"Molecular microbiology, viruses 2",sampleType:"In-house made",level:3,dist:2,shipping:"Frozen",lypo:"Liquid",comm:"Not commutable",sourcing:"In-house preparation",origin:"Viral",numLabs:230,numTests:12,tests:[{n:"Influenza A/B",c:""},{n:"RSV",c:""},{n:"SARS-CoV-2",c:""},{n:"Norovirus",c:""},{n:"Rotavirus",c:""},{n:"Adenovirus",c:""},{n:"Rhinovirus",c:""},{n:"Parainfluenza",c:""},{n:"hMPV",c:""},{n:"Bocavirus",c:""},{n:"Coronavirus",c:""},{n:"Enterovirus",c:""}]},
+  {cat:"Diagnostic Genetics",catKr:"진단유전학",sub:"Molecular Microbiology",subKr:"미생물분자검사",name:"바이러스 분자검사 3",nameEn:"Molecular microbiology, viruses 3",sampleType:"In-house made",level:2,dist:2,shipping:"Frozen",lypo:"Liquid",comm:"Not commutable",sourcing:"In-house preparation",origin:"Viral",numLabs:71,numTests:3,tests:[{n:"HSV PCR",c:""},{n:"VZV PCR",c:""},{n:"Enterovirus PCR",c:""}]},
+  {cat:"Diagnostic Genetics",catKr:"진단유전학",sub:"Human Genetics",subKr:"유전학검사",name:"세포유전검사",nameEn:"Cytogenetics",sampleType:"In-house made",level:5,dist:2,shipping:"Ambient",lypo:"Digital image",comm:"Not commutable",sourcing:"In-house preparation",origin:"Human",numLabs:35,numTests:1,tests:[{n:"Karyotyping",c:""}]},
+  {cat:"Diagnostic Genetics",catKr:"진단유전학",sub:"Human Genetics",subKr:"유전학검사",name:"분자세포유전검사 1",nameEn:"FISH 1",sampleType:"In-house made",level:10,dist:2,shipping:"Ambient",lypo:"Digital image",comm:"Not commutable",sourcing:"In-house preparation",origin:"Human",numLabs:30,numTests:1,tests:[{n:"FISH",c:""}]},
+  {cat:"Diagnostic Genetics",catKr:"진단유전학",sub:"Human Genetics",subKr:"유전학검사",name:"분자세포유전검사 2",nameEn:"FISH 2",sampleType:"In-house made",level:2,dist:2,shipping:"Ambient",lypo:"Digital image",comm:"Not commutable",sourcing:"In-house preparation",origin:"Human",numLabs:15,numTests:1,tests:[{n:"FISH (additional)",c:""}]},
+  {cat:"Diagnostic Genetics",catKr:"진단유전학",sub:"Human Genetics",subKr:"유전학검사",name:"혈액종양 진단유전검사",nameEn:"Molecular, hematologic malignancy",sampleType:"In-house made",level:2,dist:2,shipping:"Frozen",lypo:"DNA/RNA",comm:"Not commutable",sourcing:"In-house preparation",origin:"Human",numLabs:46,numTests:7,tests:[{n:"BCR-ABL1 (quantitative)",c:""},{n:"PML-RARA",c:""},{n:"RUNX1-RUNX1T1",c:""},{n:"CBFB-MYH11",c:""},{n:"FLT3-ITD",c:""},{n:"NPM1 mutation",c:""},{n:"JAK2 V617F",c:""}]},
+  {cat:"Diagnostic Genetics",catKr:"진단유전학",sub:"Human Genetics",subKr:"유전학검사",name:"고형종양 진단유전검사",nameEn:"Molecular, solid tumors",sampleType:"In-house made",level:2,dist:2,shipping:"Frozen",lypo:"DNA/RNA",comm:"Not commutable",sourcing:"In-house preparation",origin:"Human",numLabs:25,numTests:5,tests:[{n:"EGFR mutation",c:""},{n:"KRAS mutation",c:""},{n:"BRAF mutation",c:""},{n:"ALK rearrangement",c:""},{n:"ROS1 rearrangement",c:""}]},
+  {cat:"Diagnostic Genetics",catKr:"진단유전학",sub:"Human Genetics",subKr:"유전학검사",name:"유전질환 진단유전검사 1",nameEn:"Molecular, genetic disorders 1",sampleType:"In-house made",level:2,dist:2,shipping:"Frozen",lypo:"DNA",comm:"Not commutable",sourcing:"In-house preparation",origin:"Human",numLabs:66,numTests:4,tests:[{n:"CYP21A2",c:""},{n:"GJB2",c:""},{n:"SMA (SMN1 deletion)",c:""},{n:"Fragile X (FMR1)",c:""}]},
+  {cat:"Diagnostic Genetics",catKr:"진단유전학",sub:"Human Genetics",subKr:"유전학검사",name:"유전질환 진단유전검사 2",nameEn:"Molecular, genetic disorders 2",sampleType:"In-house made",level:2,dist:2,shipping:"Frozen",lypo:"DNA",comm:"Not commutable",sourcing:"In-house preparation",origin:"Human",numLabs:44,numTests:8,tests:[{n:"Huntington disease",c:""},{n:"Myotonic dystrophy 1",c:""},{n:"Spinocerebellar ataxia",c:""},{n:"Friedreich ataxia",c:""},{n:"Wilson disease",c:""},{n:"Prader-Willi/Angelman",c:""},{n:"Duchenne/Becker MD",c:""},{n:"MELAS",c:""}]},
+  {cat:"Diagnostic Genetics",catKr:"진단유전학",sub:"Human Genetics",subKr:"유전학검사",name:"유전질환 진단유전검사 3",nameEn:"Molecular, genetic disorders 3",sampleType:"In-house made",level:2,dist:2,shipping:"Frozen",lypo:"DNA",comm:"Not commutable",sourcing:"In-house preparation",origin:"Human",numLabs:10,numTests:3,tests:[{n:"Hemophilia A (F8 inversion)",c:""},{n:"Thalassemia genotyping",c:""},{n:"G6PD genotyping",c:""}]},
+  {cat:"Diagnostic Genetics",catKr:"진단유전학",sub:"Human Genetics",subKr:"유전학검사",name:"유전질환 진단유전검사 4",nameEn:"Molecular, genetic disorders 4",sampleType:"In-house made",level:2,dist:2,shipping:"Frozen",lypo:"DNA",comm:"Not commutable",sourcing:"In-house preparation",origin:"Human",numLabs:12,numTests:5,tests:[{n:"BRCA1/2",c:""},{n:"Lynch syndrome (MMR)",c:""},{n:"TP53",c:""},{n:"RB1",c:""},{n:"VHL",c:""}]},
+  {cat:"Diagnostic Genetics",catKr:"진단유전학",sub:"Human Genetics",subKr:"유전학검사",name:"약물유전 진단유전검사",nameEn:"Pharmacogenetics Molecular, pharmacogenetics",sampleType:"In-house made",level:2,dist:2,shipping:"Frozen",lypo:"DNA",comm:"Not commutable",sourcing:"In-house preparation",origin:"Human",numLabs:29,numTests:6,tests:[{n:"CYP2C19",c:""},{n:"CYP2D6",c:""},{n:"DPYD",c:""},{n:"UGT1A1",c:""},{n:"NUDT15",c:""},{n:"TPMT",c:""}]},
+  {cat:"Diagnostic Genetics",catKr:"진단유전학",sub:"Human Genetics",subKr:"유전학검사",name:"기타 진단유전검사 1",nameEn:"Human genetics, others Molecular, others 1",sampleType:"In-house made",level:2,dist:2,shipping:"Frozen",lypo:"DNA",comm:"Not commutable",sourcing:"In-house preparation",origin:"Human",numLabs:17,numTests:1,tests:[{n:"Chimerism analysis (STR)",c:""}]},
+  {cat:"Diagnostic Genetics",catKr:"진단유전학",sub:"Human Genetics",subKr:"유전학검사",name:"기타 진단유전검사 2",nameEn:"Human genetics, others Molecular, others 2",sampleType:"In-house made",level:3,dist:2,shipping:"Frozen",lypo:"DNA",comm:"Not commutable",sourcing:"In-house preparation",origin:"Human",numLabs:20,numTests:2,tests:[{n:"Cell-free fetal DNA",c:""},{n:"NIPT",c:""}]},
+  {cat:"Diagnostic Genetics",catKr:"진단유전학",sub:"Human Genetics",subKr:"유전학검사",name:"액체생검(Liquid biopsy)",nameEn:"Liquid biopsy",sampleType:"In-house made",level:2,dist:2,shipping:"Frozen",lypo:"cfDNA",comm:"Not commutable",sourcing:"In-house preparation",origin:"Synthetic",numLabs:28,numTests:1,tests:[{n:"ctDNA panel",c:""}]},
+  {cat:"Diagnostic Genetics",catKr:"진단유전학",sub:"Human Genetics",subKr:"유전학검사",name:"NGS(somatic, hematologic malignancy)",nameEn:"NGS, somatic hematologic malignancy",sampleType:"In-house made",level:2,dist:2,shipping:"Frozen",lypo:"DNA",comm:"Not commutable",sourcing:"In-house preparation",origin:"Human/Cell line",numLabs:29,numTests:1,tests:[{n:"NGS somatic hem panel",c:""}]},
+  {cat:"Diagnostic Genetics",catKr:"진단유전학",sub:"Human Genetics",subKr:"유전학검사",name:"NGS(germline)",nameEn:"NGS, germline",sampleType:"In-house made",level:3,dist:2,shipping:"Frozen",lypo:"DNA",comm:"Not commutable",sourcing:"In-house preparation",origin:"Human/Cell line",numLabs:34,numTests:1,tests:[{n:"NGS germline panel",c:""}]},
+  {cat:"Diagnostic Genetics",catKr:"진단유전학",sub:"Human Genetics",subKr:"유전학검사",name:"NGS(liquid biopsy)",nameEn:"NGS, liquid biopsy",sampleType:"In-house made",level:2,dist:2,shipping:"Frozen",lypo:"cfDNA",comm:"Not commutable",sourcing:"In-house preparation",origin:"Synthetic",numLabs:12,numTests:1,tests:[{n:"NGS liquid biopsy panel",c:""}]},
+
+  // Diagnostic Immunology (20 programs, 89 tests)
+  {cat:"Diagnostic Immunology",catKr:"진단면역학",sub:"Complements & Immunoglobulins",subKr:"보체·면역글로불린검사",name:"보체·면역글로불린검사",nameEn:"Complements & Immunoglobulins",sampleType:"Commercial materials",level:3,dist:2,shipping:"Ambient",lypo:"Lyophilized",comm:"Not commutable",sourcing:"Bio-Rad",origin:"N/A",numLabs:124,numTests:8,tests:[{n:"C3",c:""},{n:"C4",c:""},{n:"IgG",c:""},{n:"IgA",c:""},{n:"IgM",c:""},{n:"IgE (total)",c:""},{n:"Free kappa light chain",c:""},{n:"Free lambda light chain",c:""}]},
+  {cat:"Diagnostic Immunology",catKr:"진단면역학",sub:"Serology",subKr:"감염성 항원·항체검사",name:"감염성 세균 항원항체검사",nameEn:"Syphilis tests",sampleType:"In-house made",level:3,dist:2,shipping:"Frozen",lypo:"Liquid",comm:"Partially commutable (human serum pooling)",sourcing:"In-house preparation",origin:"Human",numLabs:583,numTests:10,tests:[{n:"VDRL",c:""},{n:"RPR",c:""},{n:"FTA-ABS IgG",c:""},{n:"FTA-ABS IgM",c:""},{n:"TPHA",c:""},{n:"Syphilis Ab (CIA/ECLIA)",c:""},{n:"Widal test",c:""},{n:"ASO (qualitative)",c:""},{n:"H. pylori Ab",c:""},{n:"H. pylori Ag (stool)",c:""}]},
+  {cat:"Diagnostic Immunology",catKr:"진단면역학",sub:"Serology",subKr:"감염성 항원·항체검사",name:"간염바이러스 항원항체검사(정성)",nameEn:"Hepatitis serology",sampleType:"In-house made",level:2,dist:2,shipping:"Frozen",lypo:"Liquid",comm:"Partially commutable (human blood pooling)",sourcing:"In-house preparation",origin:"Human",numLabs:1210,numTests:10,tests:[{n:"HBsAg",c:""},{n:"HBsAb",c:""},{n:"HBeAg",c:""},{n:"HBeAb",c:""},{n:"HBc IgM Ab",c:""},{n:"HBc total Ab",c:""},{n:"HCV Ab",c:""},{n:"HAV IgM Ab",c:""},{n:"HAV total Ab",c:""},{n:"HBsAg confirmation",c:""}]},
+  {cat:"Diagnostic Immunology",catKr:"진단면역학",sub:"Serology",subKr:"감염성 항원·항체검사",name:"간염바이러스 항원정량검사",nameEn:"Hepatitis serology, quantitative",sampleType:"In-house made",level:3,dist:2,shipping:"Frozen",lypo:"Liquid",comm:"Partially commutable (human blood pooling)",sourcing:"In-house preparation",origin:"Human",numLabs:27,numTests:1,tests:[{n:"HBsAg (quantitative)",c:""}]},
+  {cat:"Diagnostic Immunology",catKr:"진단면역학",sub:"Serology",subKr:"감염성 항원·항체검사",name:"바이러스 항원항체검사 1",nameEn:"Virus Serology 1",sampleType:"In-house made",level:3,dist:2,shipping:"Frozen",lypo:"Liquid",comm:"Partially commutable (human blood pooling)",sourcing:"In-house preparation",origin:"Human",numLabs:601,numTests:4,tests:[{n:"HIV Ab/Ag combination",c:""},{n:"HIV Ab (confirmatory)",c:""},{n:"HTLV-I/II Ab",c:""},{n:"Measles IgG Ab",c:""}]},
+  {cat:"Diagnostic Immunology",catKr:"진단면역학",sub:"Serology",subKr:"감염성 항원·항체검사",name:"바이러스 항원항체검사 2",nameEn:"Virus Serology 2",sampleType:"In-house made",level:2,dist:2,shipping:"Frozen",lypo:"Liquid",comm:"Partially commutable (human blood pooling)",sourcing:"In-house preparation",origin:"Human",numLabs:82,numTests:5,tests:[{n:"Rubella IgG Ab",c:""},{n:"Rubella IgM Ab",c:""},{n:"CMV IgG Ab",c:""},{n:"CMV IgM Ab",c:""},{n:"Toxoplasma IgG Ab",c:""}]},
+  {cat:"Diagnostic Immunology",catKr:"진단면역학",sub:"Serology",subKr:"감염성 항원·항체검사",name:"바이러스 항원항체검사 3",nameEn:"Virus Serology 3",sampleType:"In-house made",level:2,dist:2,shipping:"Frozen",lypo:"Liquid",comm:"Partially commutable (human blood pooling)",sourcing:"In-house preparation",origin:"Human",numLabs:50,numTests:4,tests:[{n:"HSV IgG Ab",c:""},{n:"HSV IgM Ab",c:""},{n:"VZV IgG Ab",c:""},{n:"Mumps IgG Ab",c:""}]},
+  {cat:"Diagnostic Immunology",catKr:"진단면역학",sub:"Infection-Induced Immune Response",subKr:"감염성 반응검사",name:"결핵반응검사",nameEn:"Tuberculosis Ag response",sampleType:"In-house made",level:3,dist:2,shipping:"Refrigerated",lypo:"Liquid",comm:"Not commutable",sourcing:"In-house preparation",origin:"Human",numLabs:78,numTests:1,tests:[{n:"IGRA (TB)",c:""}]},
+  {cat:"Diagnostic Immunology",catKr:"진단면역학",sub:"Human Leukocyte Antigen",subKr:"조직적합성검사",name:"조직적합성 형별검사",nameEn:"HLA typing",sampleType:"In-house made",level:2,dist:2,shipping:"Ambient",lypo:"DNA",comm:"Not commutable",sourcing:"In-house preparation",origin:"Human",numLabs:66,numTests:6,tests:[{n:"HLA-A (low resolution)",c:""},{n:"HLA-B (low resolution)",c:""},{n:"HLA-DR (low resolution)",c:""},{n:"HLA-A (high resolution)",c:""},{n:"HLA-B (high resolution)",c:""},{n:"HLA-DR (high resolution)",c:""}]},
+  {cat:"Diagnostic Immunology",catKr:"진단면역학",sub:"Human Leukocyte Antigen",subKr:"조직적합성검사",name:"특수 조직적합성 형별검사",nameEn:"HLA typing, special",sampleType:"In-house made",level:2,dist:2,shipping:"Ambient",lypo:"DNA",comm:"Not commutable",sourcing:"In-house preparation",origin:"Human",numLabs:65,numTests:3,tests:[{n:"HLA-C (high resolution)",c:""},{n:"HLA-DQ (high resolution)",c:""},{n:"HLA-DP (high resolution)",c:""}]},
+  {cat:"Diagnostic Immunology",catKr:"진단면역학",sub:"Human Leukocyte Antigen",subKr:"조직적합성검사",name:"조직적합성 교차시험검사",nameEn:"HLA crossmatching",sampleType:"In-house made",level:4,dist:2,shipping:"Refrigerated",lypo:"Liquid",comm:"Not commutable",sourcing:"In-house preparation",origin:"Human",numLabs:47,numTests:5,tests:[{n:"CDC crossmatch (T cell)",c:""},{n:"CDC crossmatch (B cell)",c:""},{n:"Flow crossmatch (T cell)",c:""},{n:"Flow crossmatch (B cell)",c:""},{n:"AHG-CDC crossmatch",c:""}]},
+  {cat:"Diagnostic Immunology",catKr:"진단면역학",sub:"Human Leukocyte Antigen",subKr:"조직적합성검사",name:"조직적합성 항체검사",nameEn:"HLA Ab tests",sampleType:"In-house made",level:2,dist:2,shipping:"Frozen",lypo:"Liquid",comm:"Not commutable",sourcing:"In-house preparation",origin:"Human",numLabs:28,numTests:6,tests:[{n:"PRA screening",c:""},{n:"PRA identification (class I)",c:""},{n:"PRA identification (class II)",c:""},{n:"DSA (class I)",c:""},{n:"DSA (class II)",c:""},{n:"C1q binding assay",c:""}]},
+  {cat:"Diagnostic Immunology",catKr:"진단면역학",sub:"Cellular Immune Assay",subKr:"세포면역검사",name:"림프구 아형검사",nameEn:"Lymphocyte subset assay",sampleType:"In-house made",level:3,dist:2,shipping:"Refrigerated",lypo:"Liquid",comm:"Not commutable",sourcing:"In-house preparation",origin:"Human",numLabs:61,numTests:5,tests:[{n:"CD3",c:""},{n:"CD4",c:""},{n:"CD8",c:""},{n:"CD19",c:""},{n:"NK cell (CD16/56)",c:""}]},
+  {cat:"Diagnostic Immunology",catKr:"진단면역학",sub:"Cellular Immune Assay",subKr:"세포면역검사",name:"줄기-전구세포검사",nameEn:"Stem/progenitor cell assay",sampleType:"In-house made",level:3,dist:2,shipping:"Refrigerated",lypo:"Liquid",comm:"Not commutable",sourcing:"In-house preparation",origin:"Human",numLabs:49,numTests:2,tests:[{n:"CD34",c:""},{n:"Viability",c:""}]},
+  {cat:"Diagnostic Immunology",catKr:"진단면역학",sub:"Cellular Immune Assay",subKr:"세포면역검사",name:"혈액종양 면역표현형검사",nameEn:"Hematologic malignancy immunophenotyping",sampleType:"In-house made",level:2,dist:2,shipping:"Refrigerated",lypo:"Liquid",comm:"Not commutable",sourcing:"In-house preparation",origin:"Human",numLabs:46,numTests:1,tests:[{n:"Leukemia/Lymphoma immunophenotyping",c:""}]},
+  {cat:"Diagnostic Immunology",catKr:"진단면역학",sub:"Autoimmune Diseases",subKr:"자가면역검사",name:"자가면역질환 1",nameEn:"Autoimmune Assay 1",sampleType:"In-house made",level:3,dist:2,shipping:"Frozen",lypo:"Liquid",comm:"Partially commutable (human serum pooling)",sourcing:"In-house preparation",origin:"Human",numLabs:79,numTests:3,tests:[{n:"ANA (IFA)",c:""},{n:"ANA pattern",c:""},{n:"ANA titer",c:""}]},
+  {cat:"Diagnostic Immunology",catKr:"진단면역학",sub:"Autoimmune Diseases",subKr:"자가면역검사",name:"자가면역질환 2",nameEn:"Autoimmune Assay 2",sampleType:"In-house made",level:2,dist:2,shipping:"Frozen",lypo:"Liquid",comm:"Partially commutable (human serum pooling)",sourcing:"In-house preparation",origin:"Human",numLabs:124,numTests:3,tests:[{n:"Anti-dsDNA Ab",c:""},{n:"Anti-CCP Ab",c:""},{n:"ANCA",c:""}]},
+  {cat:"Diagnostic Immunology",catKr:"진단면역학",sub:"Autoimmune Diseases",subKr:"자가면역검사",name:"자가면역질환 3",nameEn:"Autoimmune Assay 3",sampleType:"In-house made",level:3,dist:2,shipping:"Frozen",lypo:"Liquid",comm:"Partially commutable (human serum pooling)",sourcing:"In-house preparation",origin:"Human",numLabs:156,numTests:6,tests:[{n:"Anti-thyroglobulin Ab",c:""},{n:"Anti-TPO Ab",c:""},{n:"TSH receptor Ab",c:""},{n:"Anti-GBM Ab",c:""},{n:"Anti-phospholipid Ab IgG",c:""},{n:"Anti-phospholipid Ab IgM",c:""}]},
+  {cat:"Diagnostic Immunology",catKr:"진단면역학",sub:"Autoimmune Diseases",subKr:"자가면역검사",name:"자가면역질환 4",nameEn:"Autoimmune Assay 4",sampleType:"In-house made",level:3,dist:2,shipping:"Frozen",lypo:"Liquid",comm:"Partially commutable (human serum pooling)",sourcing:"In-house preparation",origin:"Human",numLabs:56,numTests:4,tests:[{n:"Anti-ENA profile",c:""},{n:"Anti-Sm Ab",c:""},{n:"Anti-RNP Ab",c:""},{n:"Anti-SSA/SSB Ab",c:""}]},
+  {cat:"Diagnostic Immunology",catKr:"진단면역학",sub:"Allergy",subKr:"알레르기검사",name:"알레르기 검사",nameEn:"Allergy test",sampleType:"In-house made",level:3,dist:2,shipping:"Frozen",lypo:"Liquid",comm:"Not commutable",sourcing:"In-house preparation",origin:"Human",numLabs:129,numTests:2,tests:[{n:"Total IgE",c:""},{n:"Specific IgE (MAST/ImmunoCAP)",c:""}]},
+
+  // Diagnostic Hematology (11 programs, 53 tests)
+  {cat:"Diagnostic Hematology",catKr:"진단혈액학",sub:"Hematology",subKr:"혈액학검사",name:"일반혈액검사",nameEn:"Complete blood count (CBC)",sampleType:"Commercial materials",level:3,dist:2,shipping:"Ambient",lypo:"Liquid (stabilized)",comm:"Not commutable",sourcing:"Beckman Coulter / Sysmex",origin:"Human (stabilized)",numLabs:2041,numTests:5,tests:[{n:"WBC",c:""},{n:"RBC",c:""},{n:"Hemoglobin",c:""},{n:"Hematocrit",c:""},{n:"Platelet count",c:""}]},
+  {cat:"Diagnostic Hematology",catKr:"진단혈액학",sub:"Hematology",subKr:"혈액학검사",name:"말라리아 도말검사",nameEn:"Peripheral blood smear, malaria",sampleType:"In-house made",level:3,dist:2,shipping:"Ambient",lypo:"Slide",comm:"Not commutable",sourcing:"In-house preparation",origin:"Human",numLabs:238,numTests:3,tests:[{n:"Malaria species ID",c:""},{n:"Malaria parasite detection",c:""},{n:"Malaria parasitemia",c:""}]},
+  {cat:"Diagnostic Hematology",catKr:"진단혈액학",sub:"Hematology",subKr:"혈액학검사",name:"혈구형태검사",nameEn:"Peripheral blood smear",sampleType:"In-house made",level:3,dist:2,shipping:"Ambient",lypo:"Digital image",comm:"Not commutable",sourcing:"In-house preparation",origin:"Human",numLabs:369,numTests:15,tests:[{n:"WBC differential (manual)",c:""},{n:"RBC morphology",c:""},{n:"Platelet estimation",c:""},{n:"+ 12 additional morphology items",c:""}]},
+  {cat:"Diagnostic Hematology",catKr:"진단혈액학",sub:"Hematology",subKr:"혈액학검사",name:"특수염색검사",nameEn:"Peripheral blood smear, special stain",sampleType:"In-house made",level:1,dist:2,shipping:"Ambient",lypo:"Digital image",comm:"Not commutable",sourcing:"In-house preparation",origin:"Human",numLabs:75,numTests:6,tests:[{n:"Peroxidase stain",c:""},{n:"Sudan Black B",c:""},{n:"PAS stain",c:""},{n:"Esterase stain (specific)",c:""},{n:"Esterase stain (non-specific)",c:""},{n:"Iron stain",c:""}]},
+  {cat:"Diagnostic Hematology",catKr:"진단혈액학",sub:"Hematology",subKr:"혈액학검사",name:"체액세포검사",nameEn:"Body fluid cytology",sampleType:"In-house made",level:2,dist:2,shipping:"Ambient",lypo:"Digital image",comm:"Not commutable",sourcing:"In-house preparation",origin:"Human",numLabs:254,numTests:6,tests:[{n:"CSF cell count",c:""},{n:"CSF differential",c:""},{n:"Body fluid cell count",c:""},{n:"Body fluid differential",c:""},{n:"Synovial fluid crystal",c:""},{n:"Cell morphology ID",c:""}]},
+  {cat:"Diagnostic Hematology",catKr:"진단혈액학",sub:"Hematology",subKr:"혈액학검사",name:"적혈구침강속도검사",nameEn:"Erythrocyte sedimentation rate (ESR)",sampleType:"Commercial materials",level:2,dist:2,shipping:"Ambient",lypo:"Liquid (stabilized)",comm:"Not commutable",sourcing:"Streck",origin:"Human (stabilized)",numLabs:593,numTests:1,tests:[{n:"ESR",c:""}]},
+  {cat:"Diagnostic Hematology",catKr:"진단혈액학",sub:"Coagulation",subKr:"출혈·혈전 검사",name:"일반 출혈·혈전 검사 1",nameEn:"Coagulation, general 1",sampleType:"Commercial materials",level:3,dist:2,shipping:"Frozen",lypo:"Lyophilized",comm:"Not commutable",sourcing:"Stago / Siemens",origin:"Human (pooled)",numLabs:649,numTests:5,tests:[{n:"PT (sec)",c:""},{n:"PT (INR)",c:""},{n:"aPTT",c:""},{n:"Fibrinogen",c:""},{n:"D-dimer (coag)",c:""}]},
+  {cat:"Diagnostic Hematology",catKr:"진단혈액학",sub:"Coagulation",subKr:"출혈·혈전 검사",name:"일반 출혈·혈전 검사 2",nameEn:"Coagulation, general 2",sampleType:"Commercial materials",level:3,dist:2,shipping:"Frozen",lypo:"Lyophilized",comm:"Not commutable",sourcing:"Stago / Siemens",origin:"Human (pooled)",numLabs:339,numTests:1,tests:[{n:"Antithrombin",c:""}]},
+  {cat:"Diagnostic Hematology",catKr:"진단혈액학",sub:"Coagulation",subKr:"출혈·혈전 검사",name:"특수 출혈·혈전검사 1",nameEn:"Coagulation, special 1",sampleType:"Commercial materials",level:3,dist:2,shipping:"Frozen",lypo:"Lyophilized",comm:"Not commutable",sourcing:"Stago / Siemens",origin:"Human (pooled)",numLabs:32,numTests:4,tests:[{n:"Factor VIII",c:""},{n:"Factor IX",c:""},{n:"vWF Ag",c:""},{n:"vWF activity (Ristocetin)",c:""}]},
+  {cat:"Diagnostic Hematology",catKr:"진단혈액학",sub:"Coagulation",subKr:"출혈·혈전 검사",name:"특수 출혈·혈전검사 2",nameEn:"Coagulation, special 2",sampleType:"In-house made",level:2,dist:2,shipping:"Frozen",lypo:"Liquid",comm:"Partially commutable (human blood pooling)",sourcing:"In-house preparation",origin:"Human",numLabs:148,numTests:6,tests:[{n:"Protein C",c:""},{n:"Protein S",c:""},{n:"Lupus anticoagulant (screening)",c:""},{n:"Lupus anticoagulant (confirmatory)",c:""},{n:"Mixing test",c:""},{n:"Thrombin time",c:""}]},
+  {cat:"Diagnostic Hematology",catKr:"진단혈액학",sub:"Coagulation",subKr:"출혈·혈전 검사",name:"특수 출혈·혈전검사 3",nameEn:"Coagulation, special 3 (pilot project)",sampleType:"In-house made",level:2,dist:2,shipping:"Frozen",lypo:"Liquid",comm:"Partially commutable (human blood pooling)",sourcing:"In-house preparation",origin:"Human",numLabs:0,numTests:1,tests:[{n:"Heparin anti-Xa assay",c:""}]},
+
+  // Transfusion Medicine (5 programs, 19 tests)
+  {cat:"Transfusion Medicine",catKr:"수혈의학",sub:"Pretransfusion Testing",subKr:"수혈검사",name:"일반수혈검사",nameEn:"Blood typing and crossmatching, general",sampleType:"In-house made",level:3,dist:2,shipping:"Refrigerated",lypo:"Liquid",comm:"Not commutable",sourcing:"In-house preparation",origin:"Human",numLabs:964,numTests:3,tests:[{n:"ABO Typing",c:"누-150"},{n:"RhD typing",c:"누-151"},{n:"Blood crossmatching",c:"누-155"}]},
+  {cat:"Transfusion Medicine",catKr:"수혈의학",sub:"Pretransfusion Testing",subKr:"수혈검사",name:"수혈 특수항원검사",nameEn:"Blood typing, special",sampleType:"In-house made",level:1,dist:2,shipping:"Refrigerated",lypo:"Liquid",comm:"Not commutable",sourcing:"In-house preparation",origin:"Human",numLabs:304,numTests:9,tests:[{n:"ABO subgroup typing",c:"누-157"},{n:"Weak D test",c:"누-157"},{n:"Rh CcEe antigen test",c:"누-152"},{n:"Fy(a) antigen test",c:"누-152"},{n:"Fy(b) antigen test",c:"누-152"},{n:"Jk(a) antigen test",c:"누-152"},{n:"Jk(b) antigen test",c:"누-152"},{n:"Le(a) antigen test",c:"누-152"},{n:"Le(b) antigen test",c:"누-152"}]},
+  {cat:"Transfusion Medicine",catKr:"수혈의학",sub:"Pretransfusion Testing",subKr:"수혈검사",name:"수혈 일반항체검사",nameEn:"Transfusion Ab, general",sampleType:"In-house made",level:3,dist:2,shipping:"Refrigerated",lypo:"Liquid",comm:"Not commutable",sourcing:"In-house preparation",origin:"Human",numLabs:375,numTests:4,tests:[{n:"Unexpected antibody (screening)",c:"누-157"},{n:"Direct anti-human globulin test (polyspecific)",c:"누-154"},{n:"Direct anti-human globulin test (anti-IgG)",c:"누-154"},{n:"Direct anti-human globulin test (anti-C3d)",c:"누-154"}]},
+  {cat:"Transfusion Medicine",catKr:"수혈의학",sub:"Pretransfusion Testing",subKr:"수혈검사",name:"수혈 특수항체검사 1",nameEn:"Transfusion Ab, special 1",sampleType:"In-house made",level:2,dist:2,shipping:"Refrigerated",lypo:"Liquid",comm:"Not commutable",sourcing:"In-house preparation",origin:"Human",numLabs:147,numTests:2,tests:[{n:"Unexpected antibody (identification)",c:"누-156"},{n:"ABO Ab titration test",c:""}]},
+  {cat:"Transfusion Medicine",catKr:"수혈의학",sub:"Pretransfusion Testing",subKr:"수혈검사",name:"수혈 특수항체검사 2",nameEn:"Transfusion Ab, special 2",sampleType:"In-house made",level:3,dist:2,shipping:"Refrigerated",lypo:"Liquid",comm:"Not commutable",sourcing:"In-house preparation",origin:"Human",numLabs:58,numTests:1,tests:[{n:"Cold agglutinin titer",c:""}]},
+
+  // Clinical Microbiology (5 programs, 16 tests)
+  {cat:"Clinical Microbiology",catKr:"임상미생물학",sub:"Clinical Microbiology",subKr:"미생물검사",name:"항산균검사",nameEn:"Mycobacteria, general",sampleType:"In-house made",level:5,dist:3,shipping:"Ambient",lypo:"Liquid/Slide",comm:"Not commutable",sourcing:"In-house preparation",origin:"Microbial",numLabs:235,numTests:4,tests:[{n:"AFB smear",c:""},{n:"AFB culture",c:""},{n:"MTB identification",c:""},{n:"NTM identification",c:""}]},
+  {cat:"Clinical Microbiology",catKr:"임상미생물학",sub:"Clinical Microbiology",subKr:"미생물검사",name:"항산균 약제감수성 검사",nameEn:"Mycobacteria, drug susceptibility",sampleType:"In-house made",level:5,dist:3,shipping:"Ambient",lypo:"Culture",comm:"Not commutable",sourcing:"In-house preparation",origin:"Microbial",numLabs:5,numTests:1,tests:[{n:"MTB drug susceptibility test",c:""}]},
+  {cat:"Clinical Microbiology",catKr:"임상미생물학",sub:"Clinical Microbiology",subKr:"미생물검사",name:"세균검사",nameEn:"Bacteriology",sampleType:"In-house made",level:3,dist:3,shipping:"Ambient",lypo:"Culture",comm:"Not commutable",sourcing:"In-house preparation",origin:"Microbial",numLabs:268,numTests:4,tests:[{n:"Bacterial identification",c:""},{n:"Antimicrobial susceptibility test",c:""},{n:"Gram stain",c:""},{n:"Blood culture",c:""}]},
+  {cat:"Clinical Microbiology",catKr:"임상미생물학",sub:"Clinical Microbiology",subKr:"미생물검사",name:"진균검사",nameEn:"Mycology",sampleType:"In-house made",level:2,dist:2,shipping:"Ambient",lypo:"Culture",comm:"Not commutable",sourcing:"In-house preparation",origin:"Microbial",numLabs:156,numTests:4,tests:[{n:"Fungal identification",c:""},{n:"Fungal culture",c:""},{n:"Antifungal susceptibility",c:""},{n:"KOH preparation",c:""}]},
+  {cat:"Clinical Microbiology",catKr:"임상미생물학",sub:"Clinical Microbiology",subKr:"미생물검사",name:"기생충검사",nameEn:"Parasitology",sampleType:"In-house made",level:1,dist:2,shipping:"Ambient",lypo:"Digital image",comm:"Not commutable",sourcing:"In-house preparation",origin:"Parasitic",numLabs:201,numTests:3,tests:[{n:"Parasite identification (blood)",c:""},{n:"Parasite identification (stool)",c:""},{n:"Parasite morphology",c:""}]},
+
+  // Laboratory Operations (2 programs, 15 tests)
+  {cat:"Laboratory Operations",catKr:"검사실운영",sub:"Pre-analytical Phase",subKr:"검사 전 단계",name:"검사 전 단계 품질지표",nameEn:"Pre-analytical quality index (pilot project)",sampleType:"No sample",level:"-",dist:1,shipping:"N/A",lypo:"N/A",comm:"No sample",sourcing:"N/A",origin:"N/A",numLabs:151,numTests:12,tests:[{n:"Sample rejection rate",c:""},{n:"Hemolysis rate",c:""},{n:"Lipemia rate",c:""},{n:"Icterus rate",c:""},{n:"Clotted sample rate",c:""},{n:"Insufficient volume rate",c:""},{n:"Wrong tube rate",c:""},{n:"Unlabeled sample rate",c:""},{n:"Turnaround time",c:""},{n:"Critical value notification rate",c:""},{n:"Amendment rate",c:""},{n:"Specimen identification error rate",c:""}]},
+  {cat:"Laboratory Operations",catKr:"검사실운영",sub:"Pre-analytical Phase",subKr:"검사 전 단계",name:"HIL index",nameEn:"HIL index (pilot project)",sampleType:"In-house made",level:3,dist:2,shipping:"Ambient",lypo:"Liquid",comm:"Not commutable",sourcing:"In-house preparation",origin:"Synthetic",numLabs:73,numTests:3,tests:[{n:"Hemolysis index",c:""},{n:"Icterus index",c:""},{n:"Lipemia index",c:""}]}
+];
+
+// Lab classification data (matching attached image layout)
+const LABS_DATA = {
+  total: 2119,
+  // Structured to match the area treemap in the image
+  groups: [
+    { name: "Tertiary", nameDetail: "Advanced General Hospital", count: 49, pct: 2.3, color: "#c0392b" },
+    { name: "Ref. Lab", nameDetail: "Specialized Reference Lab", count: 34, pct: 1.6, color: "#2c3e50" },
+    { name: "Secondary", children: [
+      { name: "General Hospital (100+)", count: 434, pct: 20.5, color: "#1a5276" },
+      { name: "General Hospital", count: 435, pct: 20.5, color: "#1abc9c" },
+      { name: "Specialty Hospital", count: 257, pct: 12.1, color: "#27ae60" }
+    ], total: 1126, pct: 53.1, color: "#1a5276" },
+    { name: "Public", nameDetail: "Public Health Center", count: 67, pct: 3.2, color: "#f39c12" },
+    { name: "Military", nameDetail: "Military Hospital", count: 75, pct: 3.5, color: "#e74c3c" },
+    { name: "Primary", nameDetail: "General Clinic", count: 704, pct: 33.2, color: "#8e44ad" },
+    { name: "Non-Medical", children: [
+      { name: "Non-Medical (Public Interest)", count: 58, pct: 2.7, color: "#7f8c8d" },
+      { name: "Non-Medical (Research)", count: 6, pct: 0.3, color: "#576574" }
+    ], total: 64, pct: 3.0, color: "#7f8c8d" }
+  ]
+};
+
+// Category config
+const CAT_CONFIG = {
+  "Clinical Chemistry":      { color: "#2d73d4", colorBg: "linear-gradient(135deg, #2d73d4, #1a5fb4)", order: 1 },
+  "Diagnostic Genetics":     { color: "#8b5cf6", colorBg: "linear-gradient(135deg, #8b5cf6, #6d28d9)", order: 2 },
+  "Diagnostic Immunology":   { color: "#059669", colorBg: "linear-gradient(135deg, #059669, #047857)", order: 3 },
+  "Diagnostic Hematology":   { color: "#0891b2", colorBg: "linear-gradient(135deg, #0891b2, #0e7490)", order: 4 },
+  "Transfusion Medicine":    { color: "#dc2626", colorBg: "linear-gradient(135deg, #dc2626, #b91c1c)", order: 5 },
+  "Clinical Microbiology":   { color: "#d97706", colorBg: "linear-gradient(135deg, #d97706, #b45309)", order: 6 },
+  "Laboratory Operations":   { color: "#6b7280", colorBg: "linear-gradient(135deg, #6b7280, #4b5563)", order: 7 }
+};
+
+// ===================== UTILITY =====================
+function getCatStats() {
+  const stats = {};
+  PROGRAMS.forEach(p => {
+    if (!stats[p.cat]) stats[p.cat] = { programs: 0, tests: 0 };
+    stats[p.cat].programs++;
+    stats[p.cat].tests += p.numTests;
+  });
+  return Object.entries(stats)
+    .map(([cat, s]) => ({ cat, ...s }))
+    .sort((a, b) => b.programs - a.programs);
+}
+
+// ===================== TAB 1: OVERVIEW TREEMAP =====================
+function cellContent(cat, value, tests, pctProg, heightPx) {
+  // Returns inner HTML with appropriate sizing based on available height
+  const txtStyle = 'color:white;text-shadow:0 1px 3px rgba(0,0,0,0.4);white-space:nowrap;text-align:center;';
+  if (heightPx >= 130) {
+    return `<div class="cell-name" style="font-size:15px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:95%;">${cat}</div>
+            <div class="cell-value" style="font-size:36px;">${value}</div>
+            <div class="cell-pct">${tests} test items (${pctProg}%)</div>`;
+  } else if (heightPx >= 90) {
+    return `<div class="cell-name" style="font-size:14px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:95%;">${cat}</div>
+            <div class="cell-value" style="font-size:28px;margin:2px 0;">${value}</div>
+            <div class="cell-pct" style="font-size:12px;">${tests} items (${pctProg}%)</div>`;
+  } else {
+    return `<div style="display:flex;flex-direction:column;align-items:center;justify-content:center;width:100%;gap:2px;">
+              <span style="font-weight:700;font-size:13px;${txtStyle}overflow:hidden;text-overflow:ellipsis;max-width:95%;">${cat}</span>
+              <div style="display:flex;align-items:baseline;gap:6px;justify-content:center;">
+                <span style="font-size:24px;font-weight:900;${txtStyle}line-height:1;">${value}</span>
+                <span style="font-size:12px;${txtStyle}opacity:0.9;">${tests} items (${pctProg}%)</span>
+              </div>
+            </div>`;
+  }
+}
+
+function renderOverviewTreemap() {
+  const container = document.getElementById('overview-treemap');
+  const legend = document.getElementById('overview-legend');
+  const stats = getCatStats();
+  const totalPrograms = stats.reduce((s, c) => s + c.programs, 0);
+
+  let html = '';
+  stats.forEach(s => {
+    const cfg = CAT_CONFIG[s.cat];
+    const pctProg = (s.programs / totalPrograms * 100).toFixed(1);
+    const heightPx = Math.max(75, Math.round(s.programs / totalPrograms * 600));
+    const padding = heightPx < 100 ? '6px 12px' : '16px 10px';
+    html += `<div class="treemap-row" style="height:${heightPx}px;position:relative;">
+      <div class="treemap-cell" style="flex:${s.programs};background:${cfg.colorBg};min-height:${heightPx}px;padding:${padding};"
+           onclick="showCategoryDetail('${s.cat}')"
+           onmouseenter="showTooltip(event, '${s.cat}<br>${s.programs} programs &middot; ${s.tests} test items<br>${pctProg}% of all programs')"
+           onmouseleave="hideTooltip()">
+        ${cellContent(s.cat, s.programs, s.tests, pctProg, heightPx)}
+      </div>
+      <div class="treemap-row-right">${s.programs}</div>
+      <div class="treemap-row-right-bottom">${pctProg}%</div>
+    </div>`;
+  });
+  container.innerHTML = html;
+
+  // Legend
+  legend.innerHTML = stats.map(s => {
+    const cfg = CAT_CONFIG[s.cat];
+    return `<div class="legend-item">
+      <div class="legend-color" style="background:${cfg.color}"></div>
+      ${s.cat} (${s.programs})
+    </div>`;
+  }).join('');
+}
+
+// ===================== TAB 2: PROGRAM DETAILS =====================
+function renderProgramDetails(filterCat) {
+  const container = document.getElementById('programs-container');
+  const filtersEl = document.getElementById('category-filters');
+  const stats = getCatStats();
+
+  // Render filter chips
+  filtersEl.innerHTML = `<div class="chip ${!filterCat ? 'active' : ''}" onclick="renderProgramDetails(null)">All (${PROGRAMS.length})</div>` +
+    stats.map(s => {
+      const cfg = CAT_CONFIG[s.cat];
+      return `<div class="chip ${filterCat === s.cat ? 'active' : ''}" onclick="renderProgramDetails('${s.cat}')" style="${filterCat === s.cat ? `background:${cfg.color};border-color:${cfg.color}` : ''}">${s.cat} (${s.programs})</div>`;
+    }).join('');
+
+  // Group programs by category → subcategory
+  const filtered = filterCat ? PROGRAMS.filter(p => p.cat === filterCat) : PROGRAMS;
+  const grouped = {};
+  filtered.forEach(p => {
+    const key = p.cat + '|' + p.sub;
+    if (!grouped[key]) grouped[key] = { cat: p.cat, sub: p.sub, programs: [] };
+    grouped[key].programs.push(p);
+  });
+
+  let html = '';
+  Object.values(grouped).forEach(g => {
+    const cfg = CAT_CONFIG[g.cat];
+    html += `<div class="detail-panel">
+      <div class="detail-header">
+        <h3 style="color:${cfg.color}">${g.cat} &rsaquo; ${g.sub}</h3>
+        <span class="badge" style="background:${cfg.color}">${g.programs.length} program${g.programs.length > 1 ? 's' : ''}</span>
+      </div>
+      <div class="detail-body">
+        <div class="program-grid">
+          ${g.programs.map(p => renderProgramCard(p)).join('')}
+        </div>
+      </div>
+    </div>`;
+  });
+
+  container.innerHTML = html;
+}
+
+function renderProgramCard(p) {
+  const commBadge = p.comm.startsWith('Commutable') ? 'green' :
+    p.comm.startsWith('Partially') ? 'orange' :
+    p.comm === 'No sample' ? '' : 'red';
+
+  const commLabel = p.comm.startsWith('Commutable (') ? 'Commutable' :
+    p.comm.startsWith('Partially commutable') ? 'Partially commutable' :
+    p.comm;
+
+  const labsText = p.numLabs === 0 ? 'New program' : p.numLabs.toLocaleString() + ' labs';
+
+  return `<div class="program-card" onclick='showProgramModal(${JSON.stringify(p).replace(/'/g, "&#39;")})'>
+    <div class="prog-name">${p.nameEn}</div>
+    <div class="prog-name-kr">${p.name}</div>
+    <div class="prog-meta">
+      <span class="prog-tag">${p.numTests} tests</span>
+      <span class="prog-tag green">Level ${p.level}</span>
+      <span class="prog-tag">${p.dist}×/yr</span>
+      <span class="prog-tag ${commBadge}">${commLabel}</span>
+      <span class="prog-tag pink">${labsText}</span>
+      <span class="prog-tag">${p.sampleType}</span>
+    </div>
+  </div>`;
+}
+
+function showCategoryDetail(cat) {
+  // Switch to details tab and filter
+  document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+  document.querySelectorAll('.tab-content').forEach(t => t.classList.remove('active'));
+  document.querySelector('[data-tab="details"]').classList.add('active');
+  document.getElementById('tab-details').classList.add('active');
+  renderProgramDetails(cat);
+}
+
+function showProgramModal(p) {
+  const modal = document.getElementById('modal-overlay');
+  document.getElementById('modal-title').textContent = p.nameEn;
+  document.getElementById('modal-subtitle').textContent = `${p.cat} › ${p.sub}`;
+
+  const commLabel = p.comm.startsWith('Commutable (') ? p.comm :
+    p.comm.startsWith('Partially commutable') ? p.comm : p.comm;
+  const labsText = p.numLabs === 0 ? 'New program (2026)' : p.numLabs.toLocaleString();
+
+  let body = `
+    <div class="info-grid">
+      <div class="label">Korean Name</div><div class="val">${p.name}</div>
+      <div class="label">Discipline</div><div class="val">${p.cat}</div>
+      <div class="label">Classification</div><div class="val">${p.sub}</div>
+      <div class="label">Sample Type</div><div class="val">${p.sampleType}</div>
+      <div class="label">No. of Levels</div><div class="val">${p.level}</div>
+      <div class="label">Distributions/Year</div><div class="val">${p.dist}</div>
+      <div class="label">Shipping</div><div class="val">${p.shipping || '-'}</div>
+      <div class="label">Form</div><div class="val">${p.lypo || '-'}</div>
+      <div class="label">Commutability</div><div class="val">${commLabel}</div>
+      <div class="label">Sourcing</div><div class="val">${p.sourcing || '-'}</div>
+      <div class="label">Origin</div><div class="val">${p.origin || '-'}</div>
+      <div class="label">Participating Labs</div><div class="val">${labsText}</div>
+    </div>
+    <h4 style="margin-bottom:8px;font-size:14px;">Test Items (${p.numTests})</h4>
+    <table class="tests-table">
+      <thead><tr><th>#</th><th>Test Name</th><th>Code</th></tr></thead>
+      <tbody>
+        ${p.tests.map((t, i) => `<tr><td>${i + 1}</td><td>${t.n}</td><td>${t.c || '-'}</td></tr>`).join('')}
+      </tbody>
+    </table>`;
+
+  document.getElementById('modal-body').innerHTML = body;
+  modal.classList.add('active');
+}
+
+// ===================== TAB 3: LABS TREEMAP =====================
+function labsCellContent(name, count, pct, heightPx) {
+  const ts = 'color:white;text-shadow:0 1px 3px rgba(0,0,0,0.4);white-space:nowrap;';
+  if (heightPx >= 130) {
+    return `<div class="cell-name" style="font-size:14px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:95%;">${name}</div>
+            <div class="cell-value" style="font-size:36px;">${count}</div>
+            <div class="cell-pct">(${pct}%)</div>`;
+  } else if (heightPx >= 90) {
+    return `<div class="cell-name" style="font-size:13px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:95%;">${name}</div>
+            <div class="cell-value" style="font-size:28px;margin:2px 0;">${count}</div>
+            <div class="cell-pct" style="font-size:12px;">(${pct}%)</div>`;
+  } else {
+    return `<div style="display:flex;flex-direction:column;align-items:center;justify-content:center;width:100%;gap:1px;">
+              <span style="font-weight:700;font-size:13px;${ts}overflow:hidden;text-overflow:ellipsis;max-width:95%;text-align:center;">${name}</span>
+              <div style="display:flex;align-items:baseline;gap:5px;justify-content:center;">
+                <span style="font-size:22px;font-weight:900;${ts}line-height:1;">${count}</span>
+                <span style="font-size:12px;${ts}opacity:0.9;">(${pct}%)</span>
+              </div>
+            </div>`;
+  }
+}
+
+function renderLabsTreemap() {
+  const container = document.getElementById('labs-treemap');
+  const legend = document.getElementById('labs-legend');
+  const groups = LABS_DATA.groups;
+  const total = LABS_DATA.total;
+
+  let html = '';
+
+  groups.forEach(g => {
+    if (g.children) {
+      // Multi-cell row (Secondary hospitals)
+      const heightPx = Math.max(75, Math.round((g.total || g.count) / total * 700));
+      const padding = heightPx < 100 ? '6px 12px' : '16px 10px';
+      html += `<div class="treemap-row" style="height:${heightPx}px;position:relative;">`;
+      g.children.forEach(c => {
+        html += `<div class="treemap-cell" style="flex:${c.count};background:${c.color};min-height:${heightPx}px;padding:${padding};"
+          onmouseenter="showTooltip(event, '${c.name}<br>${c.count} institutions (${c.pct}%)')"
+          onmouseleave="hideTooltip()">
+          ${labsCellContent(c.name, c.count, c.pct, heightPx)}
+        </div>`;
+      });
+      html += `<div class="treemap-row-right">${g.total || ''}</div>
+        <div class="treemap-row-right-bottom">${g.pct}%</div>
+      </div>`;
+    } else {
+      // Single-cell row
+      const count = g.count;
+      const heightPx = Math.max(75, Math.round(count / total * 700));
+      const padding = heightPx < 100 ? '6px 12px' : '16px 10px';
+      html += `<div class="treemap-row" style="height:${heightPx}px;position:relative;">
+        <div class="treemap-cell" style="flex:1;background:${g.color};min-height:${heightPx}px;padding:${padding};"
+          onmouseenter="showTooltip(event, '${g.nameDetail}<br>${count} institutions (${g.pct}%)')"
+          onmouseleave="hideTooltip()">
+          ${labsCellContent(g.nameDetail, count, g.pct, heightPx)}
+        </div>
+        <div class="treemap-row-right">${count}</div>
+        <div class="treemap-row-right-bottom">${g.pct}%</div>
+      </div>`;
+    }
+  });
+
+  container.innerHTML = html;
+
+  // Legend
+  const allItems = [];
+  groups.forEach(g => {
+    if (g.children) {
+      g.children.forEach(c => allItems.push({ name: c.name, color: c.color, count: c.count }));
+    } else {
+      allItems.push({ name: g.nameDetail, color: g.color, count: g.count });
+    }
+  });
+  legend.innerHTML = allItems.map(i =>
+    `<div class="legend-item"><div class="legend-color" style="background:${i.color}"></div>${i.name} (${i.count})</div>`
+  ).join('');
+}
+
+// ===================== TAB 4: SAMPLE TYPE =====================
+function renderSampleTreemap() {
+  // ── Aggregate by sample type ───────────────────────────────────────────────
+  const SAMPLE_COLORS = {
+    'In-house made':       '#e67e22',
+    'Commercial materials':'#3498db',
+    'No sample':           '#7f8c8d'
+  };
+  const SAMPLE_ORDER = ['In-house made', 'Commercial materials', 'No sample'];
+
+  const sampleGroups = {};
+  PROGRAMS.forEach(p => {
+    if (!sampleGroups[p.sampleType]) sampleGroups[p.sampleType] = { programs: [], count: 0, tests: 0 };
+    sampleGroups[p.sampleType].programs.push(p);
+    sampleGroups[p.sampleType].count++;
+    sampleGroups[p.sampleType].tests += p.numTests;
+  });
+  const total      = PROGRAMS.length;
+  const totalTests = PROGRAMS.reduce((s, p) => s + p.numTests, 0);
+  const sorted     = SAMPLE_ORDER.filter(t => sampleGroups[t]);
+
+  // ── KPI cards ───────────────────────────────────────────────────────────────
+  const kpiEl = document.getElementById('sample-kpi-row');
+  if (kpiEl) {
+    const tints = {
+      'In-house made':        { bg: '#fff3e0', border: '#e67e22', text: '#7f3b00' },
+      'Commercial materials': { bg: '#e3f2fd', border: '#3498db', text: '#0c4a6e' },
+      'No sample':            { bg: '#f5f5f5', border: '#9e9e9e', text: '#424242' }
+    };
+    kpiEl.innerHTML = sorted.map(t => {
+      const d = sampleGroups[t], c = tints[t] || tints['No sample'];
+      const pct  = (d.count / total * 100).toFixed(0);
+      const pctT = (d.tests / totalTests * 100).toFixed(0);
+      return `<div style="flex:1;min-width:160px;background:${c.bg};border:2px solid ${c.border};border-radius:12px;padding:16px 20px;">
+        <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.6px;color:${c.text};margin-bottom:8px;">${t}</div>
+        <div style="display:flex;align-items:flex-end;gap:8px;">
+          <span style="font-size:34px;font-weight:900;color:${SAMPLE_COLORS[t]};line-height:1;">${d.count}</span>
+          <span style="font-size:13px;color:${c.text};padding-bottom:4px;">programs (${pct}%)</span>
+        </div>
+        <div style="margin-top:10px;padding-top:10px;border-top:1px solid ${c.border};">
+          <span style="font-size:16px;font-weight:700;color:${c.text};">${d.tests.toLocaleString()}</span>
+          <span style="font-size:12px;color:${c.text};margin-left:4px;">test items (${pctT}%)</span>
+        </div>
+      </div>`;
+    }).join('');
+  }
+
+  // ── Stacked bar chart by discipline ────────────────────────────────────────
+  const stackedEl = document.getElementById('sample-stacked-chart');
+  if (stackedEl) {
+    const cats = Object.keys(CAT_CONFIG).sort((a, b) => CAT_CONFIG[a].order - CAT_CONFIG[b].order);
+    const rows = cats.map(cat => {
+      const counts = {}, tests = {};
+      sorted.forEach(t => {
+        const progs = (sampleGroups[t] || { programs: [] }).programs.filter(p => p.cat === cat);
+        counts[t] = progs.length;
+        tests[t]  = progs.reduce((s, p) => s + p.numTests, 0);
+      });
+      const rowTotal = sorted.reduce((s, t) => s + counts[t], 0);
+      return { cat, counts, tests, total: rowTotal };
+    }).filter(d => d.total > 0);
+
+    const maxTotal = Math.max(...rows.map(d => d.total));
+    const LW = 142, BW = 300, RH = 44;
+    const PW = LW + BW + 52, PH = rows.length * RH + 10;
+    let svgRows = '';
+    rows.forEach((d, i) => {
+      const y = i * RH + 4;
+      let x = LW;
+      const shortName = d.cat.replace('Clinical ', '').replace('Diagnostic ', '');
+      let bars = '';
+      sorted.forEach(t => {
+        if (d.counts[t] === 0) return;
+        const bw = Math.max(d.counts[t] / maxTotal * BW, 4);
+        const tip = `${d.cat} — ${t}<br>${d.counts[t]} programs &middot; ${d.tests[t].toLocaleString()} test items`;
+        bars += `<rect x="${x.toFixed(1)}" y="${(y + 7).toFixed(1)}" width="${bw.toFixed(1)}" height="24" fill="${SAMPLE_COLORS[t]}" rx="3"
+          onmouseenter="showTooltip(event,'${tip}')" onmouseleave="hideTooltip()" style="cursor:default;"/>`;
+        if (bw > 22) {
+          bars += `<text x="${(x + bw / 2).toFixed(1)}" y="${(y + 23).toFixed(1)}" text-anchor="middle"
+            font-family="Segoe UI,sans-serif" font-size="11" font-weight="700" fill="white" pointer-events="none">${d.counts[t]}</text>`;
+        }
+        x += bw;
+      });
+      svgRows += `
+        <text x="${(LW - 8).toFixed(1)}" y="${(y + 23).toFixed(1)}" text-anchor="end"
+          font-family="Segoe UI,sans-serif" font-size="12" fill="#374151" font-weight="500">${shortName}</text>
+        ${bars}
+        <text x="${(x + 7).toFixed(1)}" y="${(y + 23).toFixed(1)}"
+          font-family="Segoe UI,sans-serif" font-size="11" fill="#6b7280">${d.total}</text>`;
+    });
+    stackedEl.innerHTML = `<svg width="100%" viewBox="0 0 ${PW} ${PH}" style="max-width:${PW}px;display:block;overflow:visible;">${svgRows}</svg>`;
+
+    const legEl = document.getElementById('sample-stacked-legend');
+    if (legEl) {
+      legEl.innerHTML = sorted.map(t =>
+        `<span style="display:inline-flex;align-items:center;gap:5px;font-size:12px;color:#374151;">
+          <span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:${SAMPLE_COLORS[t]};flex-shrink:0;"></span>
+          ${t}
+        </span>`
+      ).join('');
+    }
+  }
+
+  // ── Donut charts: programs (left) + test items (right) ────────────────────
+  const donutEl = document.getElementById('sample-donut-chart');
+  if (donutEl) {
+    function donutPaths(data, cx, cy, R) {
+      const r = R * 0.54;
+      let angle = -Math.PI / 2;
+      return data.map(d => {
+        if (d.v === 0) return '';
+        const sweep = d.v / d.total * 2 * Math.PI;
+        const ea = angle + sweep;
+        const la = sweep > Math.PI ? 1 : 0;
+        const [c1, s1, c2, s2] = [Math.cos(angle), Math.sin(angle), Math.cos(ea), Math.sin(ea)];
+        const path = `<path d="M${(cx+R*c1).toFixed(2)},${(cy+R*s1).toFixed(2)} A${R},${R} 0 ${la},1 ${(cx+R*c2).toFixed(2)},${(cy+R*s2).toFixed(2)} L${(cx+r*c2).toFixed(2)},${(cy+r*s2).toFixed(2)} A${r},${r} 0 ${la},0 ${(cx+r*c1).toFixed(2)},${(cy+r*s1).toFixed(2)} Z"
+          fill="${d.color}" stroke="white" stroke-width="1.5"
+          onmouseenter="showTooltip(event,'${d.label}<br>${d.v.toLocaleString()} (${(d.v/d.total*100).toFixed(1)}%)')" onmouseleave="hideTooltip()" style="cursor:default;"/>`;
+        angle = ea;
+        return path;
+      }).join('');
+    }
+    const progData = sorted.map(t => ({ v: sampleGroups[t].count,  total,      color: SAMPLE_COLORS[t], label: t }));
+    const testData = sorted.map(t => ({ v: sampleGroups[t].tests,  total: totalTests, color: SAMPLE_COLORS[t], label: t }));
+    const R = 64, W = 290, H = 196, cy = 102;
+    donutEl.innerHTML = `<svg width="100%" viewBox="0 0 ${W} ${H}" style="max-width:${W}px;display:block;overflow:visible;">
+      ${donutPaths(progData, 72, cy, R)}
+      <text x="72"  y="${cy - 8}"  text-anchor="middle" font-family="Segoe UI,sans-serif" font-size="10" fill="#6b7280" font-weight="600">Programs</text>
+      <text x="72"  y="${cy + 10}" text-anchor="middle" font-family="Segoe UI,sans-serif" font-size="19" font-weight="900" fill="#1a1f36">${total}</text>
+      ${donutPaths(testData, 218, cy, R)}
+      <text x="218" y="${cy - 8}"  text-anchor="middle" font-family="Segoe UI,sans-serif" font-size="10" fill="#6b7280" font-weight="600">Test Items</text>
+      <text x="218" y="${cy + 10}" text-anchor="middle" font-family="Segoe UI,sans-serif" font-size="19" font-weight="900" fill="#1a1f36">${totalTests}</text>
+    </svg>`;
+
+    const legEl = document.getElementById('sample-donut-legend');
+    if (legEl) {
+      legEl.innerHTML = sorted.map(t => {
+        const d = sampleGroups[t];
+        return `<div style="display:flex;align-items:center;gap:8px;padding:5px 0;border-bottom:1px solid var(--border);font-size:12px;">
+          <span style="width:10px;height:10px;border-radius:50%;background:${SAMPLE_COLORS[t]};flex-shrink:0;display:inline-block;"></span>
+          <span style="flex:1;color:#374151;">${t}</span>
+          <span style="font-weight:700;color:#1a1f36;">${d.count}</span><span style="color:#6b7280;"> prog</span>
+          <span style="font-weight:600;color:#1a1f36;margin-left:6px;">${d.tests.toLocaleString()}</span><span style="color:#6b7280;"> items</span>
+        </div>`;
+      }).join('');
+    }
+  }
+
+  // ── Program detail sections per sample type ────────────────────────────────
+  const detailEl = document.getElementById('sample-detail-section');
+  if (detailEl) {
+    const tints = {
+      'In-house made':        { bg: '#fff3e0', border: '#e67e22', text: '#7f3b00', hdr: '#e67e22' },
+      'Commercial materials': { bg: '#e3f2fd', border: '#3498db', text: '#0c4a6e', hdr: '#3498db' },
+      'No sample':            { bg: '#f5f5f5', border: '#9e9e9e', text: '#424242', hdr: '#7f8c8d' }
+    };
+    detailEl.innerHTML = sorted.map(t => {
+      const d = sampleGroups[t], c = tints[t] || tints['No sample'];
+      const byDiscipline = {};
+      d.programs.forEach(p => {
+        if (!byDiscipline[p.cat]) byDiscipline[p.cat] = [];
+        byDiscipline[p.cat].push(p);
+      });
+      const discRows = Object.entries(byDiscipline)
+        .sort((a, b) => b[1].length - a[1].length)
+        .map(([cat, progs]) => {
+          const cfg = CAT_CONFIG[cat];
+          const tests = progs.reduce((s, p) => s + p.numTests, 0);
+          const labs  = progs.reduce((s, p) => s + p.numLabs, 0);
+          const progNames = progs.map(p =>
+            `<span style="display:inline-block;background:${cfg.color}22;border:1px solid ${cfg.color}55;border-radius:6px;padding:1px 7px;font-size:11px;color:#374151;margin:2px;">${p.nameEn}</span>`
+          ).join('');
+          return `<tr>
+            <td style="white-space:nowrap;">
+              <span style="display:inline-block;width:9px;height:9px;border-radius:50%;background:${cfg.color};margin-right:6px;vertical-align:middle;"></span>
+              <span style="font-size:12px;font-weight:600;">${cat.replace('Clinical ','').replace('Diagnostic ','')}</span>
+            </td>
+            <td style="text-align:center;font-weight:700;font-size:13px;">${progs.length}</td>
+            <td style="text-align:center;font-size:12px;color:#374151;">${tests.toLocaleString()}</td>
+            <td style="text-align:center;font-size:12px;color:#6b7280;">${labs > 0 ? labs.toLocaleString() : '—'}</td>
+            <td style="line-height:1.8;">${progNames}</td>
+          </tr>`;
+        }).join('');
+      return `<div style="background:var(--surface);border:2px solid ${c.border};border-radius:12px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,0.06);">
+        <div style="background:${c.hdr};padding:12px 20px;display:flex;align-items:center;gap:12px;">
+          <span style="font-size:15px;font-weight:800;color:white;">${t}</span>
+          <span style="background:rgba(255,255,255,0.25);color:white;font-size:12px;font-weight:700;padding:2px 10px;border-radius:12px;">${d.count} programs &nbsp;&middot;&nbsp; ${d.tests.toLocaleString()} test items</span>
+        </div>
+        <div style="padding:16px 20px;">
+          <table style="width:100%;font-size:13px;border-collapse:collapse;">
+            <thead><tr style="border-bottom:2px solid var(--border);">
+              <th style="text-align:left;padding:6px 8px;font-size:12px;color:#6b7280;font-weight:600;white-space:nowrap;">Discipline</th>
+              <th style="text-align:center;padding:6px 8px;font-size:12px;color:#6b7280;font-weight:600;">Programs</th>
+              <th style="text-align:center;padding:6px 8px;font-size:12px;color:#6b7280;font-weight:600;">Test Items</th>
+              <th style="text-align:center;padding:6px 8px;font-size:12px;color:#6b7280;font-weight:600;">Total Labs</th>
+              <th style="text-align:left;padding:6px 8px;font-size:12px;color:#6b7280;font-weight:600;">Programs</th>
+            </tr></thead>
+            <tbody>${discRows}</tbody>
+          </table>
+        </div>
+      </div>`;
+    }).join('');
+  }
+}
+
+// ===================== TAB 5: COMMUTABILITY =====================
+function renderCommTreemap() {
+  // ── Classify programs ──────────────────────────────────────────────────────
+  const groups = { commutable: [], partial: [], not: [], noSample: [] };
+  PROGRAMS.forEach(p => {
+    if (p.comm.startsWith('Commutable (')) groups.commutable.push(p);
+    else if (p.comm.startsWith('Partially commutable')) groups.partial.push(p);
+    else if (p.comm === 'No sample') groups.noSample.push(p);
+    else groups.not.push(p);
+  });
+  const total = PROGRAMS.length;
+  const sumTests = arr => arr.reduce((s, p) => s + p.numTests, 0);
+  const totalTests = sumTests(PROGRAMS);
+
+  const COMM_COLORS = { commutable: '#27ae60', partial: '#8bc34a', not: '#e57373', noSample: '#bdbdbd' };
+  const COMM_LABELS = { commutable: 'Commutable', partial: 'Partially Commutable', not: 'Not Commutable', noSample: 'No Sample' };
+
+  // ── KPI summary cards ──────────────────────────────────────────────────────
+  const kpiEl = document.getElementById('comm-kpi-row');
+  if (kpiEl) {
+    const cards = [
+      { key: 'commutable', bg: '#e8f5e9', border: '#27ae60', text: '#1b5e20' },
+      { key: 'partial',    bg: '#f1f8e9', border: '#8bc34a', text: '#33691e' },
+      { key: 'not',        bg: '#fce4ec', border: '#e57373', text: '#b71c1c' },
+      { key: 'noSample',   bg: '#f5f5f5', border: '#9e9e9e', text: '#424242' }
+    ];
+    kpiEl.innerHTML = cards.map(c => {
+      const progs = groups[c.key].length;
+      const tests = sumTests(groups[c.key]);
+      const pct  = (progs / total * 100).toFixed(0);
+      const pctT = (tests / totalTests * 100).toFixed(0);
+      return `<div style="flex:1;min-width:150px;background:${c.bg};border:2px solid ${c.border};border-radius:12px;padding:16px 20px;">
+        <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.6px;color:${c.text};margin-bottom:8px;">${COMM_LABELS[c.key]}</div>
+        <div style="display:flex;align-items:flex-end;gap:8px;">
+          <span style="font-size:34px;font-weight:900;color:${COMM_COLORS[c.key]};line-height:1;">${progs}</span>
+          <span style="font-size:13px;color:${c.text};padding-bottom:4px;">programs (${pct}%)</span>
+        </div>
+        <div style="margin-top:10px;padding-top:10px;border-top:1px solid ${c.border};">
+          <span style="font-size:16px;font-weight:700;color:${c.text};">${tests.toLocaleString()}</span>
+          <span style="font-size:12px;color:${c.text};margin-left:4px;">test items (${pctT}%)</span>
+        </div>
+      </div>`;
+    }).join('');
+  }
+
+  // ── Stacked horizontal bar chart by discipline ────────────────────────────
+  const stackedEl = document.getElementById('comm-stacked-chart');
+  if (stackedEl) {
+    const cats = Object.keys(CAT_CONFIG).sort((a, b) => CAT_CONFIG[a].order - CAT_CONFIG[b].order);
+    const rows = cats.map(cat => {
+      const comm    = groups.commutable.filter(p => p.cat === cat);
+      const partial = groups.partial.filter(p => p.cat === cat);
+      const notG    = groups.not.filter(p => p.cat === cat);
+      const noSamp  = groups.noSample.filter(p => p.cat === cat);
+      const rowTotal = comm.length + partial.length + notG.length + noSamp.length;
+      return {
+        cat,
+        counts: { commutable: comm.length, partial: partial.length, not: notG.length, noSample: noSamp.length },
+        tests:  { commutable: sumTests(comm), partial: sumTests(partial), not: sumTests(notG), noSample: sumTests(noSamp) },
+        total:  rowTotal
+      };
+    }).filter(d => d.total > 0);
+
+    const maxTotal = Math.max(...rows.map(d => d.total));
+    const LW = 142, BW = 300, RH = 44;
+    const PW = LW + BW + 52, PH = rows.length * RH + 10;
+    const keys = ['commutable', 'partial', 'not', 'noSample'];
+    let svgRows = '';
+    rows.forEach((d, i) => {
+      const y = i * RH + 4;
+      let x = LW;
+      const shortName = d.cat.replace('Clinical ', '').replace('Diagnostic ', '');
+      let bars = '';
+      keys.forEach(k => {
+        if (d.counts[k] === 0) return;
+        const bw = Math.max(d.counts[k] / maxTotal * BW, 4);
+        const tip = `${d.cat} — ${COMM_LABELS[k]}<br>${d.counts[k]} programs &middot; ${d.tests[k].toLocaleString()} test items`;
+        bars += `<rect x="${x.toFixed(1)}" y="${(y + 7).toFixed(1)}" width="${bw.toFixed(1)}" height="24" fill="${COMM_COLORS[k]}" rx="3"
+          onmouseenter="showTooltip(event,'${tip}')" onmouseleave="hideTooltip()" style="cursor:default;"/>`;
+        if (bw > 22) {
+          bars += `<text x="${(x + bw / 2).toFixed(1)}" y="${(y + 23).toFixed(1)}" text-anchor="middle"
+            font-family="Segoe UI,sans-serif" font-size="11" font-weight="700" fill="white" pointer-events="none">${d.counts[k]}</text>`;
+        }
+        x += bw;
+      });
+      svgRows += `
+        <text x="${(LW - 8).toFixed(1)}" y="${(y + 23).toFixed(1)}" text-anchor="end"
+          font-family="Segoe UI,sans-serif" font-size="12" fill="#374151" font-weight="500">${shortName}</text>
+        ${bars}
+        <text x="${(x + 7).toFixed(1)}" y="${(y + 23).toFixed(1)}"
+          font-family="Segoe UI,sans-serif" font-size="11" fill="#6b7280">${d.total}</text>`;
+    });
+    stackedEl.innerHTML = `<svg width="100%" viewBox="0 0 ${PW} ${PH}" style="max-width:${PW}px;display:block;overflow:visible;">${svgRows}</svg>`;
+
+    const legendEl = document.getElementById('comm-stacked-legend');
+    if (legendEl) {
+      legendEl.innerHTML = keys.map(k =>
+        `<span style="display:inline-flex;align-items:center;gap:5px;font-size:12px;color:#374151;">
+          <span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:${COMM_COLORS[k]};flex-shrink:0;"></span>
+          ${COMM_LABELS[k]}
+        </span>`
+      ).join('');
+    }
+  }
+
+  // ── Donut charts: programs (left) + test items (right) ────────────────────
+  const donutEl = document.getElementById('comm-donut-chart');
+  if (donutEl) {
+    function donutPaths(data, cx, cy, R) {
+      const r = R * 0.54;
+      let angle = -Math.PI / 2;
+      return data.map(d => {
+        if (d.v === 0) return '';
+        const sweep = d.v / d.total * 2 * Math.PI;
+        const ea = angle + sweep;
+        const la = sweep > Math.PI ? 1 : 0;
+        const [c1, s1, c2, s2] = [Math.cos(angle), Math.sin(angle), Math.cos(ea), Math.sin(ea)];
+        const path = `<path d="M${(cx+R*c1).toFixed(2)},${(cy+R*s1).toFixed(2)} A${R},${R} 0 ${la},1 ${(cx+R*c2).toFixed(2)},${(cy+R*s2).toFixed(2)} L${(cx+r*c2).toFixed(2)},${(cy+r*s2).toFixed(2)} A${r},${r} 0 ${la},0 ${(cx+r*c1).toFixed(2)},${(cy+r*s1).toFixed(2)} Z"
+          fill="${d.color}" stroke="white" stroke-width="1.5"
+          onmouseenter="showTooltip(event,'${d.label}<br>${d.v.toLocaleString()} (${(d.v/d.total*100).toFixed(1)}%)')" onmouseleave="hideTooltip()" style="cursor:default;"/>`;
+        angle = ea;
+        return path;
+      }).join('');
+    }
+    const keys = ['commutable', 'partial', 'not', 'noSample'];
+    const progData = keys.map(k => ({ v: groups[k].length,    total,      color: COMM_COLORS[k], label: COMM_LABELS[k] }));
+    const testData = keys.map(k => ({ v: sumTests(groups[k]), total: totalTests, color: COMM_COLORS[k], label: COMM_LABELS[k] }));
+    const R = 64, W = 290, H = 196, cy = 102;
+    donutEl.innerHTML = `<svg width="100%" viewBox="0 0 ${W} ${H}" style="max-width:${W}px;display:block;overflow:visible;">
+      ${donutPaths(progData, 72, cy, R)}
+      <text x="72"  y="${cy - 8}"  text-anchor="middle" font-family="Segoe UI,sans-serif" font-size="10" fill="#6b7280" font-weight="600">Programs</text>
+      <text x="72"  y="${cy + 10}" text-anchor="middle" font-family="Segoe UI,sans-serif" font-size="19" font-weight="900" fill="#1a1f36">${total}</text>
+      ${donutPaths(testData, 218, cy, R)}
+      <text x="218" y="${cy - 8}"  text-anchor="middle" font-family="Segoe UI,sans-serif" font-size="10" fill="#6b7280" font-weight="600">Test Items</text>
+      <text x="218" y="${cy + 10}" text-anchor="middle" font-family="Segoe UI,sans-serif" font-size="19" font-weight="900" fill="#1a1f36">${totalTests}</text>
+    </svg>`;
+
+    const donutLegEl = document.getElementById('comm-donut-legend');
+    if (donutLegEl) {
+      donutLegEl.innerHTML = keys.map(k => {
+        const p = groups[k].length, t = sumTests(groups[k]);
+        return `<div style="display:flex;align-items:center;gap:8px;padding:5px 0;border-bottom:1px solid var(--border);font-size:12px;">
+          <span style="width:10px;height:10px;border-radius:50%;background:${COMM_COLORS[k]};flex-shrink:0;display:inline-block;"></span>
+          <span style="flex:1;color:#374151;">${COMM_LABELS[k]}</span>
+          <span style="font-weight:700;color:#1a1f36;">${p}</span><span style="color:#6b7280;"> prog</span>
+          <span style="font-weight:600;color:#1a1f36;margin-left:6px;">${t.toLocaleString()}</span><span style="color:#6b7280;"> items</span>
+        </div>`;
+      }).join('');
+    }
+  }
+
+  // ── Summary table (commutable + partially commutable only) ────────────────
+  const tableEl = document.getElementById('comm-summary-table');
+  if (tableEl) {
+    const commColor = '#27ae60', partColor = '#8bc34a';
+    const allComm = [
+      ...groups.commutable.map(p => ({ ...p, _group: 'Commutable' })),
+      ...groups.partial.map(p => ({ ...p, _group: 'Partially commutable' }))
+    ];
+    allComm.sort((a, b) => {
+      if (a._group !== b._group) return a._group === 'Commutable' ? -1 : 1;
+      if (a.cat !== b.cat) return a.cat.localeCompare(b.cat);
+      return a.nameEn.localeCompare(b.nameEn);
+    });
+    const rows = allComm.map((p, i) => {
+      const cfg = CAT_CONFIG[p.cat];
+      const badgeColor = p._group === 'Commutable' ? commColor : partColor;
+      const badgeLabel = p._group === 'Commutable' ? 'Commutable' : 'Partial';
+      const testList = p.tests.slice(0, 5).map(t => t.n).join(', ') + (p.tests.length > 5 ? ` <span style="color:var(--text2);">(+${p.tests.length - 5} more)</span>` : '');
+      const commDetail = (p.comm.match(/\(([^)]+)\)/) || ['', ''])[1] || p.comm;
+      return `<tr>
+        <td style="text-align:center;color:var(--text2);font-size:12px;">${i + 1}</td>
+        <td><span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:${cfg.color};margin-right:6px;vertical-align:middle;"></span>
+          <span style="font-size:11px;color:var(--text2);">${p.cat}</span></td>
+        <td style="font-weight:600;">${p.nameEn}</td>
+        <td style="text-align:center;"><span style="display:inline-block;padding:2px 8px;border-radius:12px;font-size:11px;font-weight:700;color:white;background:${badgeColor};white-space:nowrap;">${badgeLabel}</span></td>
+        <td style="font-size:12px;color:var(--text2);">${commDetail}</td>
+        <td style="font-size:12px;">${p.origin}</td>
+        <td style="text-align:center;font-weight:600;">${p.numTests}</td>
+        <td style="text-align:center;color:var(--text2);font-size:12px;">${p.numLabs > 0 ? p.numLabs.toLocaleString() : '—'}</td>
+        <td style="font-size:12px;color:var(--text2);max-width:260px;">${testList}</td>
+      </tr>`;
+    }).join('');
+    tableEl.innerHTML = `<table class="tests-table" style="width:100%;font-size:13px;">
+      <thead><tr>
+        <th style="width:36px;">#</th><th>Discipline</th><th>Program Name</th>
+        <th style="width:90px;">Status</th><th>Commutability Basis</th>
+        <th>Material Origin</th><th style="width:60px;">Tests</th>
+        <th style="width:70px;">Labs (N)</th><th>Key Test Items</th>
+      </tr></thead>
+      <tbody>${rows}</tbody>
+    </table>`;
+  }
+}
+// ===================== TOOLTIP =====================
+function showTooltip(e, html) {
+  const tt = document.getElementById('tooltip');
+  tt.innerHTML = html;
+  tt.style.display = 'block';
+  const x = Math.min(e.clientX + 12, window.innerWidth - 320);
+  const y = Math.min(e.clientY + 12, window.innerHeight - 100);
+  tt.style.left = x + 'px';
+  tt.style.top = y + 'px';
+}
+function hideTooltip() {
+  document.getElementById('tooltip').style.display = 'none';
+}
+
+// ===================== TABS =====================
+document.querySelectorAll('.tab').forEach(tab => {
+  tab.addEventListener('click', () => {
+    document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+    document.querySelectorAll('.tab-content').forEach(t => t.classList.remove('active'));
+    tab.classList.add('active');
+    document.getElementById('tab-' + tab.dataset.tab).classList.add('active');
+  });
+});
+
+// Modal close
+document.getElementById('modal-close').addEventListener('click', () => {
+  document.getElementById('modal-overlay').classList.remove('active');
+});
+document.getElementById('modal-overlay').addEventListener('click', (e) => {
+  if (e.target === document.getElementById('modal-overlay')) {
+    document.getElementById('modal-overlay').classList.remove('active');
+  }
+});
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') document.getElementById('modal-overlay').classList.remove('active');
+});
+
+// ===================== GITHUB SHARE =====================
+function shareOnGitHub() {
+  const shareUrl = 'https://github.com/new';
+  const message = `
+2026 KEQAS EQA Dashboard를 GitHub에서 호스팅하려면:
+
+1. GitHub 저장소 생성
+   - 저장소명: 2026-keqas-eqa-dashboard
+   - 설정: Public
+   - URL: ${window.location.href}
+
+2. GitHub Pages 활성화
+   - Settings > Pages > Build and deployment
+   - Source: Deploy from a branch
+   - Branch: main, Folder: / (root)
+
+3. 배포 완료 후 이용 가능:
+   - https://username.github.io/2026-keqas-eqa-dashboard/
+
+자세한 방법은 DEPLOYMENT.md 파일을 참고하세요.
+  `;
+  
+  alert(message);
+  
+  // GitHub 저장소 생성 페이지로 이동
+  window.open(shareUrl, '_blank');
+}
+
+// ===================== INIT =====================
+renderOverviewTreemap();
+renderProgramDetails(null);
+renderLabsTreemap();
+renderSampleTreemap();
+renderCommTreemap();
+</script>
+
+</body>
+</html>

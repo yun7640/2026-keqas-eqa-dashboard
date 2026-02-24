@@ -1,0 +1,278 @@
+﻿--- crossmatch ---
+  [HLA crossmatching-T Cell] | HLA crossmatching-T cell | D842100C
+  [HLA crossmatching-B Cell(급여가능)] | HLA crossmatching-B cell | D842300C
+  [HLA crossmatching-T (AHG)(100/100가능)] | HLA crossmatching-T (AHG) | D842400C
+--- unexpected ---
+  [Unexpected Ab screening] | 비예기항체선별검사 | D156100C
+  [Unexpected Ab Identification test] | 불규칙항체검사(동정) | D156200C
+--- Coombs ---
+  [Indirect Coombs′test (polyvalent)] | Indirect Coombs' test (polyvalent) | D153205C
+  [Indirect Coombs, IgG] | indirect Coombs, IgG | D154203C
+  [Indirect Coombs, IgA] | indirect Coombs, IgA | D154202C
+--- C3d ---
+  [Direct Coombs' test, C3d] | Direct Coombs, C3 | D154101C
+--- Sudan ---
+  [Sudan Black B] | 특수염색(수단블랙 B) | D084105DZ
+--- PAS ---
+  [PAS] | 특수염색(PAS) | D084102C
+  [Lipase] | 리파아제 | D3800013
+  [(뇨,체액)Lipase] | 리파아제 | D3800013
+--- periodic ---
+  [CACNA1S gene mutation(hypokalemic periodic paralysis] | CACNA1S gene mutation(hypokalemic periodic paralysis | C580602DZ
+--- ALP ---
+  [ANAE (Alpha-naphthly acetate esterase) stain] | 효소조직화학검사(ANAE (Alpha-naphthly acetate esterase) stain) | D084103DZ
+  [ANBE (Alpha-naphthly butyrate esterase) stain] | ANBE (Alpha-naphthly butyrate esterase) stain | D084103C
+  [Alkaline phosphatase(ALP)] | 포스파타제(알칼리) | D1870003
+--- alkaline phos ---
+  [LAP (Leukocyte alkaline phosphatase) score] | LAP(Leukocyte Alkaline Phosphate) Score | D084101DZ
+  [Alkaline phosphatase(ALP)] | 포스파타제(알칼리) | D1870003
+  [(뇨,체액)Alkaline phosphatase(ALP)] | (뇨,체액)포스파타제(알칼리) | D1870003
+--- GT ---
+  [γ-GT] | γ-GT | D1890003
+  [(뇨,체액)γ-GT] | (뇨,체액)γ-GT | D1890003
+  [(응급)γ-GT] | (응급)γ-GT | D1890003
+--- Fe ---
+  [WBC differential count] | 백혈구백분율(혈액) | D0013003
+  [WBC Differential Count (Donor)] | 백혈구백분율(혈액) (Donor) | D0013003
+  [Fecal leukocytes] | 백혈구백분율(혈액외 검체) | D0313003
+--- phosphorus ---
+  [I.Phos (Inorganic phosphorus)] | 무기인 | D2800043
+  [(뇨,체액)I.Phos (Inorganic phosphorus)] | 인 | D2800043
+  [(진료전)I.Phos (Inorganic phosphorus)] | I.Phos | D2800043
+---  P  ---
+  [Anti-Ribosomal P Ab] | Anti-Ribosomal P Ab | D785203DZ
+--- hs.CRP ---
+  [(입원전)hs-CRP (정량)] | (입원전)hs C-반응성단백(정량) | D0113003
+--- hs-CRP ---
+  [(입원전)hs-CRP (정량)] | (입원전)hs C-반응성단백(정량) | D0113003
+--- CA.*15 ---
+  [CA-15-3] | CA-15-3 | D4340003
+--- TPLA ---
+  [TPLA(syphilis)] | TPLA(syphilis) | D6923003
+--- HLA-A ---
+  [HLA-A  (serology)] | HLA-A  (serology) | D840101C
+  [HLA-A (DNA)(100/100가능)] | HLA-A (DNA) | D840201C
+  [HLA-A (DNA-high resolution)] | HLA-A (DNA-high resolution) | D840301DZ
+--- anti-MPO ---
+  [Anti-MPO (Myeloperoxidase) Ab] | Anti-MPO (Myeloperoxidase) Ab | D795103DZ
+--- anti-PR3 ---
+  [Anti-Pr3 (Proteinase 3) Ab] | Anti-Pr3 (Proteinase 3) Ab | D795104DZ
+--- MAST ---
+  [Mastocheck(유방암 선별보조 혈장단백검사)[액체크로마토그래피-탠덤질량분석법]] | Mastocheck(유방암 선별보조 혈장단백검사)[액체크로마토그래피-탠덤질량분석법] | SSSSSS
+  [MAST (Food)] | MAST 법에 의한 면역글로블린 E | D746000C
+  [MAST (Inhalant)] | MAST 법에 의한 면역글로블린 E | D746000C
+--- allergen ---
+  [Allergen specific IgE] | 항원특이적 면역글로불린 E | D7440013
+  [Allergen specific IgE] | 항원특이적 면역글로불린 E | D7440013
+--- acid.*fast ---
+  [acid fast stain] | 특수염색(기타) | D084101C
+  [Acid fast fluorescent stain] | Acid Fast Fluorescent Stain | D6003003
+--- anti.*TB ---
+  [[선별선택80]QuantiFERON-TB] | [선별선택80]결핵균 특이항원 자극 인터페론-감마 | D602000C
+  [[선별선택80]QuantiFERON-TB Gold Plus] | [선별선택80]결핵균 특이항원 자극 인터페론-감마 | D602000C
+--- HBV DNA ---
+  [HBV DNA 정량 (bDNA assay)] | HBV DNA 정량 (bDNA assay) | D704402DZ
+  [HBV DNA Quantitation (real time)] | HBV DNA Quantitation (real time) | D704403C
+  [HBV DNA Quantitation (real time)] | HBV DNA Quantitation (real time) | D704403C
+--- HBV.*real ---
+  [HBV DNA Quantitation (real time)] | HBV DNA Quantitation (real time) | D704403C
+  [HBV DNA Quantitation (real time)] | HBV DNA Quantitation (real time) | D704403C
+--- HPV.*DNA ---
+  [HPV DNA probe (hybrid capture)] | HPV DNA Probe(hybrid capture)인유두종 바이러스 검사 | D658602DZ
+--- HPV.*PCR ---
+  [HPV type 18 PCR] | HPV Typing 18 PCR | D591101DZ
+  [HPV type 16 PCR] | HPV Typing 16 PCR | D591101DZ
+  [HPV PCR hybridization] | HPV PCR  Hybridization | D591101DZ
+--- DMD ---
+  [DMD/BMD exon deletion test] | DMD/BMD Exon Deletion Test | CZ581
+--- BRCA ---
+  [BRCA1 mutation] | BRCA1 mutation | C580905DZ
+  [BRCA2 mutation] | BRCA2 mutation | C581001DZ
+  [BRCA1 mutation(family)] | BRCA1 mutation(family) | C580500DZ
+--- TP53 ---
+  [TP53 Gene] | TP53 Gene | C584130C
+  [TP53 (17p13.1)gene-외주] | TP53 (17p13.1)gene-외주 | C584130DZ
+  [TP53 Gene,FISH(위탁)] | TP53 Gene,FISH(위탁) | C584130DZ
+--- SBMA ---
+  [SBMA (Spinobulbar muscular atrophy)] | SBMA(Spinobulbar Muscular Atrophy) | C580301DZ
+--- STR ---
+  [Gastric juice analysis] | 위액검사 | D0328003
+  [Estrogen] | 에스트로겐 | D3711037Z
+  [Estradiol (E2)] | 에스트라디올 E2 | D3710023
+--- Troponin T ---
+  [Troponin T] | 트로포닌 T | D4023024Z
+--- CK.*CPK ---
+  [CK(CPK)] | CK(CPK) | D2510013
+  [(뇨,체액)CK(CPK)] | (뇨,체액)CK(CPK) | D2510013
+  [(응급)CK(CPK)] | (응급)CK(CPK) | D2510013
+--- CK  ---
+  [Sudan Black B] | 특수염색(수단블랙 B) | D084105DZ
+  [CK isoenzymes  (EP)] | CPK 이소엔자임 | D254203DZ
+  [F11 Buck wheat (메밀)] | F11 Buck wheat (메밀) | D7440013
+--- CA125 ---
+  [CA125] | CA125 | D4311004Z
+--- CA19 ---
+  [CA19-9] | CA19-9 | D4350003
+  [(응급면역)CA19-9] | CA19-9 | D4350003
+  [(진료전)CA19-9] | CA19-9 | D4350003
+--- osmol ---
+  [(혈청) Osmolarity] | Osmorality | D2820003
+  [(뇨,체액)Osmolarity] | Osmorality | D2820003
+  [(응급뇨)Osmolarity] | (응급뇨)Osmolality | D2820003
+--- beta.*micro ---
+  [[선별선택90]Beta-2- microglobulin] | [선별선택90]베타투마이크로글로불린 | D4230004Z
+--- gentamycin ---
+  [Gentamycin (General)] | Gentamycin(General) | D5321153
+  [Gentamycin (High Quality)] | Gentamycin(High Quality) | D5331143
+  [Gentamycin (General)] | Gentamycin(General) | D5321153
+--- Ig.*G.*immuno ---
+  [IgG subclass1 (Immunoglobulin 정량)] | IgG subclass1 (Immunoglobulin 정량) | D7420014Z
+  [IgG subclass2 (Immunoglobulin 정량)] | IgG subclass2 (Immunoglobulin 정량) | D7420024Z
+  [IgG subclass3 (Immunoglobulin 정량)] | IgG subclass3 (Immunoglobulin 정량) | D7420034Z
+--- IgG.*정량 ---
+  [IgG subclass1 (Immunoglobulin 정량)] | IgG subclass1 (Immunoglobulin 정량) | D7420014Z
+  [IgG subclass2 (Immunoglobulin 정량)] | IgG subclass2 (Immunoglobulin 정량) | D7420024Z
+  [IgG subclass3 (Immunoglobulin 정량)] | IgG subclass3 (Immunoglobulin 정량) | D7420034Z
+--- Ig.*A.*immuno ---
+  [IgG subclass1 (Immunoglobulin 정량)] | IgG subclass1 (Immunoglobulin 정량) | D7420014Z
+  [IgG subclass2 (Immunoglobulin 정량)] | IgG subclass2 (Immunoglobulin 정량) | D7420024Z
+  [IgG subclass3 (Immunoglobulin 정량)] | IgG subclass3 (Immunoglobulin 정량) | D7420034Z
+--- free.*kappa ---
+  [Free Kappa(κ) light chain(serum)] | [선별선택80]Free Kappa(κ) light chain(serum) | D442104KZ
+  [Free Kappa light chain(R/U)] | [선별선택80]유리경쇄정량검사(요)-카파(random urine) | D442103KZ
+  [Free Kappa light chain (24hrs urine)] | [선별선택80]유리경쇄정량검사(요)-카파(24hrs urine) | D442103KZ
+--- free.*lambda ---
+  [Free Lambda(λ) light chain(serum)] | [선별선택80]Free Lambda(λ) light chain(serum) | D442102KZ
+  [Free Lambda light chain(R/U)] | [선별선택80]유리경쇄정량검사(요)-람다(random urine) | D442101KZ
+  [Free Lambda light chain(24hrs urine)] | [선별선택80]유리경쇄정량검사(요)-람다(24hrs urine) | D442101KZ
+--- ds-DNA ---
+  [Anti-ds-DNA Ab] | 항DNA항체(정밀) | D7862003
+  [Anti-ds-DNA Ab IgG] | Anti-ds-DNA Ab IgG(Quality) | D7862003
+  [Anti-ds-DNA Ab (Titration)] | Anti-ds-DNA Ab(Titration) | D786500C
+--- Anti-RNP ---
+  [Anti-RNP (ribonucleprotein) Ab] | Anti-RNP Ab(Anti-Ribonucleprotein Ab) | D785204DZ
+--- RNP ---
+  [Anti-RNP (ribonucleprotein) Ab] | Anti-RNP Ab(Anti-Ribonucleprotein Ab) | D785204DZ
+--- SSA ---
+  [Arylsulfatase A assay] | 아릴설파타제A A Arylsulfatase | D517105DZ
+  [Immunoblot assay(Food,Allergy screening)] | MAST 법에 의한 면역글로블린(Food,Allergy screening) | D746000DZ
+  [Immunoblot assay(Inhalant,Allergy screening)] | MAST 법에 의한 면역글로블린(Inhalant,Allergy screening) | D746000DZ
+--- Anti-CCP ---
+  [[선별선택90]Anti-CCP (Cyclic citrullinated peptide) Ab] | [선별선택90]Anti CCP Ab(Cyclic Citrullinated Peptide Ab) | D8130003
+--- CCP ---
+  [[선별선택90]Anti-CCP (Cyclic citrullinated peptide) Ab] | [선별선택90]Anti CCP Ab(Cyclic Citrullinated Peptide Ab) | D8130003
+--- ANCA ---
+  [ANCA (정성)] | ANCA (정성) | D794100DZ
+  [ANCA (정량)] | ANCA (정량) | D794200DZ
+--- Antibiotic.*DISK ---
+  [Antibiotic-Disk diffusion] | 디스크확산법 | D5841003
+--- M.*tuberculosis.*PCR ---
+  [M.tuberculosis PCR] | M.tuberculosis PCR | D604101C
+  [M.tuberculosis  nested PCR] | M.tuberculosis  Nested PCR | D604201C
+--- MTB.*PCR ---
+  [MTB/NTM real-time PCR] | MTB/NTM real-time PCR | D604202C
+--- TB.*PCR ---
+  [MTB/NTM real-time PCR] | MTB/NTM real-time PCR | D604202C
+  [TB/RIF 내성검사(Real-time Nested PCR)] | TB/RIF 내성검사(Real-time Nested PCR) | D604301C
+--- CMV.*real.*time ---
+  [CMV Quantitation (real time)] | CMV Quantitation (real time) | D658503C
+  [CMV Quantification (real time)] | CMV Quantification (real time) | D658503C
+--- EBV.*real.*time ---
+  [EBV Quantitation (real time)] | EBV Quantitation (real time) | D658502C
+  [EBV Quantification (real time)] | EBV Quantification (real time) | D658502C
+--- HPV.*type ---
+  [HPV type 18 PCR] | HPV Typing 18 PCR | D591101DZ
+  [HPV type 16 PCR] | HPV Typing 16 PCR | D591101DZ
+--- HSV.*PCR ---
+  [HSV (Herpes simplex virus) PCR] | Herpes simplex virus PCR | D658104DZ
+  [HSV type Ⅰ PCR] | HSV type Ⅰ PCR | D658104DZ
+  [HSV type Ⅱ PCR] | HSV type Ⅱ PCR | D658104DZ
+--- Chromosome.*analysis ---
+  [Chromosome analysis of Inherited disorders] | Chromosome analysis of Inherited disorders | CY69200DZ
+  [Chromosome analysis Malignancy (고형종양)] | 고형종양의 염색체검사 | CX56800C
+  [Trisomy 21 FISH with Chromosome analysis] | Trisomy 21 FISH with Chromosome analysis | C5841016
+--- JAK2 ---
+  [JAK2 gene V617F] | JAK2 gene V617F | C583304DZ
+  [JAK2 gene exon12] | JAK2 gene exon12 | C583303DZ
+--- FLT3 ---
+  [FLT3/ITD mutation] | FLT3/ITD mutation | C583301C
+  [FLT3/TKD mutation] | FLT3/TKD mutation | C583301C
+  [FLT3-ITD mutation(Fragment analysis)] | FLT3-ITD mutation(Fragment analysis) | C583209DZ
+--- EGFR.*gene ---
+  [EGFR gene mutation(Real-time PCR)] | EGFR 유전자, 돌연변이(실시간 중합효소 연쇄반응) | C583119DZ
+--- BRAF.*gene ---
+  [BRAF gene V600E mutation] | BRAF gene V600E mutation | C5831176
+  [BRAF gene V600E mutation melanoma] | BRAF gene V600E mutation melanoma | C583117DZ
+--- KIT.*gene ---
+  [KIT gene mutation] | KIT gene mutation | C583602DZ
+--- K-ras ---
+  [K-ras p12,13] | K-ras p12,13 | C583401DZ
+  [K-ras gene mutation] | K-ras gene mutation | C583401DZ
+--- MTHFR ---
+  [MTHFR major mutation] | MTHFR major mutation | C580210DZ
+--- MEN2 ---
+  [RET, MEN2 (MEN2A)] | RET, MEN2 (MEN2A) | C580726DZ
+  [RET, MEN2 (FMTC)] | RET, MEN2 (FMTC) | C580726DZ
+  [RET, MEN2 (MEN2B)] | RET, MEN2 (MEN2B) | C580726DZ
+--- RET.*mut ---
+  [RET gene mutation] | RET gene mutation | C580726DZ
+--- MELAS ---
+  [MELAS major mutation(MT-TL1 gene)] | MELAS major mutation(MT-TL1 gene) | C580608DZ
+--- Prader.*Willi ---
+  [Prader-Willi/Angelman syndrome PCR] | Prader-Willi/Angelman syndrome PCR | C580313DZ
+  [Prader-Willi /Angelman, FISH] | Prader-Willi /Angelman, FISH | C5841016
+  [Prader-Willi/Angelman FISH(양수)] | Prader-Willi/Angelman FISH(양수) | C5841016
+--- Huntington ---
+  [Huntington′s ds Dx] | Huntington′s Disease Dx | C580309DZ
+--- Fragile.*X ---
+  [Fragile X (DNA) PCR] | 위약X증후군 | C581102DZ
+  [Fragile X 증후군(FMR1gene PCR)] | Fragile X 증후군(FMR1gene PCR) | C580312DZ
+--- FMR1 ---
+  [Fragile X 증후군(FMR1gene PCR)] | Fragile X 증후군(FMR1gene PCR) | C580312DZ
+--- TPO.*Ab ---
+  [Anti TPO Ab (Anti Microsomal Ab)] | Anti TPO Ab (Anti Microsomal Ab) | D3212044Z
+  [(진료전)Anti TPO Ab (Anti Microsomal Ab)] | (진료전)Anti TPO Ab (Anti Microsomal Ab) | D3212043
+--- CMV.*IgG ---
+  [CMV-IgG] | CMV-IgG | D654220C
+--- CMV.*IgM ---
+  [CMV-IgM] | CMV-IgM | D654320C
+--- EBV.*VCA.*IgG ---
+  [EBV VCA IgG] | EBV VCA IgG | D654208DZ
+--- EBV.*VCA.*IgM ---
+  [EBV VCA IgM] | EBV VCA IgM | D654308DZ
+--- EBNA.*IgG ---
+  [EBV EBNA IgG] | EBV EBNA IgG | D654207DZ
+--- HSV.*IgG ---
+  [HSV-IgG] | HSV-IgG | D654209DZ
+  [HSV type 1 IgG] | 바이러스항체 HSV type 1 IgG | D654209DZ
+  [HSV type 2 IgG] | 바이러스 항체 HSV type 2 IgG | D654209DZ
+--- HSV.*IgM ---
+  [HSV-IgM] | HSV-IgM | D654309DZ
+--- VZV.*IgG ---
+  [VZV IgG] | VZV IgG | D654219C
+--- VZV.*IgM ---
+  [VZV IgM] | VZV IgM | D654319C
+--- Quantiferon ---
+  [[선별선택80]QuantiFERON-TB] | [선별선택80]결핵균 특이항원 자극 인터페론-감마 | D602000C
+  [[선별선택80]QuantiFERON-TB Gold Plus] | [선별선택80]결핵균 특이항원 자극 인터페론-감마 | D602000C
+--- IGRA ---
+  [IGRA(환자노출조치용)] | IGRA(환자노출조치용) | D602000C
+  [IGRA(직원검진전용)] | IGRA(직원검진전용) | D602000B
+--- HLA.*B27 ---
+  [HLA B27] | HLA B27 | D841101C
+  [HLA B27 real-time PCR] | HLA B27 real-time PCR | D841302C
+  [HLA B27 (DNA-high resolution)] | HLA B27 (DNA-high resolution) | D841402DZ
+--- HLA.*B51 ---
+  [HLA-B51 genotyping] | 유전자형 검사-HLA-B51유전자〔대립유전자특이중합효소연쇄반응법〕 | C5800
+--- HLA.*crossmatch.*B.*Flow ---
+  [HLA crossmatching-B (Flow)(외주)] | HLA crossmatching-B (flow)(외주) | D842800AZ
+--- growth.*hormone ---
+  [Human growth hormone] | Human Growth Hormone | D3420004Z
+  [(진료전)Human growth hormone] | (진료전)Human growth hormone | D3420004Z
+--- GH ---
+  [High molecular weight kininogen] | 고분자량키니노겐 | D1240004Z
+  [Total porphyrine (High Quality)] | Total porphyrine(High Quality) | D5163003
+  [Porphobilinogen(Quan-High quality)] | Porphobilinogen(정량-정밀) | D5163004Z
+--- smooth.*muscle ---
+  [Anti-Smooth muscle Ab (General)] | Anti-Smooth Muscle Ab (General) | D7991003
+  [Anti-Smooth muscle Ab] | Anti-Smooth Muscle Ab (High Quality) | D7993003

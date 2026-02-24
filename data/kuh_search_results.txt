@@ -1,0 +1,1099 @@
+﻿--- iron ---
+  Iron stain (단독처방 불가, BM panel 전용) | 특수염색(철) | D084106C
+  (외주)Iron stain (BM panel 전용) | (외주)Iron stain (BM panel 전용) | D084106DZ
+--- cortisol ---
+  Cortisol (High Quality) | Cortisol(High Quality) | D3502143
+  Free Cortisol (High Quality) | Free Cortisol(High Quality) | D3502134Z
+--- bun ---
+  BUN (Blood Urea Nitrogen) | BUN (Blood Urea Nitrogen) | D2300003
+  (뇨,체액)KT/V BUN  (Serum) | KT/V BUN (Serum) | D2300003
+  α-Subunit (Free) | 유리알파-소체(융모막성 고나도트로핀) Free a-subunit | D3450007Z
+  (응급)BUN (Blood urea nitrogen) | (응급)BUN(Blood Urea Nitrogen) | D2300003
+  (진료전)BUN (Blood urea nitrogen) | BUN(Blood Urea Nitrogen) | D2300003
+--- urea ---
+  BUN (Blood Urea Nitrogen) | BUN (Blood Urea Nitrogen) | D2300003
+  (뇨,체액)Urea Nitrogen | Urea Nitrogen | D2300003
+  [선별선택80]Ureaplasma urealiticum culture | [선별선택80]기타 미생물 배양(ureaplasma) | D582105DZ
+  Myco / Ureaplasma culture | [선별선택80]Myco / Ureaplasma culture | D582105DZ
+  [선별선택90](100/100가능) CLO test (Urease test) | [선별선택90]CLO Test(Urease Test) | D5892003
+--- carnitine ---
+  Carnitine test | 카르니틴 | D4902163
+  Vitamin BT (L-Carnitine) | Vitamin BT (L-Carnitine) | D4904124Z
+--- acetyl ---
+  [선별전용80]N-acetyl-β-D-glucosamide | [선별전용80]N-acetyl-β-D-glucosamide | D2260003
+  Acetylcholine Receptor Ab | 항 아세틸콜린수용체 항체 | D8081007Z
+--- galactose ---
+  Galactose(High Quality) | Galactose(High Quality) | D5122004Z
+  Galactose(급여가능) | Galactose | D5121004Z
+  UDP-galactose epimerase | UDP-Galactose Epimerase | D517207DZ
+  Galactose-1-phosphate,quantitative | Galactose-1-phosphate,quantitative | D517101DZ
+  Total Galactose(NST-유료) | Total Galactose(NST-유료) | D5122004Z
+--- LDH ---
+  LDH(혈액) | LDH(혈액) | D2510053
+  (뇨,체액)LDH | LDH | D2510053
+  LDH isoenzymes  (EP) | LDH 이소엔자임 | D254202DZ
+  (응급)LDH | (응급)LDH | D2510053
+  (응급)LDH | (응급)LDH | D2510053
+--- R15 ---
+  Indocyanine green test (ICG) R15 | Indocyanine Green Test(ICG) R15 | D196100C
+--- ICG ---
+  인도싸이아닌그린검사(ICG 15분 정체율검사) | 인도싸이아닌그린검사(ICG 15분 정체율검사) | D196100C
+  인도싸이아닌그린검사(ICG Rmax) | 인도싸이아닌그린검사(ICG Rmax) | D196200C
+  Indocyanine green test (ICG) R15 | Indocyanine Green Test(ICG) R15 | D196100C
+  인도싸이아닌그린검사(ICG 15분 정체율검사) | 인도싸이아닌그린검사(ICG 15분 정체율검사) | D196100C
+--- blast ---
+  Blastomyces Ab (General) | Blastomyces Ab (General) | D6221023
+  Blastomyces  Ab | Blastomyces  Ab (High Quality) | D622202C
+  급성 림프구성 백혈병 유전자 패널검사(NGS-Acute Lymphoblastic Leukemia panel) | [선별전용80]급성 림프구성 백혈병 유전자 패널검사(NGS-Acute Lymphoblastic Leukemi | CB00500DZ
+--- lymphocyte ---
+  Lymphocyte culture | Lymphocyte Culture | D0861013
+  Lymphocyte culture (other stimulant; specify) | Lymphocyte culture (other stimulant; specify) | D0861013
+  Mixed lymphocyte cultere | Mixed Lymphocyte Cultere | D0861013
+--- eosinophil ---
+  Eosinophil count | 호산구수(혈액) | D0022003
+  Eosinophil (secretion) | 호산구수(혈액외검체) | D0325003
+  ECP (Eosinophil cationic protein) | ECP(Eosinophil Cationic Protein) | CZ114
+  ECP (Eosinophil cationic protein) | ECP(Eosinophil Cationic Protein) | CZ114
+  ECP(Eosinophil cationic protein) | ECP(Eosinophil Cationic Protein) | CZ114
+--- neutrophil ---
+  [선별전용80]NGAL(Neutrophil Gelatinase Associated Lipocalin)(POCT) | [선별전용80]호중구 젤라티나제 결합 리포칼린(현장검사) | D2341003
+  neutrophil Chemotaxis test | 호중구 기능검사(호중구 주화성검사) | D176202C
+  neutrophil H2O2 test | 호중구 기능검사 (호중구 산화물형성능검사) | D176301C
+  Phagocytosis of neutrophils | 호중구 기능검사(호중구 탐식능검사) | D176303C
+  Microbial killing of neutrophils | 호중구 기능검사(호중구 살균능검사) | D176302C
+--- band ---
+  Oligoclonal band in CSF | 올리고크로날밴드 | D474000DZ
+  Oligoclonal band (IEF & immunofixation) | Oligoclonal band (IEF & immunofixation) | D474000DZ
+--- reticulocyte ---
+  IRF (Immature reticulocyte fraction) | 미성숙 망상적혈구 분획 | D0502023
+  (응급)IRF (Immature reticulocyte fraction) | (응급)Immature reticulocyte fraction | D0502023
+  (진료전)IRF (Immature reticulocyte fraction) | (진료전)(미성숙망상적혈구 분획) | D0502023
+  (입원전)IRF (Immature reticulocyte fraction) | (입원전)IRF (미성숙망상적혈구 분획) | D0502023
+--- reti ---
+  Reti. count (소아용) | 망상적혈구수(유세포분석법) | D0502013
+  IRF (Immature reticulocyte fraction) | 미성숙 망상적혈구 분획 | D0502023
+  Eosinophil (secretion) | 호산구수(혈액외검체) | D0325003
+  Reticulin stain (단독처방 불가, BM panel 전용) | 특수염색(기타) | D084101C
+  Reticulin stain(원내수탁용) | Reticulin stain(원내수탁용) | D084101C
+--- HBsAg ---
+  HBsAg 정량 | [선별선택80]HBsAg 정량 | D7017023
+--- HBs ---
+  HBs Ag (General) | HBs Ag (General) | D7001003
+  HBs Ag | HBs Ag (High Quality) | D7015003
+  Anti-HBs Ab (General) | Anti-HBs Ab (General) | D7002003
+  Anti-HBs Ab | Anti-HBs Ab (High Quality) | D7018003
+  HBsAg 정량 | [선별선택80]HBsAg 정량 | D7017023
+--- HBe ---
+  HBe Ag (General) | HBe Ag(General) | D7003003
+  HBe Ag | HBe Ag(High Quality) | D7022003
+  Anti-HBe (General) | Anti-HBe(General) | D7004003
+  Anti-HBe | Anti-HBe(High Quality) | D7024003
+--- HBc ---
+  Anti-HBcT | Anti-HBcT | D7020013
+  Anti-HBc IgM | Anti-HBc IgM | D7020023
+--- HAV ---
+  HAV Ab IgG | A형간염항체(IgG) | D7011013
+  HAV Ab(IgM) | A형간염항체(IgM) | D7011023
+  Anti HAV IgM | A형간염항체(IgM) | D7011023
+  Anti HAV IgG | A형간염항체(IgG) | D7011013
+--- HCV ---
+  HCV Ab (General) | HCV Ab(General) | D7005003
+  HCV Ab(High Quality) | HCV Ab(High Quality) | D7026003
+  HCV RT-PCR Hybridization | Hepatitis C virus RT-PCR Hybridization | D704301DZ
+  HCV RT-PCR hybridization | HCV RT-PCR hybridization | D704301DZ
+  HCV RNA Quantification (Real-time) | HCV RNA 정량 (Real-time) | D704502C
+--- HIV ---
+  HIV Ab (General) | HIV항체(일반) | D7201003
+  HIV Ab(Ag/Ab) | HIV 항체(정밀) | D7212003
+  HIV p24 Ag | HIV p24 Ag | D7213004Z
+  (응급)HIV Ag/Ab(정밀)(급여가능) | (응급)HIV 항원/항체(정밀) | D7212003
+  (응급면역)HIV Ab(Ag/Ab) | HIV 항체(High) | D7212003
+--- RPR ---
+  RPR (syphilis)-정밀 | 매독반응검사-정밀 | D6913003
+  RPR (syphilis)-screening | 매독반응검사-선별검사 | D6911003
+  Chlorpromazine (Quality General) | Chlorpromazine(Quality General) | D5341133
+  Chlorpromazine (Quality Mass Spectrometry) | Chlorpromazine(Quality Mass Spectrometry) | D5345133
+  RPR (syphilis)-titer | 매독반응검사-역가 | D6912003
+--- VDRL ---
+  VDRL (정량) | VDRL (정량) | D6911003
+  (입원전)VDRL (정밀) | (입원전)VDRL (정밀) | D6913003
+--- TPHA ---
+  TPHA(정성) | TPHA(정성) | D6921004Z
+  TPHA (Titration) | TPHA (Titration) | D6922004Z
+--- FTA ---
+  19S FTA-ABS IgM | 19S FTA-ABS IgM | D692400DZ
+  FTA-ABS Ig M (Screening) | FTA-ABS Ig M (Screening) | D692400DZ
+  FTA-ABS (Titration) | FTA-ABS (Titration) | D692500C
+  FTA-ABS Ig G (Screening) | FTA-ABS Ig G (Screening) | D692400DZ
+--- ANA ---
+  RBC Membrane Protein Analysis | 적혈구막 단백질 | BZ033
+  vWF Multimeric analysis(von willebrand factor) | 본윌리브란드인자 [멀티머검사] | D211200DZ
+  ANAE (Alpha-naphthly acetate esterase) stain | 효소조직화학검사(ANAE (Alpha-naphthly acetate esterase) stain) | D084103DZ
+  Gastric juice analysis | 위액검사 | D0328003
+  Duodenal fluid analysis | 십이지장액검사 | D0328003
+--- complement ---
+  C3 (Complement 3) | C3(보체정량 3) | D7471013
+  C3a (Complement 3a) | C3a(보체정량 3a) | D7472014Z
+  C4 (Complement 4) | C4(보체정량 4) | D7471023
+  C4a (Complement 4a) | C4a(보체정량 4a) | D7472034Z
+  C5a (Complement 5a) | C5a(보체정량 5a) | D7472054Z
+--- IgG ---
+  IgG | IgG(면역조직세포화학검사) | C567300C
+  IgG | IgG(면역조직세포화학검사) | C567300C
+  IgG(CSF) | 면역글로블린 IgG(CSF) | D7410044Z
+  IgG subclass1 (Immunoglobulin 정량) | IgG subclass1 (Immunoglobulin 정량) | D7420014Z
+  IgG subclass2 (Immunoglobulin 정량) | IgG subclass2 (Immunoglobulin 정량) | D7420024Z
+--- IgA ---
+  IgA | IgA(면역조직세포화학검사) | C567300C
+  IgA | IgA(면역조직세포화학검사) | C567300C
+  IgA (소아) | 면역글로블린 IgA (소아) | D7410014Z
+  Sm IgA | Sm IgA | D080300C
+  Sm IgA/Cy IgA | Sm IgA/Cy IgA | D080300C
+--- IgM ---
+  IgM | IgM(면역조직세포화학검사) | C567300C
+  IgM | IgM(면역조직세포화학검사) | C567300C
+  IgM(소아) | 면역글로블린 IgM(소아) | D7410054Z
+  Sm IgM | Sm IgM | D080300C
+  Sm IgM/Cy IgM | Sm IgM/Cy IgM | D080300C
+--- IgE ---
+  Urokinase type plasminigen activator | 유로키나제형 플라즈미노겐활성체 | D1300004Z
+  IgE | 면역글로블린 IgE | D7410033
+  Immuno Fixation IgD,IgE (혈청) | Immuno Fixation IgD,IgE (혈청) | D475101KZ
+  Immuno Fixation IgD,IgE (요,체액) | Immuno Fixation IgD,IgE (요,체액) | D475201KZ
+  EBV-Early Antigen-IgA | EBV-Early Antigen-IgA | D658502DZ
+--- PT  ---
+  APT 검사 | APT 검사 | D0321003
+--- aPTT ---
+  aPTT | 활성화 부분트롬보플라스틴시간 | D1004003
+  Mixing test, aPTT(pre-incubation) | 혈장혼합시험(응고억제인자 선별검사)-aPTT(pre-incubation) | D103002C
+  Mixing test, aPTT(2hrs-incubation) | 혈장혼합시험(응고억제인자 선별검사)-aPTT(2hrs-incubation) | D103002C
+  (응급)aPTT | (응급)aPTT | D1004003
+  (진료전)aPTT | 활성화 부분트롬보플라스틴시간 | D1004003
+--- fibrinogen ---
+  Fibrinogen | 섬유소원(기능적) | D1005003
+  Fibrinogen (Immunological) | 섬유소원(면역학적) | D1132014Z
+  (응급)Fibrinogen | (응급)Fibrinogen | D1005003
+  (진료전)Fibrinogen (Funt) | 섬유소원(기능적) | D1005003
+  (입원전)Fibrinogen | (입원전)섬유소원 | D1005003
+--- thrombin ---
+  Prothrombin Time | 프로트롬빈시간 | D1003003
+  Prothrombin consumption test | 프로트롬빈소비시험 | D1007003
+  Thrombin time | 트롬빈시간 | D1006003
+  Anti-Thrombin | 항트롬빈 측정 | D1121003
+  Prothrombin fragment 1+2 | 프로트롬빈분절 1+2 | D1230004Z
+--- D-dimer ---
+  D-dimer (Qualitative) | D-Dimer (정성) | D1071003
+  D-dimer (Semiquantitative) | D-Dimer (반정량) | D1072004Z
+  D-dimer(Quantitative) | D-Dimer (정량) | D1073003
+  (응급)D-Dimer(Quantitative) | (응급)D-Dimer(정량) | D1073003
+--- protein C ---
+  Protein C activity | Protein C Activity | D1141004Z
+  Protein C Ag | Protein C Ag | D1142004Z
+  APC (Activated protein C) resistance | 활성화 C 단백 저항성검사 | D1030034Z
+  ApoLipoprotein CIII | 아포지단백 CIII | D2630044Z
+  ApoLipoprotein CII | 아포지단백 CII | D2630044Z
+--- protein S ---
+  Protein S activity | Protein S Activity | D1151004Z
+  Protein S free (유리형) | Protein S Free(유리형) | D1152004Z
+  Protein S Ag (Total) | Protein S Ag(Total) | D1152004Z
+--- factor ---
+  Pletelet factor 3 | 혈소판 제3인자 | D1324004Z
+  factor II  (Functional) | 혈액응고인자(기능적) factor II | D113101DZ
+  factor V  (Functional) | 혈액응고인자(기능적) factor V | D113102DZ
+  factor VII  (Funtional) | 혈액응고인자(기능적) factor VII | D113103DZ
+  factor VIII  (Funtional) | 혈액응고인자(기능적) factor VIII | D113104DZ
+--- VIII ---
+  factor VIII  (Funtional) | 혈액응고인자(기능적) factor VIII | D113104DZ
+  factor VIII (Immunological) | 혈액응고인자(면역학적) factor VIII | D113205C
+  factor VIII Ab(inhibitor) | 응고인자항체 factor VIII | D104001DZ
+--- aspirin ---
+  Platelet function test(Aspirin) | [선별전용50]혈소판 기능검사(Aspirin) | D1326003
+  Aspirin (Salicylic acid) (High Quality) | Aspirin(Salicylic Acid)(High Quality) | D5331033
+  Aspirin(Salicylic acid)(Quan-General) | Aspirin(Salicylic acid)(Quan-General) | D5323404Z
+  Aspirin (Salicylic acid) (High Quality) | Aspirin(Salicylic Acid)(High Quality) | D5331033
+  Aspirin (Salicylic acid) (High Quality) | Aspirin(Salicylic Acid)(High Quality) | D5331033
+--- glucose ---
+  Glucose | Glucose | D3022003
+  (뇨,체액)Glucose | Glucose | D3022003
+  (뇨,체액)Glucose 1  (투석액) | Glucose 1 (투석액) | D3022003
+  (뇨,체액)Glucose 2 (투석액) | Glucose 2(투석액) | D3022003
+  (뇨,체액)Glucose 3  (투석액) | Glucose 3 (투석액) | D3022003
+--- stool ---
+  (급여가능) Helicobocter pylori stool Ag | Helicobocter pylori 대변 항원검사 | D5895004Z
+  Clostridium difficile toxin assay (A/B), stool | Clostridium difficile toxin assay (A/B), stool | D5903003
+  Stool occult blood  (chemical method) | 분변잠혈반응검사(화학적 촉매발색법) | D0318003
+  Stool occult blood,Hb | 분변잠혈반응검사(일반면역-Hb) | D0315003
+  Stool occult blood,Hb & Transferrin | 분변잠혈반응검사(일반면역-Hb & Transferrin) | D0315003
+--- occult ---
+  Stool occult blood  (chemical method) | 분변잠혈반응검사(화학적 촉매발색법) | D0318003
+  Stool occult blood,Hb | 분변잠혈반응검사(일반면역-Hb) | D0315003
+  Stool occult blood,Hb & Transferrin | 분변잠혈반응검사(일반면역-Hb & Transferrin) | D0315003
+--- pH ---
+  Eosinophil count | 호산구수(혈액) | D0022003
+  PB Morphology | 혈구형태(말초혈액도말) | D051000C
+  LAP (Leukocyte alkaline phosphatase) score | LAP(Leukocyte Alkaline Phosphate) Score | D084101DZ
+  Eosinophil (secretion) | 호산구수(혈액외검체) | D0325003
+  Epinephrine(혈소판 응집능 검사) | 혈소판 응집능 검사(Epinephrine) | D132304DZ
+--- sediment ---
+  (응급)ESR (Erythrocyte sedimentation rate) | (응급)ESR(Etrythrocyte Sedimentation Rate) | D0100013
+--- urine ---
+  (뇨) Urine Protein | (뇨) 총단백 | D1840003
+  (뇨,체액)KT/V creatinine clerarance  (Ccr)  (Urine) | KT/V Creatinine Clerarance (Ccr) (Urine) | D2321003
+  Methylmalonic acid 정성 (Random Urine) | Methylmalonic acid 정성 (Random Urine) | D515301DZ
+  Methanol (urine) | 메탄올 (소변) | D5343474Z
+  Creatinine(urine-외주) | Creatinine(urine-외주) | D2280004Z
+--- crossmatch ---
+  HLA crossmatching-T Cell | HLA crossmatching-T cell | D842100C
+  HLA crossmatching-B Cell(급여가능) | HLA crossmatching-B cell | D842300C
+  HLA crossmatching-T (AHG)(100/100가능) | HLA crossmatching-T (AHG) | D842400C
+  HLA crossmatching-B  (AHG)l | HLA crossmatching-B (AHG) | D842600DZ
+  HLA crossmatching-T (Flow)(100/100가능) | HLA crossmatching-T (flow) | D842700C
+--- ABO ---
+  Oxcarbazepine metabolite (MHD) | Oxcarbazepine metabolite (MHD)(약물 및 독물검사) | D534961DZ
+  Risperidone & metabolites | Risperidone & metabolites | D534975DZ
+  Fluoxetine & metabolites | Fluoxetine & metabolites | D534934DZ
+  ABO Typing-Cell type (자동화법) | ABO 혈구형검사 (자동화법) | D1502003
+  ABO-Subgroup | ABO 아형 검사 | D150300C
+--- Rh  ---
+  Rh Ab titer | 혈액형 항체역가 | D157000C
+--- Coombs ---
+  Indirect Coombs′test (polyvalent) | Indirect Coombs' test (polyvalent) | D153205C
+  Indirect Coombs, IgG | indirect Coombs, IgG | D154203C
+  Indirect Coombs, IgA | indirect Coombs, IgA | D154202C
+  Indirect Coombs, IgM | indirect Coombs, IgM | D154204C
+  Indirect Coombs, C3 | indirect Coombs, C3 | D154201C
+--- titration ---
+  ASO (Titration) | ASO (Titration) | D5832003
+  CRP (Titration) | C-반응성단백(반정량) | D0112003
+  RA (Titration) | RA (Titration) | D7812003
+  TPHA (Titration) | TPHA (Titration) | D6922004Z
+  FTA-ABS (Titration) | FTA-ABS (Titration) | D692500C
+--- 역가 ---
+  Anti-nuclear Ab (역가) | Anti-nuclear Ab (Titration) | D784300C
+--- AFP ---
+  AFP (Alphafetoprotein) (General) | AFP(Alphafetoprotein)(General) | D1420023
+  AFP(Alphafetoprotein)(High Quality) | 알파피토프로테인(정밀) | D2420023
+  AFP(양수) | AFP(양수)(High Quality) | D2420024Z
+  AFP(산전) | 알파피토프로테인(정밀) | D2420023
+  [선별전용50]AFP-L3(%) | [선별전용50]알파피토프로틴 동종효소_분획분석 | D4111004Z
+--- CEA ---
+  [선별선택90]CEA (Carcinoembryonic Ag) | [선별선택90]태아성암항원 | D4290003
+  [선별선택90](응급면역)CEA (Carcinoembryonic Ag) | [선별선택90]태아성암항원 | D4290003
+  [선별선택90](진료전)CEA | [선별선택90]CEA(Carcinoembryonic Antigen) | D4290003
+  [선별선택90](입원전)CEA (Carcinoembryonic Ag) | [선별선택90](입원전)CEA 태아성암항원 | D4290003
+--- CA 72 ---
+  CA 72-4 | CA 72-4 | D4360004Z
+--- PSA ---
+  PSA (Prostate specific Ag) | PSA(Prostate Specific Antigen) | D4300033
+  Free PSA (Prostate specific Ag) | 유리전립선특이항원 | D4300014Z
+  (응급면역)PSA (Prostate specific Ag) | PSA (Prostate specific Ag) | D4300033
+  (응급면역)Free PSA (Prostate specific Ag) | 유리전립선특이항원 | D4300013
+  (진료전)PSA | (진료전)전립선특이항원 | D4300033
+--- TSH ---
+  [선별선택90]Neonatal TSH | [선별선택90]Neonatal TSH | D3250014Z
+  [선별선택90]Neonatal TSH(NST-유료) | [선별선택90]Neonatal TSH(NST-유료) | D3250014Z
+  [선별선택90]TSH (Throid stimulating hormone) | [선별선택90]갑상선자극호르몬 | D3250013
+  TSH Receptor Ab | TSH Receptor Ab | D3212014Z
+  [선별선택90](응급면역)TSH(Throid stimulating hormone) | [선별선택90]갑상선자극호르몬 | D3250013
+--- free T4 ---
+  [선별선택90]Free T4 | [선별선택90]Free T4 | D3230053
+  [선별선택90](응급면역)Free T4 | [선별선택90]Free T4 | D3230053
+  [선별선택90](진료전)Free T4 | [선별선택90]Free T4 | D3230053
+  [선별선택90](입원전)Free T4 | [선별선택90](입원전)Free T4 | D3230053
+--- free T3 ---
+  [선별선택90]Free T3 | [선별선택90]Free T3 | D3230014Z
+--- T4 ---
+  [선별선택90]Neonatal FT4 | [선별선택90]Neonatal FT4 | D3230054Z
+  [선별선택90]T4 (Thyroxin) | [선별선택90]T4(Thyroxin) | D3230044Z
+  [선별선택90]Free T4 | [선별선택90]Free T4 | D3230053
+  [선별선택90](응급면역)T4(Thyroxin) | [선별선택90]T4(Thyroxin) | D3230043
+  [선별선택90](응급면역)Free T4 | [선별선택90]Free T4 | D3230053
+--- T3 ---
+  [선별선택90]T3 (Triiodothyronine) | [선별선택90]트리요도타이로닌 | D3230063
+  [선별선택90]Free T3 | [선별선택90]Free T3 | D3230014Z
+  T3 Uptake | T3 Uptake | D3230024Z
+  Reverse T3 | Reverse T3 | D3230033
+  [선별선택90](응급면역)T3 (Triiodothyronine) | [선별선택90]트리요도타이로닌 | D3230063
+--- insulin ---
+  [선별선택90]Insulin(AC) | [선별선택90]Insulin(AC) | D3050023
+  Proinsulin | Proinsulin | CZ206
+  [선별선택90]Insulin(30min) | [선별선택90]Insulin(30min) | D3050023
+  [선별선택90]Insulin (PC 2hrs) | [선별선택90]Insulin (PC 2hrs) | D3050023
+  Insulin(60min) | [선별선택90]Insulin(60min) | D3050023
+--- C-peptide ---
+  [선별선택90]C-Peptide (AC) | [선별선택90]C-Peptide (AC) | D3050013
+  [선별선택90]C-Peptide (PC 2hrs) | [선별선택90]C-Peptide (PC 2hrs) | D3050013
+  [선별선택90]C-Peptide(30min) | [선별선택90]C-Peptide(30min) | D3050013
+  C-Peptide(60min) | [선별선택90]C-Peptide(60min) | D3050013
+  [선별선택90](응급면역)C-Peptide(AC) | [선별선택90]C-Peptide(AC) | D3050013
+--- testosterone ---
+  Testosterone | Testosterone | D3710064Z
+  Free testosterone | Free testosterone | D3710057Z
+--- estradiol ---
+  Estradiol (E2) | 에스트라디올 E2 | D3710023
+--- progesterone ---
+  17α-OH progesterone(급여가능) | 17α-OH Progesterone(급여가능) | D3710014Z
+  17α-OH progesterone(NST-유료) | 17α-OH progesterone(NST-유료) | D3710014Z
+  Progesterone (P4) | Progesterone(P4) | D3710084Z
+  17α-OH Progesterone | 17α-OH Progesterone | D3710014Z
+  Urine 17-OHProgesterone1 | Urine 17-OHProgesterone1 | D3710013
+--- prolactin ---
+  Prolactin | Prolactin | D3410003
+  Prolactin | Prolactin | D3410003
+  (응급면역)Prolactin | Prolactin | D3410003
+  (진료전)Prolactin | (진료전)Prolactin | D3410003
+--- GH ---
+  High molecular weight kininogen | 고분자량키니노겐 | D1240004Z
+  Total porphyrine (High Quality) | Total porphyrine(High Quality) | D5163003
+  Porphobilinogen(Quan-High quality) | Porphobilinogen(정량-정밀) | D5163004Z
+  Copropophyrine (High Quality) | Copropophyrine(High Quality) | D5163003
+  Uropophyrine (High Qualityl) | Uropophyrine(High Qualityl) | D5163003
+--- IGF ---
+  IgF-BPⅢ(Insulin Growth-binding protein Ⅲ) | 인슐린양 성장인자결합단백질 3 | D3440024Z
+  IGF-1 (Somatomedin-C) (Insulin-Like Growth factor 1) | 인슐린양 성장인자 1 | D3440014Z
+--- PTH ---
+  Intact PTH (Parathyroid Hormone) | Intact PTH (부갑상선호르몬) | D5020013
+  PTH related peptide (PTH-rP) | PTH related peptide (PTH-rP) | CZ192
+  (응급면역)Intact PTH (Parathyroid Hormone) | Intact PTH (부갑상선호르몬) | D5020013
+--- ACTH ---
+  ACTH (Adrenocorticotropic hormone) | ACTH(Adreno Cortico Tropic Hormone) | D3430004Z
+  (응급면역)ACTH (Adrenocorticotropic hormone) | ACTH (Adrenocorticotropic hormone) | D3430003
+--- FSH ---
+  FSH (Follicle stimulating hormone) | FSH(Follicle Stimulating Hormone) | D3702023
+  D4Z4 locus, mutation(FSHD-Southen blot) | D4Z4 locus, mutation(FSHD-Southen blot) | C581101DZ
+--- LH ---
+  LH (Leuteinizing hormone) | LH(Leuteinizing Hormone) | D3702034Z
+  MLH1 mutation | [선별선택80]MLH1 mutation | C580819DZ
+  LHON 11778 (Leber's Hereditary Optic Neuropathy) | LHON 11778 (Leber's Hereditary Optic Neuropathy) | C580211DZ
+  LHON 14484 (Leber's Hereditary Optic Neuropathy) | LHON 14484 (Leber's Hereditary Optic Neuropathy) | C580211DZ
+  LHON type(MT-ND4,MT-ND6,MT-ND1 gene) | LHON type(MT-ND4,MT-ND6,MT-ND1 gene) | C580623DZ
+--- hCG ---
+  β HCG | β HCG | D3720003
+  (산전)β-hCG | (산전)β-hCG | D3720004Z
+  Free-β-HCG | Free-β-HCG | CZ215
+  (산전)β-hCG | (산전)β-hCG | D3720004Z
+  Urine hCG (정성) | 요 임신반응검사(정성) | D5701003
+--- vitamin B12 ---
+  Vitamin B12 (Cyanocobalamin) | 비타민 B12(Cyanocobalamin) | D4902053
+--- folate ---
+  Folate | 엽산 | D4902143
+--- vitamin D ---
+  1,25-(OH)2 Vitamin D(RIA) | 1,25-(OH)2 Vitamin D(RIA) | D4902017Z
+  Vitamin D Total | Vitamin D Total | D4902153
+  1,25-(OH)2 Vitamin D(CLIA) | 1,25-(OH)2 Vitamin D(CLIA) | D490201HZ
+--- tacrolimus ---
+  [선별선택90]Tacrolimus(FK 506)(농도) | [선별선택90]Tacrolimus(FK 506)(농도) | D534984C
+  Tacrolimus 약물농도해석보고서 | Tacrolimus 약물농도해석보고서 | D5290
+--- cyclosporine ---
+  [선별선택90]Cyclosporine | [선별선택90]Cyclosporine(Quan-High Quality) | D5333113
+  Cyclosporine 약물농도해석보고서 | Cyclosporine 약물농도해석보고서 | D5290
+  [선별선택90]Cyclosporine(LC-MS) | [선별선택90]Cyclosporine(정량,크로마토그라피-질량분석법) | D534923C
+--- sirolimus ---
+  Sirolimus (Rapamycin) | Sirolimus (Rapamycin) | D534978DZ
+--- vancomycin ---
+  Vancomycin (General) | Vancomycin(General) | D5321363
+  Vancomycin (High Quality) | Vancomycin(High Quality) | D5331363
+  Vancomycin (General) | Vancomycin(General) | D5321363
+  Vancomycin(농도) | Vancomycin(농도) | D5333473
+  Vancomycin (General) | Vancomycin(General) | D5321363
+--- digoxin ---
+  Digoxin (General) | Digoxin(General) | D5321113
+  Digoxin (High Quality) | Digoxin(High Quality) | D5331113
+  Digoxin (General) | Digoxin(General) | D5321113
+  Digoxin(High Quality) | Digoxin(High Quality) | D5333153
+  Digoxin (General) | Digoxin(General) | D5321113
+--- carbamazepine ---
+  Carbamazepine (General) | Carbamazepine(General) | D5321063
+  Carbamazepine (High Quality) | Carbamazepine(High Quality) | D5331063
+  Carbamazepine (General) | Carbamazepine(General) | D5321063
+  Carbamazepine(농도) | Carbamazepine(농도) | D5333084Z
+  Carbamazepine (General) | Carbamazepine(General) | D5321063
+--- phenytoin ---
+  Phenytoin (General) | Phenytoin(General) | D5321293
+  Phenytoin (High Quality) | Phenytoin(High Quality) | D5331283
+  Phenytoin (General) | Phenytoin(General) | D5321293
+  Phenytoin(농도) | Phenytoin(농도) | D5333364Z
+  Free phenytoin | Free phenytoin | D5333354Z
+--- valproic ---
+  Valproic acid (General) (Orfil,Depakene) | Valproic Acid(General)(Orfil,Depakene) | D5321353
+  Valproic acid (High Quality) | Valproic Acid(High Quality) | D5331343
+  Valproic acid (General) (Orfil,Depakene) | Valproic Acid(General)(Orfil,Depakene) | D5321353
+  Valproic Acid(농도) | Valproic Acid(농도) | D5333453
+  Valproic acid (General) (Orfil,Depakene) | Valproic Acid(General)(Orfil,Depakene) | D5321353
+--- phenobarbital ---
+  Phenobarbital (General) | Phenobarbital(General) | D5321273
+  Phenobarbital (High Quality) | Phenobarbital(High Quality) | D5331263
+  Phenobarbital (General) | Phenobarbital(General) | D5321273
+  Phenobarbital(농도) | Phenobarbital(농도) | D5333344Z
+  Phenobarbital (General) | Phenobarbital(General) | D5321273
+--- lithium ---
+  Lithium(Li)(Quan-ICP-ES법 또는 원자흡광광도법) | Lithium(Li)(정량-ICP-ES법 또는 원자흡광광도법) | D5511124Z
+  Lithium (Li) | Lithium(Li)(중금속검사) | D5511123
+  Lithium (Li) | Lithium(Li)(중금속검사) | D5511123
+  Lithium (Li) | Lithium(Li)(중금속검사) | D5511123
+  Lithium (Li) | Lithium(Li)(중금속검사) | D5511123
+--- methotrexate ---
+  Methotrexate (General) | Methotrexate(General) | D5321233
+  Methotrexate (High Quality) | Methotrexate(High Quality) | D5331223
+  Methotrexate (General) | Methotrexate(General) | D5321233
+  Methotrexate | Methotrexate(Quan-High Quality) | D5333284Z
+  Methotrexate (General) | Methotrexate(General) | D5321233
+--- theophylline ---
+  Theophylline (General) | Theophylline(General) | D5321343
+  Digitoxin Theophylline (High Quality) | Digitoxin Theophylline(High Quality) | D5331103
+  Theophylline (High Quality) | Theophylline(High Quality) | D5331333
+  Theophylline (General) | Theophylline(General) | D5321343
+  Digitoxin Theophylline(Quan-High Quality) | Digitoxin Theophylline(Quan-High Quality) | D5333143
+--- tobramycin ---
+  Tobramycin (General) | Tobramycin(General) | D5321013
+  Tobramycin (General) | Tobramycin(General) | D5321013
+  Tobramycin(농도) | Tobramycin(농도) | D5333444Z
+  Tobramycin(Trough) | Tobramycin(Trough) | D5333444Z
+  Tobramycin(Peak) | Tobramycin(Peak) | D5333444Z
+--- amikacin ---
+  Amikacin (General) | Amikacin(General) | D5321013
+  Amikacin | Amikacin | D5331013
+  Amikacin (General) | Amikacin(General) | D5321013
+  Amikacin(High Quality) | Amikacin(High Quality) | D5333024Z
+  Amikacin(Trough) | Amikacin(Trough) | D5333024Z
+--- acetaminophen ---
+  Acetaminophen | Acetaminophen | D5323014Z
+  APAP(Acetaminophen) | 약물및독물검사(정성)-정밀(Acetaminophen) | D5331013
+--- ferritin ---
+  Ferritin | 훼리틴 | D0522013
+  (응급면역)Ferritin | 훼리틴 | D0522013
+  (진료전)Ferritin | 훼리틴 | D0522013
+  (진료전)Ferritin | 훼리틴 | D0522013
+  (입원전)Ferritin | (입원전)훼리틴 | D0522013
+--- transferrin ---
+  CDT (Carbohydrate Deficient Transferrin) | [선별전용90]CDT (Carbohydrate Deficient Transferrin) | CZ112004Z
+  CDT(Carbohydrate Deficient Transferrin,급여) | CDT(Carbohydrate Deficient Transferrin,급여) | D477000C
+  Transferrin | 트랜스페린 | D4710014Z
+  Stool occult blood,Hb & Transferrin | 분변잠혈반응검사(일반면역-Hb & Transferrin) | D0315003
+--- haptoglobin ---
+  Haptoglobin | 합토글로빈 | D4700034Z
+--- prealbumin ---
+  Prealbumin | 프리알부민 | D4710024Z
+  Prealbumin | 프리알부민 | D4710024Z
+--- ceruloplasmin ---
+  Ceruloplasmin | 세룰로프라즈민 | D4700014Z
+--- homocysteine ---
+  Homocysteine (HPLC) | [선별선택80]Homocysteine(HPLC) | D5147013
+  Homocysteine (CLIA) | [선별선택80]호모시스테인검사 | D5147013
+  (응급면역)Homocysteine (CLIA) | [선별선택80]Homocysteine (CLIA) | D5147013
+  (진료전)Homocysteine (CLIA) | [선별선택80]Homocysteine(CLIA) | D5147013
+  (진료전)Homocysteine (HPLC) | [선별선택80]Homocysteine(HPLC) | D5147013
+--- myoglobin ---
+  Myoglobin (Qual) | Myoglobin(Qual) | D4011003
+  Myoglobin | Myoglobin | D4012004Z
+  (응급)Myoglobin (정성) | (응급)Myoglobin(Qual) | D4011003
+  (응급면역)Myoglobin(정량) | Myoglobin(정량) | D4012003
+  Myoglobin(정량) | Myoglobin(정량) | C3842
+--- CK-MB ---
+  (응급)CK-MB | (응급)CK-MB | D4040003
+  (응급면역)CK-MB | CK-MB | D4040003
+--- troponin ---
+  Troponin T | 트로포닌 T | D4023024Z
+--- BNP ---
+  NT-ProBNP (N-terminal probrain natriuretic peptide) | NT-ProBNP(N-Terminal Probrain Natriuretic Peptide) | D4062013
+  (응급면역)BNP | BNP | D4062023
+  (응급면역)NT-ProBNP | NT-ProBNP(N-Terminal Probrain Natriuretic Peptide) | D4062013
+  BNP (응급실전용) | BNP (응급실전용) | D4061023
+--- NT-pro ---
+  NT-ProBNP (N-terminal probrain natriuretic peptide) | NT-ProBNP(N-Terminal Probrain Natriuretic Peptide) | D4062013
+  (응급면역)NT-ProBNP | NT-ProBNP(N-Terminal Probrain Natriuretic Peptide) | D4062013
+--- CRP ---
+  CRP (정량) | C-반응성단백(정량) | D0113003
+  CRP (Qualitative) | C-반응성단백(정성) | D0111003
+  CRP (Titration) | C-반응성단백(반정량) | D0112003
+  (응급)CRP (정량) | (응급)CRP (정량) | D0113003
+  (진료전)CRP (정량) | CRP (정량) | D0113003
+--- ASO ---
+  ASO (정량) | ASO (정량) | D5833003
+  VIP (Vasoactive Intestinal Polypeptide) | VIP (Vasoactive Intestinal Polypeptide) | CZ200
+  ASO | ASO | D5831003
+  ASO (Titration) | ASO (Titration) | D5832003
+  ASO (Quantitation) | ASO (Quantitation) | D5833003
+--- RF  ---
+  IRF (Immature reticulocyte fraction) | 미성숙 망상적혈구 분획 | D0502023
+  RF (Rheumatoid factor,RA) | RF (Rheumatoid factor,RA) | D7813003
+  (응급)IRF (Immature reticulocyte fraction) | (응급)Immature reticulocyte fraction | D0502023
+  (진료전)IRF (Immature reticulocyte fraction) | (진료전)(미성숙망상적혈구 분획) | D0502023
+  (입원전)IRF (Immature reticulocyte fraction) | (입원전)IRF (미성숙망상적혈구 분획) | D0502023
+--- rheumatoid ---
+  RF (Rheumatoid factor,RA) | RF (Rheumatoid factor,RA) | D7813003
+--- ammonia ---
+  Ammonia | 암모니아 | D1920003
+  (응급)Ammonia | (응급)Ammonia | D1920003
+--- cystatin ---
+  Cystatin C | 시스타틴 씨 | D2330003
+  (진료전)Cystatin C | 시스타틴 씨 | D2330003
+--- glycated ---
+  Glycated Albumin | [선별선택90]Glycated Albumin | D3090004Z
+--- ethanol ---
+  Methanol (urine) | 메탄올 (소변) | D5343474Z
+  Trichloroethanol (Qual) | Trichloroethanol(정성) | D5421163
+  Trichloroethanol (Quantity) | Trichloroethanol(정량) | D5423163
+  Alcohol (Ethanol) (High Quality) | Alcohol(Ethanol)(High Quality) | D5332013
+  Alcohol (Ethanol) (High Quality) | Alcohol(Ethanol)(High Quality) | D5332013
+--- lactic ---
+  Lactic acid (CSF) | Lactic acid (CSF) | D5110004Z
+  Lactic acid (Lactate) | Lactic Acid(Lactate) | D5110003
+  (응급)Lactic acid(Lactate) | (응급)Lactic Acid(Lactate) | D5110003
+  (응급)Lactic acid (ABGA) | (응급)Lactic acid (ABGA) | D5110003
+  (현장검사)Lactic acid (ABGA) | (현장검사)Lactic acid (ABGA) | D5110003
+--- ionized ---
+  (응급)Ca ionized | (응급)Ca Ionized | D2810023
+  (응급)Mg ionized (ABGA) | (응급)Mg ionized (ABGA) | D2810013
+  (현장검사)Ca ionized | (POCT)Ca ionized | D2810023
+  (현장검사)Mg ionized (ABGA) | (현장검사)Mg ionized (ABGA) | D2810013
+--- copper ---
+  Copper(Cu)(Qual) | Copper(Cu)(정성) | D5501073
+  Copper (Cu) | Copper(Cu) | D5503073
+  Copper(Cu) | (중금속검사)Copper(Cu) | D5511074Z
+  Copper (Cu) | Copper(Cu) | D5503073
+  Copper (Cu) | Copper(Cu) | D5503073
+--- zinc ---
+  ZTT (Zinc turbidity test) | ZTT(Zinc Turbidity Test) | D1810004Z
+  Zinc(Qual) | Zinc(정성) | D5501163
+  Zinc | Zinc | D5503163
+  Zinc | Zinc | D5503163
+  Zinc | Zinc | D5503163
+--- selenium ---
+  Se (Selenium) | Se(Selenium) | D5503153
+  Se (Selenium) | Se(Selenium) | D5503153
+--- amino acid ---
+  Amino acid 3종 | Aminoacid 3종 | D514500DZ
+  Amino acid | Amino acid | D514500DZ
+--- methylmalonic ---
+  Methylmalonic acid 정성 (Random Urine) | Methylmalonic acid 정성 (Random Urine) | D515301DZ
+  Methylmalonic acid 정량 | Methylmalonic acid 정량 | D515301KZ
+  Methylmalonic acid 정량 (EDTA) | Methylmalonic acid 정량 (EDTA) | D515301KZ
+--- epinephrine ---
+  Epinephrine(혈소판 응집능 검사) | 혈소판 응집능 검사(Epinephrine) | D132304DZ
+  Epinephrine(0) | Epinephrine(0) | D351408C
+  Epinephrine(120) | Epinephrine(120) | D351408C
+  Epinephrine(180) | Epinephrine(180) | D351408C
+  Norepinephrine(0) | Norepinephrine(0) | D351405C
+--- norepinephrine ---
+  Norepinephrine(0) | Norepinephrine(0) | D351405C
+  Norepinephrine(120) | Norepinephrine(120) | D351405C
+  Norepinephrine(180) | Norepinephrine(180) | D351405C
+  Norepinephrine (HPLC) | Norepinephrine (HPLC) | D351405DZ
+  Norepinephrine(0) | Norepinephrine(0) | D351405C
+--- metanephrine ---
+  Metanephrine total | Metanephrine total | D351404DZ
+  Normetanephrine | Normetanephrine | D351406DZ
+  Metanephrine | Metanephrine | D351404DZ
+--- VMA ---
+  VMA (Vanilly mandelic acid) (Quan) | VMA(정량) | D351407DZ
+--- thyroglobulin ---
+  Anti-Thyroglobulin Ab | Anti-Thyroglobulin Ab | D3240003
+  Thyroglobulin | 싸이로글로불린 | D4250003
+  Anti-Thyroglobulin Ab | Anti-Thyroglobulin Ab | D3240003
+  (진료전)Anti-Thyroglobulin Ab | (진료전)Anti-Thyroglobulin Ab | D3240003
+--- EPO ---
+  Treponema pallidum PCR | Treponema pallidum PCR | D693101DZ
+--- erythropoietin ---
+  Erythropoietin | 에리스로포이에틴 | D0570014Z
+--- procalcitonin ---
+  Procalcitonin 정량 | Procalcitonin 정량 | D0142003
+  (응급면역)Procalcitonin 정량 | Procalcitonin 정량 | D0142003
+--- AMH ---
+  Anti-Mullerian hormone[AMH] | 항 뮬러관 호르몬 | D3730004Z
+--- mullerian ---
+  Anti-Mullerian hormone[AMH] | 항 뮬러관 호르몬 | D3730004Z
+--- DHEA ---
+  DHEA-S (Dyhydro-epiandrosterine sulfate) | DHEA-S(Dyhydro-Epiandrosterine Sulfate) | D3502103
+  DHEAs | DHEAs | D3502104Z
+--- aldosterone ---
+  Aldosterone(RIA) | Aldosterone(RIA) | D3503037Z
+  Aldosterone [정밀분광/질량분석] | Aldosterone [정밀분광/질량분석] | D350408DZ
+  Aldosterone(LC/MS) | Aldosterone(LC/MS) | D350408KZ
+--- renin ---
+  Renin Activity[PRA:Plasma Renin Activity](RIA) | Renin Activity[PRA:Plasma Renin Activity](RIA) | D3541007Z
+  Renin Activity[PRA:Plasma Renin Activity](LC/MS) | Renin Activity[PRA:Plasma Renin Activity](LC/MS) | D354200KZ
+--- PIVKA ---
+  PIVKA Ⅱ test (Protein induced by Vit.K absence) | PIVKA Ⅱ Test(Protein induced by Vit.K absence) | D4260003
+  PIVKA Ⅱ test (Protein induced by Vit.K absence) | PIVKA Ⅱ Test(Protein induced by Vit.K absence) | D4260003
+--- HE4 ---
+  HE4 | [선별전용80]HE4 | D4370004Z
+  [선별전용80](응급면역)HE4 | [선별전용80]인간 부고환 단백 4 | D4370003
+--- cyfra ---
+  CYFRA 21-1 (Cytokeratin 19) | [선별선택80]CYFRA 21-1(Cytokeratin 19) | D4480004Z
+--- SCC ---
+  SCC (Squamous cell cancer Ag) | SCC(Squamous Cell Cancer Antigen) | D4390003
+--- amitriptyline ---
+  Amitriptyline(Quality General) | Amitriptyline(정량)(약물 및 독물검사) | D5343054Z
+  Amitriptyline (Quality Mass Spectrometry) | Amitriptyline(정량)(약물 및 독물검사) | D534905C
+--- desipramine ---
+  Desipramine (Quality General) | Desipramine(정량)(약물 및 독물검사) | D5343243
+  Desipramine (Quality Mass Spectrometry) | Desipramine(정량-질량분석법)(약물 및 독물검사) | D534924C
+--- primidone ---
+  Primidone (General) | Primidone(General) | D5321303
+  Primidone (High Quality) | Primidone(High Quality) | D5331293
+  Primidone (General) | Primidone(General) | D5321303
+  Primidone (High Quality) | Primidone(High Quality) | D5331293
+  Primidone (General) | Primidone(General) | D5321303
+--- propranolol ---
+  Propranolol | 약물 및 독물검사(Propranolol) | D5345463
+--- quinidine ---
+  Quinidine (General) | Quinidine(General) | D5321013
+  Quinidine (General) | Quinidine(General) | D5321013
+  Quinidine (General) | Quinidine(General) | D5321013
+  Quinidine (High Quality) | Quinidine(High Quality) | D5332013
+  Quinidine (General) | Quinidine(General) | D5321013
+--- ethosuximide ---
+  Ethosuximide (General) | Ethosuximide(General) | D5321133
+  Ethosuximide (High Quality) | Ethosuximide(High Quality) | D5331133
+  Ethosuximide (General) | Ethosuximide(General) | D5321133
+  Ethosuximide (High Quality) | Ethosuximide(High Quality) | D5331133
+  Ethosuximide (General) | Ethosuximide(General) | D5321133
+--- mycophenolic ---
+  Mycophenolic Acid(MPA) | Mycophenolic Acid(MPA) | D534955C
+--- voriconazole ---
+  Voriconazole(농도) | Voriconazole(농도) | D534997C
+--- posaconazole ---
+  Posaconazole(농도) | Posaconazole(농도) | D534968C
+--- everolimus ---
+  Everolimus | Everolimus | D534932DZ
+--- lamotrigine ---
+  Lamotrigine (Quality General) | Lamotrigine(Quality General) | D5341013
+  Lamotrigine (Quality Mass Spectrometry) | Lamotrigine(Quality Mass Spectrometry) | D5345013
+  Lamotrigine | Lamotrigine | D534943DZ
+--- levetiracetam ---
+  Levetiracetam | Levetiracetam | D534944DZ
+--- topiramate ---
+  Topiramate | Topiramate | D534990DZ
+--- zonisamide ---
+  Zonisamide (Exegran) (Quality General) | Zonisamide(Exegran)(Quality General) | D5341613
+  Zonisamide (Exegran) (Quality Mass Spectrometry) | Zonisamide(Exegran)(Quality Mass Spectrometry) | D5345613
+  Zonisamide | Zonisamide | D534999DZ
+--- oxcarbazepine ---
+  Oxcarbazepine metabolite (MHD) | Oxcarbazepine metabolite (MHD)(약물 및 독물검사) | D534961DZ
+--- lacosamide ---
+  Lacosamide | Lacosamide | D5349A3DZ
+--- perampanel ---
+  Perampanel | Perampanel | D5349A4DZ
+--- amphetamine ---
+  Amphetamine (General) | Amphetamine(General) | D5323013
+  Amphetamine (High Quality) | Amphetamine(High Quality) | D5333013
+  Methamphetamine (GC) | 약물 및 독물검사(Methamphetamine)(GC) | D5345313
+  Amphetamine (General) | Amphetamine(General) | D5323013
+  Amphetamine (High Quality) | Amphetamine(High Quality) | D5333013
+--- methamphetamine ---
+  Methamphetamine (GC) | 약물 및 독물검사(Methamphetamine)(GC) | D5345313
+  Methamphetamine(외주) | 약물 및 독물검사(Methamphetamine(외주) | D5345314Z
+  Methamphetamine(필로폰) | Methamphetamine(필로폰) | D5321213
+  Methamphetamine(필로폰) | Methamphetamine(필로폰) | D5321213
+  MET(Methamphetamine) | 약물및독물검사(정성)-정밀(Methamphetamine) | D5331203
+--- morphine ---
+  Morphine (General) | Morphine(General) | D5321013
+  Morphine (General) | Morphine(General) | D5321013
+  Morphine(Quan-High Quality) | Morphine(Quan-High Quality) | D5333014Z
+  Morphine (General) | Morphine(General) | D5321013
+  Morphine (High Quality) | Morphine(High Quality) | D5332013
+--- LSD ---
+  선천성대사이상검사(NST 82종+LSD 6종) | 선천성대사이상검사(NST 82종+LSD 6종) | D519000KZ
+  LSD 6종 (2회차) | LSD 6종 (2회차) | D519200KZ
+--- phencyclidine ---
+  Phencyclidine (General) | Phencyclidine(General) | D5321013
+  Phencyclidine (High Quality) | Phencyclidine(High Quality) | D5333013
+  Phencyclidine (General) | Phencyclidine(General) | D5321013
+  Phencyclidine (High Quality) | Phencyclidine(High Quality) | D5333013
+  Phencyclidine (General) | Phencyclidine(General) | D5321013
+--- apolipoprotein ---
+  ApoLipoprotein A1 | 아포지단백 A1 | D2630024Z
+  ApoLipoprotein B | 아포지단백 B | D2630034Z
+  ApoLipoprotein CIII | 아포지단백 CIII | D2630044Z
+  ApoLipoprotein AII | 아포지단백 AII | D2630024Z
+  ApoLipoprotein CII | 아포지단백 CII | D2630044Z
+--- lipoprotein ---
+  ß-Lipoprotein | 베타지단백 | D2630013
+  Lipoprotein lipase | 지단백리파아제 Lipoprotein lipase | BZ151
+  Lipoprotein electrophoresis | 지질단백분획 | D265000DZ
+  ApoLipoprotein A1 | 아포지단백 A1 | D2630024Z
+  ApoLipoprotein B | 아포지단백 B | D2630034Z
+--- kappa ---
+  Kappa(Immunostain) | Kappa(Immunostain) | C567300C
+  Ig Kappa gene rearrangement | 면역글로불린 Kappa 경쇄유전자 재배열 검사(Ig Kappa gene rearrangement) | C583903DZ
+  Kappa ISH | Kappa ISH | C584001C
+  Free Kappa(κ) light chain(serum) | [선별선택80]Free Kappa(κ) light chain(serum) | D442104KZ
+  Free Kappa light chain(R/U) | [선별선택80]유리경쇄정량검사(요)-카파(random urine) | D442103KZ
+--- lambda ---
+  Lambda(Immunostain) | Lambda(Immunostain) | C567300C
+  Lambda ISH | Lambda ISH | C584001C
+  Free Lambda(λ) light chain(serum) | [선별선택80]Free Lambda(λ) light chain(serum) | D442102KZ
+  Free Lambda light chain(R/U) | [선별선택80]유리경쇄정량검사(요)-람다(random urine) | D442101KZ
+  Free Lambda light chain(24hrs urine) | [선별선택80]유리경쇄정량검사(요)-람다(24hrs urine) | D442101KZ
+--- ANCA ---
+  ANCA (정성) | ANCA (정성) | D794100DZ
+  ANCA (정량) | ANCA (정량) | D794200DZ
+--- MPO ---
+  MPO (IHC) | MPO (IHC) | C567300FZ
+  [선별선택90]MPO | [선별선택90]MPO | D081200C
+  Anti-MPO (Myeloperoxidase) Ab | Anti-MPO (Myeloperoxidase) Ab | D795103DZ
+--- PR3 ---
+  Anti-Pr3 (Proteinase 3) Ab | Anti-Pr3 (Proteinase 3) Ab | D795104DZ
+--- anti-CCP ---
+  [선별선택90]Anti-CCP (Cyclic citrullinated peptide) Ab | [선별선택90]Anti CCP Ab(Cyclic Citrullinated Peptide Ab) | D8130003
+--- mitochondrial ---
+  Anti-Mitochondrial Ab (General) | Anti-Mitochondrial Ab(General) | D7971003
+  Anti-Mitochondrial Ab | Anti-Mitochondrial Ab(High Quality) | D7973003
+--- smooth muscle ---
+  Anti-Smooth muscle Ab (General) | Anti-Smooth Muscle Ab (General) | D7991003
+  Anti-Smooth muscle Ab | Anti-Smooth Muscle Ab (High Quality) | D7993003
+--- thyroglobulin Ab ---
+  Anti-Thyroglobulin Ab | Anti-Thyroglobulin Ab | D3240003
+  Anti-Thyroglobulin Ab | Anti-Thyroglobulin Ab | D3240003
+  (진료전)Anti-Thyroglobulin Ab | (진료전)Anti-Thyroglobulin Ab | D3240003
+--- anti-Sm ---
+  Anti-Smooth muscle Ab (General) | Anti-Smooth Muscle Ab (General) | D7991003
+  Anti-Smooth muscle Ab | Anti-Smooth Muscle Ab (High Quality) | D7993003
+  Anti-Sm Ab | Anti-Sm Ab(Smith Ab) | D785206DZ
+  Anti-Sm Ab | Anti-Sm Ab(Smith Ab) | D785206DZ
+--- anti-RNP ---
+  Anti-RNP (ribonucleprotein) Ab | Anti-RNP Ab(Anti-Ribonucleprotein Ab) | D785204DZ
+--- allergen ---
+  Allergen specific IgE | 항원특이적 면역글로불린 E | D7440013
+  Allergen specific IgE | 항원특이적 면역글로불린 E | D7440013
+--- AFB ---
+  AFB Cul,ID(고체) | 항산균배양(고체) | D6011003
+  AFB 약제감수성검사 (10종 미만) | 항산균 약제 감수성검사(10종목 미만) | D6013003
+  AFB 염색 (직접) | AFB 염색(직접) | D5802013
+  AFB Stain | AFB 염색 | D6002003
+  AFB Stain | AFB 염색 | D6002003
+--- tuberculosis ---
+  TB(Tuberculosis) drug 정량 | TB(Tuberculosis) drug 정량 | D534929DZ
+  M. tuberculosis  Ab | M Tuberculosis  Ab | D603200C
+  Yersinia pseudotuberculosis Ab | Yersinia pseudotuberculosis Ab | D587214DZ
+  M.tuberculosis PCR | M.tuberculosis PCR | D604101C
+  M.tuberculosis  nested PCR | M.tuberculosis  Nested PCR | D604201C
+--- MTB ---
+  결핵균(MTB) 약제감수성 | 항산균 약제 감수성검사(10종목 이상) | D6013004Z
+  MTB/NTM real-time PCR | MTB/NTM real-time PCR | D604202C
+--- gram stain ---
+  Gram stain | 그람염색 | D5802023
+--- culture ---
+  Lymphocyte culture | Lymphocyte Culture | D0861013
+  Lymphocyte culture (other stimulant; specify) | Lymphocyte culture (other stimulant; specify) | D0861013
+  Anaerobic culture | 혐기성 배양 | D5853003
+  EHEC culture ID | EHEC culture ID | D5820004Z
+  N.gonorrhoeae culture ID | N.gonorrhoeae  Culture ID | D5820003
+--- sensitivity ---
+  Culture (Sensitivity와 동시처방) | 미생물배양 및 동정검사 | B4051
+  Culture (BAL)(Sensitivity와 동시처방) | Culture (BAL)(Sensitivity와 동시처방) | D585501C
+  Culture (Blood)(Sensitivity와 동시처방) | Culture (Blood)(Sensitivity와 동시처방) | D5856003
+--- antibiotic ---
+  Antibiotic-Disk diffusion | 디스크확산법 | D5841003
+  Antibiotic-MIC | 항균제 최소억제농도 검사(MIC) | D5843003
+  Antibiotic-E test (진단검사 전용) | 항균제 최소억제농도 검사(E test (진단검사 전용) | D5843003
+  Antibiotic-E test | 항균제 최소억제농도 검사 | D5843003
+--- fungus ---
+  Mx1 Fungus mixes(곰팡이혼합) | Mx1 Fungus mixes(곰팡이혼합) | D7440013
+  Fungus culture | 미생물 간이배양검사 | D5810003
+  Fungus 배양 | Fungus 배양 | D5854004Z
+  Fungus 염색 | Fungus 염색 | D6201003
+  Fungus  Cul & ID & Disk diffusion, Respiratory | Fungus  Cul & ID & Disk diffusion, Respiratory | D5851003
+--- india ink ---
+  India ink | 미생물 현미경검사(특수염색) | D5804013
+--- mold ---
+  진균 감수성검사(Mold) | 진균 감수성검사(Mold) | D5854004Z
+--- parasite ---
+  Parasite Exam,Direct | 분변충란검사(직접도말법) | D6401003
+--- HBV DNA ---
+  HBV DNA 정량 (bDNA assay) | HBV DNA 정량 (bDNA assay) | D704402DZ
+  HBV DNA Quantitation (real time) | HBV DNA Quantitation (real time) | D704403C
+  HBV DNA Quantitation (real time) | HBV DNA Quantitation (real time) | D704403C
+--- HCV RNA ---
+  HCV RNA Quantification (Real-time) | HCV RNA 정량 (Real-time) | D704502C
+--- adenovirus ---
+  Adenovirus Ab (General) | Adenovirus  Ab (General) | D6531013
+  Adenovirus-IgG | Adenovirus-IgG | D654201DZ
+  Adenovirus-IgM | Adenovirus-IgM | D654301DZ
+  Adenovirus Ag | 아데노바이러스 항원 | D654101DZ
+  [선별선택90]Adenovirus culture | [선별선택90](바이러스 배양) Adenovirus culture | D652100DZ
+--- influenza ---
+  Hemophilus Influenza Ab (General) | Hemophilus Influenza Ab (General) | D1582103
+  Hemophilus influenza Ab | Hemophilus Influenza Ab (High Quality) | D587207C
+  Para influenza Ag | Para influenza Ag | D655110DZ
+  Influenza V. A&B Ag | Influenza V. A&B Ag | D655106DZ
+  Influenza A (CF) | Influenza A(CF) | D6531103
+--- RSV ---
+  RSV Ab (General) | RSV  Ab (General) | D6531163
+  RSV-IgG | RSV-IgG | D654216C
+  RSV-IgM | RSV-IgM | D654316C
+  RSV Ag (심장수술용) | RSV Ag (심장수술용) | D654109DZ
+  [선별선택90]RSV culture | [선별선택90](바이러스 배양) RSV culture | D652100DZ
+--- parainfluenza ---
+  [선별선택90]Parainfluenza virus culture | [선별선택90](바이러스 배양) Parainfluenza virus culture | D652100DZ
+  Parainfluenza virus Real-time PCR | Parainfluenza virus Real-time PCR | CZ997
+--- HPV ---
+  HPV type 18 PCR | HPV Typing 18 PCR | D591101DZ
+  HPV type 16 PCR | HPV Typing 16 PCR | D591101DZ
+  HPV PCR hybridization | HPV PCR  Hybridization | D591101DZ
+  HPV DNA probe (hybrid capture) | HPV DNA Probe(hybrid capture)인유두종 바이러스 검사 | D658602DZ
+  HPV genotyping | HPV genotyping | D658208DZ
+--- herpes ---
+  HSV (Herpes simplex virus) PCR | Herpes simplex virus PCR | D658104DZ
+  Human herpes Virus type 6 PCR | Human herpes Virus type 6 PCR | D658105KZ
+  Human herpes virus 8(HHV8) PCR | Human herpes virus 8(HHV8) PCR | D658105DZ
+--- HSV ---
+  HSV Ab (General) | HSV  Ab (General) | D6531093
+  HSV-IgG | HSV-IgG | D654209DZ
+  HSV-IgM | HSV-IgM | D654309DZ
+  HSV type 1 IgG | 바이러스항체 HSV type 1 IgG | D654209DZ
+  HSV type 2 IgG | 바이러스 항체 HSV type 2 IgG | D654209DZ
+--- varicella ---
+  Varicella zoster virus (VZV) Ab (General) | Varicella Zoster Virus (VZV) Ab (General) | D6531193
+  [선별선택90]VZV (Varicella zoster virus) culture | [선별선택90](바이러스 배양) VZV (Varicella zoster virus) culture | D652100DZ
+  Varicella zoster virus PCR | Varicella Zoster Virus PCR | D658107DZ
+--- VZV ---
+  Varicella zoster virus (VZV) Ab (General) | Varicella Zoster Virus (VZV) Ab (General) | D6531193
+  VZV IgG | VZV IgG | D654219C
+  VZV IgM | VZV IgM | D654319C
+  [선별선택90]VZV (Varicella zoster virus) culture | [선별선택90](바이러스 배양) VZV (Varicella zoster virus) culture | D652100DZ
+--- SARS ---
+  SARS-CoV-2 Ab (S 항원), total | SARS-CoV-2 Ab (S 항원), total | D654226DZ
+--- COVID ---
+  응급용 COVID-19(급여,신속가산) | 응급용 COVID-19(급여,신속가산) | D658702C
+  응급용 COVID-19(전액 본인부담) | 응급용 COVID-19(전액 본인부담) | D658702C
+  응급용 COVID-19/Flu A/Flu B(급여) | 응급용 COVID-19/Flu A/Flu B(급여) | D680106C
+  응급용 COVID-19/Flu A/Flu B(전액 본인부담) | 응급용 COVID-19/Flu A/Flu B(전액 본인부담) | D680106C
+  COVID-19/Flu A/Flu B real-time RT PCR(급여) | COVID-19/Flu A/Flu B real-time RT PCR(급여) | D680113C
+--- chlamydia ---
+  Chlamydia Ab (General) | Chlamydia  Ab (General) | D1582263
+  Chlamydia Ab | Chlamydia  Ab (High Quality) | D587301C
+  Chlamydia pneumoniae Ig G | Chlamydia Pneumoniae Ig G | D587304DZ
+  Chlamydia pneumoniae Ig M | Chlamydia Pneumoniae Ig M | D587401DZ
+  Chlamydia Ag | Chlamydia Ag | D587101DZ
+--- gonorrhoeae ---
+  N.gonorrhoeae culture ID | N.gonorrhoeae  Culture ID | D5820003
+  Neisseria gonorrhoeae PCR | Neisseria gonorrhoeae PCR | D591101C
+--- chromosome ---
+  Chromosome of malignancy | Chromosome of malignancy | C600500DZ
+  Chromosome analysis of Inherited disorders | Chromosome analysis of Inherited disorders | CY69200DZ
+  Chromosome analysis Malignancy (고형종양) | 고형종양의 염색체검사 | CX56800C
+  Chromosome, Other | Chromosome, Other | C600100C
+  Chromosome 13q | Chromosome 13q | C584112C
+--- JAK2 ---
+  JAK2 gene V617F | JAK2 gene V617F | C583304DZ
+  JAK2 gene exon12 | JAK2 gene exon12 | C583303DZ
+--- FLT3 ---
+  FLT3/ITD mutation | FLT3/ITD mutation | C583301C
+  FLT3/TKD mutation | FLT3/TKD mutation | C583301C
+  FLT3-ITD mutation(Fragment analysis) | FLT3-ITD mutation(Fragment analysis) | C583209DZ
+  FLT3/ITD mutation | FLT3/ITD mutation | C583301C
+  FLT3/TKD mutation | FLT3/TKD mutation | C583301C
+--- NPM1 ---
+  NPM1 gene Mutation | NPM1 gene Mutation | C583305DZ
+--- CALR ---
+  CALR gene mutation | CALR gene mutation | C583802DZ
+--- EGFR ---
+  EGFR gene mutation(Real-time PCR) | EGFR 유전자, 돌연변이(실시간 중합효소 연쇄반응) | C583119DZ
+--- BRAF ---
+  BRAF gene V600E mutation | BRAF gene V600E mutation | C5831176
+  BRAF gene V600E mutation melanoma | BRAF gene V600E mutation melanoma | C583117DZ
+--- KIT ---
+  KIT gene mutation | KIT gene mutation | C583602DZ
+--- achondroplasia ---
+  Achondroplasia,FGFR3 major mutation | Achondroplasia,FGFR3 major mutation | C580618DZ
+--- FGFR3 ---
+  Achondroplasia,FGFR3 major mutation | Achondroplasia,FGFR3 major mutation | C580618DZ
+  FISH IGH::FGFR3 | FISH IGH::FGFR3 | C584121DZ
+--- MTHFR ---
+  MTHFR major mutation | MTHFR major mutation | C580210DZ
+--- DMD ---
+  DMD/BMD exon deletion test | DMD/BMD Exon Deletion Test | CZ581
+--- SMA ---
+  Plasma Hemoglobin | Plasma Hemoglobin | D0590004Z
+  sdLDL cholesterol(small dense LDL cholesterol) | sdLDL 콜레스테롤[화학반응-장비측정] | CZ135
+  Vitamin K ,plasma | Vitamin K ,plasma | D490410DZ
+  Plasma porphyrin 정성 | Plasma porphyrin 정성 | D5161004Z
+  Renin Activity[PRA:Plasma Renin Activity](RIA) | Renin Activity[PRA:Plasma Renin Activity](RIA) | D3541007Z
+--- BRCA ---
+  BRCA1 mutation | BRCA1 mutation | C580905DZ
+  BRCA2 mutation | BRCA2 mutation | C581001DZ
+  BRCA1 mutation(family) | BRCA1 mutation(family) | C580500DZ
+  BRCA2 mutation(family) | BRCA2 mutation(family) | C580500DZ
+  BRCA1 gene, del/dup(MLPA) | BRCA1 gene, del/dup(MLPA) | CZ581
+--- TP53 ---
+  TP53 Gene | TP53 Gene | C584130C
+  TP53 (17p13.1)gene-외주 | TP53 (17p13.1)gene-외주 | C584130DZ
+  TP53 Gene,FISH(위탁) | TP53 Gene,FISH(위탁) | C584130DZ
+--- ATP7B ---
+  Wilson disease, ATP7B gene mutation (Full Sequencing) | Wilson disease, ATP7B gene mutation (Full Sequencing) | C580904DZ
+--- wilson ---
+  Wilson major mutant(Sequencing) | Wilson major mutant(Sequencing) | C580904DZ
+  Wilson disease, ATP7B gene mutation (Full Sequencing) | Wilson disease, ATP7B gene mutation (Full Sequencing) | C580904DZ
+--- RET ---
+  Reti. count (소아용) | 망상적혈구수(유세포분석법) | D0502013
+  IRF (Immature reticulocyte fraction) | 미성숙 망상적혈구 분획 | D0502023
+  Eosinophil (secretion) | 호산구수(혈액외검체) | D0325003
+  Clot retraction test | 혈병퇴축시험 | D1061024Z
+  Reticulin stain (단독처방 불가, BM panel 전용) | 특수염색(기타) | D084101C
+--- huntington ---
+  Huntington′s ds Dx | Huntington′s Disease Dx | C580309DZ
+--- fragile X ---
+  Fragile X (DNA) PCR | 위약X증후군 | C581102DZ
+  Fragile X 증후군(FMR1gene PCR) | Fragile X 증후군(FMR1gene PCR) | C580312DZ
+--- FMR1 ---
+  Fragile X 증후군(FMR1gene PCR) | Fragile X 증후군(FMR1gene PCR) | C580312DZ
+--- SBMA ---
+  SBMA (Spinobulbar muscular atrophy) | SBMA(Spinobulbar Muscular Atrophy) | C580301DZ
+--- SCA ---
+  ASCA(Anti Saccharomyces Cerevisiae Ab) | ASCA(Anti Saccharomyces Cerevisiae Ab) | CZ435006
+  ASCA (IgA) | ASCA (IgA) | D807001DZ
+  ASCA (IgG) | ASCA (IgG) | D807002DZ
+  SCA1 (Spino cerebella ataxia type 1) | Molecular Diagnosis of SCA1(Spino Cerebella Ataxia Type 1) | C580303DZ
+  SCA3 (Spino cerebella ataxia type 3) | Molecular Diagnosis of SCA3(Spino Cerebella Ataxia Type 3) | C580305DZ
+--- CYP2C19 ---
+  CYP2C19 genotyping | CYP2C19 genotyping | C580617DZ
+--- TPMT ---
+  TPMT genotyping,major (Thiopurine methyltransferase) | [선별선택80]TPMT genotyping,major | C580762DZ
+--- VKORC1 ---
+  와파린약물유전학검사(VKORC1 & 2C9) | 와파린약물유전학검사(VKORC1 & 2C9) | C580616DZ
+--- NUDT15 ---
+  NUDT15 genotyping | NUDT15 genotyping | C580640DZ
+--- ABO genotyp ---
+  ABO genotyping | ABO genotyping | C5806
+  ABO genotyping | ABO genotyping | C5806
+--- STR ---
+  Gastric juice analysis | 위액검사 | D0328003
+  Estrogen | 에스트로겐 | D3711037Z
+  Estradiol (E2) | 에스트라디올 E2 | D3710023
+  Estriol (E3) | 에스트라디올 E3 | D3710043
+  Gastrin | Gastrin | D3810014Z
+--- NGS ---
+  유전성 부정맥 유전자 패널검사(NGS-Arrhythmia panel) | [선별전용80]유전성 부정맥 유전자 패널검사 | CB00100KZ
+  유전성 심근병증 유전자 패널검사(NGS-Cardiomyopathy panel) | [선별전용80]유전성 심근병증 유전자 패널검사 | CB00100KZ
+  유전성 수포성 표피박리증 및 어린선 패널검사(NGS-Dermatology panel) | [선별전용80]유전성 수포성 표피박리증 및 어린선 패널검사 | CB00100KZ
+  유전성 암 유전자 패널검사(NGS-Hereditary cancer syndrome panel plus) | [선별전용80]유전성 암 유전자 패널검사 | CB00100KZ
+  유전성 암 유전자 패널검사(NGS-Hereditary cancer syndrome panel) | [선별전용80]유전성 암 유전자 패널검사 (23) | CB00100KZ
+--- HLA ---
+  HLA-C (DNA-low) | HLA-C (DNA-low) | D840201DZ
+  HLA-A  (serology) | HLA-A  (serology) | D840101C
+  HLA-B  (serology) | HLA-B  (serology) | D840101C
+  HLA-C  (serology) | HLA-C  (serology) | D840101C
+  HLA-A (DNA)(100/100가능) | HLA-A (DNA) | D840201C
+--- crossmatch ---
+  HLA crossmatching-T Cell | HLA crossmatching-T cell | D842100C
+  HLA crossmatching-B Cell(급여가능) | HLA crossmatching-B cell | D842300C
+  HLA crossmatching-T (AHG)(100/100가능) | HLA crossmatching-T (AHG) | D842400C
+  HLA crossmatching-B  (AHG)l | HLA crossmatching-B (AHG) | D842600DZ
+  HLA crossmatching-T (Flow)(100/100가능) | HLA crossmatching-T (flow) | D842700C
+--- CD3 ---
+  CD30 | CD30 | C567300C
+  CD34 (IHC) | CD34 (IHC) | C567300C
+  CD3 (IHC) | CD3 (IHC) | C567300C
+  CD38 (IHC) | CD38 (IHC) | C567300C
+  [선별선택90]CD3 (Subset用) | [선별선택90]CD3 | D081200C
+--- CD4 ---
+  CD45(=LCA) (IHC) | CD45(=LCA) (IHC) | C567300C
+  [선별선택90]CD4 (Subset用) | [선별선택90]CD4(helper T) | D081200C
+  CD4 (BAL) | CD4 (BAL) | D764000C
+  CD4/CD8 ratio (BAL) | CD4/CD8 ratio (BAL) | D764000B
+  [선별선택90]CD45 | [선별선택90]CD45 | D081200C
+--- CD8 ---
+  [선별선택90]CD8 (Subset用) | [선별선택90]CD8(cytotoxic T) | D081200C
+  CD8 (BAL) | CD8 (BAL) | D764000C
+  CD4/CD8 ratio (BAL) | CD4/CD8 ratio (BAL) | D764000B
+  [선별선택90]CD8 | [선별선택90]CD8 | D081200C
+--- CD19 ---
+  CD19 | CD19 | C567300C
+  [선별선택90]CD19(B cell) | [선별선택90]CD19(B cell) | D081200C
+  [선별선택90]CD19 | [선별선택90]CD19(B Cell Ag) | D081200C
+  CD19 (BAL) | CD19 (BAL) | D764000C
+  [선별선택90]CD19(ZAP70 profile) | [선별선택90]CD19(ZAP70 profile) | D081200DZ
+--- CD56 ---
+  [선별선택90]CD56 | [선별선택90]CD56 | D081200C
+--- CD16 ---
+  [선별선택90]CD16+56(Nk cell) (Subset用) | [선별선택90]CD16+56(Nk cell) | D081200C
+  CD16+56 (BAL) | CD16+56 (BAL) | D764000C
+--- CD34 ---
+  CD34 (IHC) | CD34 (IHC) | C567300C
+  [선별선택90]CD34 | [선별선택90]CD34 | D081200C
+  CD34 Count(세포치료) | CD34 Count(세포치료)_count bead법 사용 | D085201C
+  조혈전구세포(CD34) | 조혈전구세포(CD34) | CZ471
+--- rubella ---
+  Rubella  Ab (General) | Rubella  Ab (General) | D6531183
+  Rubella -IgG | Rubella -IgG | D654218C
+  Rubella -IgM | Rubella -IgM | D654318C
+  Rubella IgG avidity test | Rubella 항체 결합력 검사 | D654401DZ
+  Rubella IgG | Rubella IgG | D654218DZ
+--- IGRA ---
+  IGRA(환자노출조치용) | IGRA(환자노출조치용) | D602000C
+  IGRA(직원검진전용) | IGRA(직원검진전용) | D602000B
+--- EBV VCA ---
+  EBV VCA IgM | EBV VCA IgM | D654308DZ
+  EBV VCA IgG | EBV VCA IgG | D654208DZ
+--- EBNA ---
+  EBV EBNA IgG | EBV EBNA IgG | D654207DZ
+--- neonatal ---
+  [선별선택90]Neonatal TSH | [선별선택90]Neonatal TSH | D3250014Z
+  [선별선택90]Neonatal FT4 | [선별선택90]Neonatal FT4 | D3230054Z
+  [선별선택90]Neonatal TSH(NST-유료) | [선별선택90]Neonatal TSH(NST-유료) | D3250014Z
+--- bilirubin ---
+  T.bilirubin | 총빌리루빈 | D1830003
+  D.bilirubin | 직접빌리루빈 | D1820003
+  (뇨,체액)T.bilirubin | T.Bilirubin | D1830003
+  (뇨,체액)D.bilirubin | (뇨,체액)직접빌리루빈 | D1820003
+  (응급)T.bilirubin | (응급)T.Bilirubin | D1830003
+--- ketone ---
+  Ketone body 분획검사 | Ketone body 분획검사 | D301300KZ
+  Total ketone | Total ketone | D301300C
+  (뇨) Ketone | (뇨) 케톤체 | D2251003
+--- blood ---
+  Blood viscocity test | 혈액점도검사 | D400001DZ
+  Blood Viscosity Test(WB) | 혈액점도검사(WB) | CZ250
+  BUN (Blood Urea Nitrogen) | BUN (Blood Urea Nitrogen) | D2300003
+  Lead (Pb) blood (Qual) | Lead (Pb) Blood(정성) | D5501133
+  Lead  (Pb) blood | Lead (Pb) Blood | D5503133
+--- urobilinogen ---
+  Stool urobilinogen | 분변 유로빌리노겐(정량) | D1950003
+--- leukocyte ---
+  LAP (Leukocyte alkaline phosphatase) score | LAP(Leukocyte Alkaline Phosphate) Score | D084101DZ
+  Fecal leukocytes | 백혈구백분율(혈액외 검체) | D0313003
+  Leukocyte common Ag | Leukocyte Common Ag | C567300C
+  Leukocyte Filtered Packed Plt(백혈구 여과 제거 혈소판 ),320㎖ | 백혈구 여과 제거 혈소판, 전혈 320ml | X2121
+  Leukocyte Filtered Packed Plt (백혈구 여과 제거 혈소판),400㎖ | 백혈구 여과 제거 혈소판, 전혈 400ml | X2122
+--- ABGA ---
+  (응급)Na (ABGA) | (응급)Na (ABGA) | D2800023
+  (응급)K (ABGA) | (응급)K (ABGA) | D2800063
+  (응급)Cl (ABGA) | (응급)Cl (ABGA) | D2800033
+  (응급)ABGA | (응급)ABGA | D0410003
+  (응급)Mg ionized (ABGA) | (응급)Mg ionized (ABGA) | D2810013
+--- TIBC ---
+  TIBC | 철결합능 | D0521043
+  (진료전)TIBC | 철결합능 | D0521043
+  (입원전)TIBC | (입원전)철결합능 | D0521043
+--- antitrypsin ---
+  Alpha1- antitrypsin | 알파 1-항트립신 | D4700024Z
+  a1-Antitrypsin clearance | 알파 1-항트립신 | D4700024Z
+--- peroxidase ---
+  Myeloperoxidase | 특수염색(퍼옥시다제) | D084108C
+  Anti-MPO (Myeloperoxidase) Ab | Anti-MPO (Myeloperoxidase) Ab | D795103DZ
+--- sudan ---
+  Sudan Black B | 특수염색(수단블랙 B) | D084105DZ
+--- iron stain ---
+  Iron stain (단독처방 불가, BM panel 전용) | 특수염색(철) | D084106C
+  (외주)Iron stain (BM panel 전용) | (외주)Iron stain (BM panel 전용) | D084106DZ
+--- body fluid ---
+  Body fluid cell count | 체액일반검사 | D0327003
+  Body fluid stain & microscopy | 체액염색경검사 | D032900C
+  Cul & ID & Disk diffusion  ( 호기성 & 혐기성 배양) Blood, Body fluid | Cul & ID & Disk Diffusion ( 호기성 & 혐기성 배양) Blood, Body fluid | D5853003
+  Cul & ID & Disk diffusion, Blood, body fluid  (호기성 배양) | Cul & ID & Disk Diffusion, Blood, body fluid (호기성 배양) | D5851003
+  Cul & ID & MIC, Blood, Body fluid( 호기성 & 혐기성 배양) | Cul & ID & MIC, Blood, Body fluid( 호기성 & 혐기성 배양) | D5856003
+--- macrophage ---
+  Macrophage stain | Macrophage  Stain | C567300C
+--- anti-D ---
+  Anti-ds-DNA Ab | 항DNA항체(정밀) | D7862003
+  Anti-ds-DNA Ab IgG | Anti-ds-DNA Ab IgG(Quality) | D7862003
+  Anti-ds-DNA Ab (Titration) | Anti-ds-DNA Ab(Titration) | D786500C
+--- weak D ---
+  Weak D test (Du test) | 약 Du 검사 | D1514003
+--- subgroup ---
+  ABO-Subgroup | ABO 아형 검사 | D150300C
+--- hemolysis ---
+  Autohemolysis test | 자가 용혈검사 | D054102DZ
+  Sucrose hemolysis test | 슈크로즈 용혈검사 | D053102DZ

@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026 KEQAS EQA Dashboard - GitHub Pages</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Noto Sans KR', sans-serif;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #333;
+}
+
+.container {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+  overflow: hidden;
+  max-width: 600px;
+  width: 90%;
+  animation: slideUp 0.5s ease-out;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.header-banner {
+  background: linear-gradient(135deg, #2563eb 0%, #7c3aed 50%, #1e40af 100%);
+  padding: 40px 30px;
+  color: white;
+  text-align: center;
+}
+
+.header-banner h1 {
+  font-size: 28px;
+  margin-bottom: 8px;
+  font-weight: 700;
+}
+
+.header-banner p {
+  font-size: 14px;
+  opacity: 0.9;
+  margin-bottom: 16px;
+}
+
+.logo-area {
+  font-size: 48px;
+  margin: 20px 0;
+}
+
+.content {
+  padding: 40px 30px;
+}
+
+.content h2 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #2563eb;
+  border-bottom: 2px solid #e1e4eb;
+  padding-bottom: 12px;
+}
+
+.content p {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 12px;
+  font-size: 14px;
+}
+
+.feature-list {
+  list-style: none;
+  margin: 20px 0;
+}
+
+.feature-list li {
+  padding: 10px 0;
+  padding-left: 30px;
+  position: relative;
+  color: #666;
+  font-size: 14px;
+}
+
+.feature-list li:before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #059669;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.button-group {
+  display: flex;
+  gap: 12px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  flex: 1;
+  min-width: 140px;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #2563eb, #7c3aed);
+  color: white;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(37, 99, 235, 0.3);
+}
+
+.btn-secondary {
+  background: #f5f7fa;
+  color: #2563eb;
+  border: 2px solid #2563eb;
+}
+
+.btn-secondary:hover {
+  background: #2563eb;
+  color: white;
+}
+
+.info-box {
+  background: #f0f9ff;
+  border-left: 4px solid #2563eb;
+  padding: 16px;
+  border-radius: 8px;
+  margin-top: 20px;
+  font-size: 13px;
+  color: #1e40af;
+}
+
+.info-box strong {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.tech-stack {
+  display: flex;
+  gap: 8px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.tech-badge {
+  background: #f5f7fa;
+  border: 1px solid #e1e4eb;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 12px;
+  color: #666;
+}
+
+footer {
+  background: #f8f9fb;
+  padding: 20px;
+  text-align: center;
+  border-top: 1px solid #e1e4eb;
+  color: #999;
+  font-size: 12px;
+}
+
+.github-badge {
+  display: inline-block;
+  margin-top: 20px;
+}
+
+@media (max-width: 600px) {
+  .container {
+    border-radius: 0;
+  }
+  
+  .header-banner {
+    padding: 30px 20px;
+  }
+  
+  .header-banner h1 {
+    font-size: 24px;
+  }
+  
+  .content {
+    padding: 30px 20px;
+  }
+  
+  .button-group {
+    flex-direction: column;
+  }
+  
+  .btn {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="header-banner">
+    <div class="logo-area">📊</div>
+    <h1>2026 KEQAS EQA Dashboard</h1>
+    <p>신빙도조사사업 프로그램 현황 대화형 대시보드</p>
+  </div>
+
+  <div class="content">
+    <h2>🎯 대시보드 소개</h2>
+    <p>2026년도 대한진단검사정도관리협회(KEQAS) 신빙도조사사업 프로그램 현황을 한눈에 볼 수 있는 대화형 대시보드입니다.</p>
+
+    <h2>✨ 주요 기능</h2>
+    <ul class="feature-list">
+      <li><strong>실시간 통계</strong> - 신빙도조사 프로그램 통계 시각화</li>
+      <li><strong>기관별 분석</strong> - 병원별 참여 현황 및 검사항목 추이</li>
+      <li><strong>트렌드 분석</strong> - 다빈도 검사항목 현황</li>
+      <li><strong>진료통계 연동</strong> - 건강보험 진료통계와 연결</li>
+      <li><strong>반응형 디자인</strong> - 모바일/태블릿/데스크톱 모두 지원</li>
+      <li><strong>대화형 시각화</strong> - 트리맵, 차트, 테이블로 데이터 탐색</li>
+    </ul>
+
+    <div class="info-box">
+      <strong>💡 팁</strong>
+      GitHub Pages를 통해 이 대시보드를 공개적으로 호스팅할 수 있습니다. 
+      DEPLOYMENT.md 파일을 참고하여 설정하세요.
+    </div>
+
+    <div class="button-group">
+      <a href="2026_KEQAS_EQA_Dashboard.html" class="btn btn-primary">
+        📈 대시보드 보기
+      </a>
+      <a href="https://github.com" target="_blank" class="btn btn-secondary">
+        ⭐ GitHub
+      </a>
+    </div>
+
+    <h2 style="margin-top: 40px;">🛠️ 기술 스택</h2>
+    <div class="tech-stack">
+      <span class="tech-badge">HTML5</span>
+      <span class="tech-badge">CSS3</span>
+      <span class="tech-badge">JavaScript</span>
+      <span class="tech-badge">Chart.js</span>
+      <span class="tech-badge">JSON</span>
+      <span class="tech-badge">Python</span>
+    </div>
+
+    <h2 style="margin-top: 40px;">📚 문서</h2>
+    <ul class="feature-list" style="list-style: none; margin-left: 0;">
+      <li style="padding-left: 0; margin-bottom: 8px;">
+        <a href="README.md" style="color: #2563eb; text-decoration: none; font-weight: 600;">
+          📖 README - 프로젝트 개요 및 사용 방법
+        </a>
+      </li>
+      <li style="padding-left: 0; margin-bottom: 8px;">
+        <a href="DEPLOYMENT.md" style="color: #2563eb; text-decoration: none; font-weight: 600;">
+          🚀 DEPLOYMENT - GitHub Pages 배포 가이드
+        </a>
+      </li>
+      <li style="padding-left: 0;">
+        <a href="CONTRIBUTION.md" style="color: #2563eb; text-decoration: none; font-weight: 600;">
+          🤝 CONTRIBUTION - 기여 가이드
+        </a>
+      </li>
+    </ul>
+
+  </div>
+
+  <footer>
+    <p>2026 KEQAS EQA Dashboard &copy; 2026</p>
+    <p>대한진단검사정도관리협회 (Korean Association of External Quality Assessment Service)</p>
+    <p>
+      <a href="https://www.keqas.org" target="_blank" style="color: #2563eb; text-decoration: none;">
+        www.keqas.org
+      </a>
+    </p>
+  </footer>
+</div>
+
+</body>
+</html>

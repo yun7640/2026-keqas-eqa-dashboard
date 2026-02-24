@@ -1,0 +1,2420 @@
+﻿(100/100가능)HLA-A (DNA)
+(100/100가능)HLA-A (DNA-high resolution)
+(급여)HPV genotyping real-time PCR
+(급여가능) Helicobocter pylori stool Ag
+(급여가능)Chromosome analysis of Inherited disorders
+(급여가능)HLA-B (DNA-high resolution)
+(급여가능)HLA-C (DNA-high resolution)
+(급여가능)HLA-DRB1 typing (DNA-high resolution)
+(뇨) Creatinine
+(뇨) Glucose
+(뇨) Ketone
+(뇨) Protein
+(뇨) Urine Microscopy
+(뇨) Urine Protein
+(뇨)Routine U/A (10종)
+(뇨)Routine U/A (4종)
+(뇨,체액)ALT (GPT)
+(뇨,체액)AST (GOT)
+(뇨,체액)Albumin
+(뇨,체액)Alkaline phosphatase(ALP)
+(뇨,체액)Amylase
+(뇨,체액)CK(CPK)
+(뇨,체액)CSF Protein
+(뇨,체액)Ca
+(뇨,체액)Citrate quantitation
+(뇨,체액)Cl
+(뇨,체액)Creatine
+(뇨,체액)Creatinine1 (투석액)
+(뇨,체액)Creatinine2 (투석액)
+(뇨,체액)Creatinine3 (투석액)
+(뇨,체액)Creatinine4 (정맥혈)
+(뇨,체액)D.bilirubin
+(뇨,체액)Glucose
+(뇨,체액)Glucose 1  (투석액)
+(뇨,체액)Glucose 2 (투석액)
+(뇨,체액)Glucose 3  (투석액)
+(뇨,체액)Glucose 4 ( 정맥혈)
+(뇨,체액)HDL-cholesterol
+(뇨,체액)I.Phos (Inorganic phosphorus)
+(뇨,체액)K
+(뇨,체액)KT/V BUN  (Serum)
+(뇨,체액)KT/V albumin  (Serum)
+(뇨,체액)KT/V creatinine (Serum)
+(뇨,체액)KT/V creatinine clerarance  (Ccr)  (Dialysate)
+(뇨,체액)KT/V creatinine clerarance  (Ccr)  (Urine)
+(뇨,체액)LDH
+(뇨,체액)LDL-cholesterol
+(뇨,체액)Lipase
+(뇨,체액)Mg
+(뇨,체액)Microalbumin (정량)
+(뇨,체액)Na
+(뇨,체액)Osmolarity
+(뇨,체액)Oxalate quantitation
+(뇨,체액)T.bilirubin
+(뇨,체액)T.cholesterol
+(뇨,체액)Triglyceride
+(뇨,체액)Urea Nitrogen
+(뇨,체액)Uric acid
+(뇨,체액)γ-GT
+(비급여) 폐렴 panel 33종(세균/바이러스/내성유전자)
+(산전)AFP
+(산전)Dimeric Inhibin-A
+(산전)Free E3(Estriol)
+(산전)β-hCG
+(외주)BM aspiration (BM panel 전용)
+(외주)BM biopsy (BM panel 전용)
+(외주)BM clot section (BM panel 전용)
+(외주)Iron stain (BM panel 전용)
+(외주)PB Morphology (단독처방 불가, BM panel 전용)
+(외주)Reticulin stain (BM panel 전용)
+(외주)기타 면역조직 화학검사
+(원내)기타 면역조직 화학검사
+(응급) D.Bilirubin
+(응급) Uric Acid
+(응급)ABGA
+(응급)ALT (GPT)
+(응급)AST (GOT)
+(응급)Albumin
+(응급)Alcohol(Ethanol)(High)
+(응급)Alkaline phosphatase (ALP)
+(응급)Ammonia
+(응급)Amylase
+(응급)BUN (Blood urea nitrogen)
+(응급)CK(CPK)
+(응급)CK-MB
+(응급)CO-Oximeter(carboxy Hb,methehemoglobin)
+(응급)CRP (정량)
+(응급)CSF Cl
+(응급)CSF Glucose
+(응급)CSF K
+(응급)CSF Na
+(응급)Ca
+(응급)Ca ionized
+(응급)Cl
+(응급)Cl (ABGA)
+(응급)Creatine
+(응급)Creatinine
+(응급)D-Dimer(Quantitative)
+(응급)ESR (Erythrocyte sedimentation rate)
+(응급)Eosinophil Count
+(응급)Fibrinogen
+(응급)Glucose
+(응급)Glucose (ABGA)
+(응급)Glucose(PC 2Hrs)
+(응급)HDL-cholesterol
+(응급)HIV Ag/Ab(정밀)(급여가능)
+(응급)Hct
+(응급)Hemoglobin
+(응급)I. Phos
+(응급)I.Phos
+(응급)IRF (Immature reticulocyte fraction)
+(응급)K
+(응급)K (ABGA)
+(응급)LDH
+(응급)LDL-Cholesterol
+(응급)Lactic acid (ABGA)
+(응급)Lactic acid(Lactate)
+(응급)Lipase
+(응급)Mg
+(응급)Mg ionized (ABGA)
+(응급)Myoglobin (정성)
+(응급)Na
+(응급)Na (ABGA)
+(응급)Osmolarity
+(응급)PDW
+(응급)PLT
+(응급)Prothrombin time
+(응급)RBC
+(응급)RDW
+(응급)Reti. count
+(응급)Routine U/A(4종)
+(응급)Routine body fluid
+(응급)Routine urinalysis (10종까지)
+(응급)SAA (Serum Amyloid A)
+(응급)T. protein
+(응급)T.bilirubin
+(응급)T.cholesterol
+(응급)TnI
+(응급)Total CO₂
+(응급)Triglyceride
+(응급)Urea Nitrogen
+(응급)Uric acid
+(응급)Urine microscopy
+(응급)WBC
+(응급)WBC differential count
+(응급)aPTT
+(응급)hCG
+(응급)γ-GT
+(응급)조혈전구세포검사(HPC)
+(응급)혈중베타케톤(β-hydroxybutyrate)
+(응급뇨)Osmolarity
+(응급면역)(장기이식용)Anti-HBs
+(응급면역)ACTH (Adrenocorticotropic hormone)
+(응급면역)AFP(Alphafetoprotein)
+(응급면역)BNP
+(응급면역)CA-125
+(응급면역)CA19-9
+(응급면역)CK-MB
+(응급면역)Ferritin
+(응급면역)Free PSA (Prostate specific Ag)
+(응급면역)HIV Ab(Ag/Ab)
+(응급면역)Homocysteine (CLIA)
+(응급면역)Intact PTH (Parathyroid Hormone)
+(응급면역)Myoglobin(정량)
+(응급면역)NT-ProBNP
+(응급면역)PSA (Prostate specific Ag)
+(응급면역)Procalcitonin 정량
+(응급면역)Prolactin
+(응급면역)Valproic Acid
+(응급면역)hs-TnI
+(응급면역)β hCG
+(응급체액)Albumin
+(응급체액)Amylase
+(응급체액)Body fluid cell count
+(응급체액)Body fluid stain & microscopy
+(응급체액)CSF protein
+(응급체액)LDH
+(응급체액)Lipase
+(응급체액)T. protein
+(입원전) Routine urinalysis (10종까지)
+(입원전)AFP (Alphafetoprotein)
+(입원전)ALT (GPT)
+(입원전)AST (GOT)
+(입원전)Albumin
+(입원전)Alkaline phosphatase (ALP)
+(입원전)Anti-HBs Ab
+(입원전)BUN (Blood urea nitrogen)
+(입원전)CA-125
+(입원전)CA19-9
+(입원전)Ca
+(입원전)Cl
+(입원전)Creatinine
+(입원전)D.bilirubin
+(입원전)ESR
+(입원전)Eosinophil count
+(입원전)Fe
+(입원전)Ferritin
+(입원전)Fibrinogen
+(입원전)Free PSA (Prostate specific Ag)
+(입원전)Glucose
+(입원전)HBs Ag
+(입원전)HCV Ab
+(입원전)HDL-cholesterol
+(입원전)HIV Ab
+(입원전)Hb
+(입원전)Hct
+(입원전)Hemoglobin A1C (당뇨검사)
+(입원전)I.Phos (Inorganic phosphorus)
+(입원전)IRF (Immature reticulocyte fraction)
+(입원전)K
+(입원전)LDH
+(입원전)LDL-cholesterol
+(입원전)Mg
+(입원전)Na
+(입원전)PDW
+(입원전)PSA (Prostate specific Ag)
+(입원전)Plt
+(입원전)Prothrombin time
+(입원전)RBC
+(입원전)RDW
+(입원전)Reti.count
+(입원전)T. protein
+(입원전)T.bilirubin
+(입원전)T.cholesterol
+(입원전)TIBC
+(입원전)TnT
+(입원전)Total CO₂
+(입원전)Triglyceride
+(입원전)UIBC
+(입원전)Uric acid
+(입원전)Urine microscopy
+(입원전)VDRL (정밀)
+(입원전)WBC
+(입원전)WBC differential count
+(입원전)aPTT
+(입원전)hs-CRP (정량)
+(입원전)γ-GT
+(자상조치용)(응급)HIV Ab
+(자상조치용)Anti-HBs Ab
+(자상조치용)HBs Ag
+(자상조치용)HCV Ab
+(장기이식) Anti-HBs
+(진료전) Hemoglobin A1C (당뇨검사)
+(진료전)AFP
+(진료전)ALT (GPT)
+(진료전)AST (GOT)
+(진료전)Albumin
+(진료전)Alkaline phosphatase (ALP)
+(진료전)Amylase
+(진료전)Anti TPO Ab (Anti Microsomal Ab)
+(진료전)Anti-Thyroglobulin Ab
+(진료전)BUN (Blood urea nitrogen)
+(진료전)CA-125
+(진료전)CA19-9
+(진료전)CK
+(진료전)CRP (정량)
+(진료전)CTX (C-telopeptide of collagen type1)
+(진료전)Ca
+(진료전)Carbamazepine
+(진료전)Cl
+(진료전)Creatinine
+(진료전)Cystatin C
+(진료전)D.bilirubin
+(진료전)ESR
+(진료전)Eosinophil count
+(진료전)Fe
+(진료전)Ferritin
+(진료전)Fibrinogen (Funt)
+(진료전)Free PSA
+(진료전)Glucose
+(진료전)HDL-cholesterol
+(진료전)Hb
+(진료전)Hct
+(진료전)Hemoglobin A1C(당뇨검사)
+(진료전)Hemoglobin A1c (당뇨검사)
+(진료전)Homocysteine (CLIA)
+(진료전)Homocysteine (HPLC)
+(진료전)Human growth hormone
+(진료전)I.Phos (Inorganic phosphorus)
+(진료전)IRF (Immature reticulocyte fraction)
+(진료전)K
+(진료전)LDH
+(진료전)LDL-cholesterol
+(진료전)Lipase
+(진료전)Mg
+(진료전)Na
+(진료전)PDW
+(진료전)PSA
+(진료전)Plt
+(진료전)Prolactin
+(진료전)Prothrombin time
+(진료전)RBC
+(진료전)RDW
+(진료전)Reti.count
+(진료전)Routine U/A (4종까지)
+(진료전)Routine urinalysis (10종까지)
+(진료전)T. protein
+(진료전)T.bilirubin
+(진료전)T.cholesterol
+(진료전)TIBC
+(진료전)TnT
+(진료전)Total CO₂
+(진료전)Triglyceride
+(진료전)UIBC
+(진료전)Uric acid
+(진료전)Urine microscopy
+(진료전)Valproic acid
+(진료전)WBC
+(진료전)WBC differential count
+(진료전)aPTT
+(진료전)γ-GT
+(체액) Creatinine
+(체액) T. Protein
+(현장검사)ABGA
+(현장검사)BUN(ABGA)
+(현장검사)CO-oximeter(carboxyl Hb, methehemoglobin)
+(현장검사)Ca ionized
+(현장검사)Cl
+(현장검사)Creatinine(ABGA)
+(현장검사)Glucose (ABGA)
+(현장검사)Glucose(자가혈당측정기)
+(현장검사)HCT
+(현장검사)K
+(현장검사)Lactic acid (ABGA)
+(현장검사)Mg ionized (ABGA)
+(현장검사)Na
+(현장검사)Total CO₂(ABGA)
+(혈청) Osmolarity
+1,25-(OH)2 Vitamin D(CLIA)
+1,25-(OH)2 Vitamin D(RIA)
+1,5-Anhydroglucitol
+16S rDNA 염기서열분석(직접검체)
+17-Ketosteroid
+17-OHCS (Hydroxy corticosteroid)
+17-OHCS(0)(내분비내과)-덱사메타손 억제검사용
+17-OHCS(2d)(내분비내과)
+17α-OH Progesterone
+17α-OH pregnenolone
+17α-OH progesterone(NST-유료)
+17α-OH progesterone(급여가능)
+19S FTA-ABS IgM
+2-5A
+5-HIAA 정량
+5-HIAA 정성
+A1 항원검사
+ABO Typing-Cell type (자동화법)
+ABO genotyping
+ABO-Subgroup
+ACE (Angiotensin converting enzyme)
+ACT(Activated Clotting Time, Handy test)
+ACTH (Adrenocorticotropic hormone)
+ADAMTS-13 activity
+ADAMTS-13 activity [면역블롯팅법]
+ADH (-15)
+ADH (135)
+ADH (Anti diuretic hormone,arginine vassopresin)
+ADH(Anti Diuretic Hormone)(LC/MS)
+ADP(혈소판 응집능 검사)
+AFB Cul,ID(고체)
+AFB Cul,ID(액체)
+AFB Stain
+AFB 약제감수성검사 (10종 미만)
+AFB 염색 (직접)
+AFG (Alphafetoglobulin) (General)
+AFG (Alphafetoglobulin) (High Quality)
+AFP (Alphafetoprotein) (General)
+AFP(Alphafetoprotein)(High Quality)
+AFP(산전)
+AFP(양수)
+ALD,ABCD 1 gene
+ALL panel A(child),FISH
+ALP isoenzymes  (EP)
+ALT (GPT)
+ANAE (Alpha-naphthly acetate esterase) stain
+ANBE (Alpha-naphthly butyrate esterase) stain
+ANCA (정량)
+ANCA (정성)
+APAP(Acetaminophen)
+APC (Activated protein C) resistance
+APCA (Anti-parietal cell Ab)
+APT 검사
+ASCA (IgA)
+ASCA (IgG)
+ASCA(Anti Saccharomyces Cerevisiae Ab)
+ASO
+ASO (Quantitation)
+ASO (Titration)
+ASO (정량)
+AST (GOT)
+ATM(11q22.3),FISH
+Acetaminophen
+Acethylcholine Esterase
+Acetoacetate
+Acetylcholine Receptor Ab
+Achondroplasia,FGFR3 major mutation
+Acid elution test  for HbF
+Acid fast fluorescent stain
+Acid phosphatase
+Actinomyces  Ab
+ActinomycesAb (General)
+Activated coagulation time
+Addis count
+Adeno virus Real-time PCR
+Adeno virus type 1
+Adeno virus type 11
+Adeno virus type 2
+Adeno virus type 21
+Adeno virus type 3
+Adeno virus type 37
+Adeno virus type 4
+Adeno virus type 5
+Adeno virus type 6
+Adeno virus type 7
+Adeno virus type 8
+Adenosine deaminase (ADA)
+Adenovirus Ab (General)
+Adenovirus Ag
+Adenovirus-IgG
+Adenovirus-IgM
+Al (Alumium)
+Albumin
+Alcohol (Ethanol) (High Quality)
+Aldolase
+Aldosterone [정밀분광/질량분석]
+Aldosterone(LC/MS)
+Aldosterone(RIA)
+Alkaline phosphatase(ALP)
+Allergen specific IgE
+Alloisoleucine
+Alpha1- antitrypsin
+Aluminium(Al)
+Ameba- IgG
+Ameba-IgM
+Amikacin
+Amikacin (General)
+Amikacin (High Quality)
+Amikacin 약물농도해석보고서
+Amikacin(High Quality)
+Amikacin(Trough)
+Amikacin(농도)
+Amino acid
+Amino acid 3종
+Amiodarone (Quality General)
+Amiodarone (Quality Mass Spectrometry)
+Amitriptyline (Quality Mass Spectrometry)
+Amitriptyline(Quality General)
+Ammonia
+Amniotic fluid L/S ratio
+Amphetamine (General)
+Amphetamine (High Quality)
+Amylase
+Amylase isoenzyme
+Amylase pancreatic
+Amyloid A
+Amyloid stain
+Anaerobic culture
+Androstenedione
+Anti HAV IgG
+Anti HAV IgM
+Anti TPO Ab (Anti Microsomal Ab)
+Anti nuclear Ab
+Anti-Aquaporin 4 IgG Ab(정성)
+Anti-Centromere Ab
+Anti-GAD (glutamic acid decarboxylase) Ab
+Anti-GBM (Glomerular basement membrane) Ab
+Anti-GM1 IgG isotype
+Anti-GM1 IgM isotype
+Anti-HBc IgM
+Anti-HBcT
+Anti-HBe
+Anti-HBe (General)
+Anti-HBs Ab
+Anti-HBs Ab (General)
+Anti-Histone Ab
+Anti-Hu Autoantibody
+Anti-IA-2 Ab (ICA 512 Ab)
+Anti-Intrinsic factor Ab
+Anti-Jo-1 Ab
+Anti-LKM-1 (liver kidney microsomal) Ab
+Anti-MAG (Myelin associated glycoprotein) Ab
+Anti-MOG antibody
+Anti-MPO (Myeloperoxidase) Ab
+Anti-Microsomal Ab (General)
+Anti-Microsomal Ab(High Quality)
+Anti-Mitochondrial Ab
+Anti-Mitochondrial Ab (General)
+Anti-Mullerian hormone[AMH]
+Anti-Neutrophil Ab
+Anti-Nuclear Ab (Screening)
+Anti-Pr3 (Proteinase 3) Ab
+Anti-RNP (ribonucleprotein) Ab
+Anti-Ri Autoantibody
+Anti-Ribosomal P Ab
+Anti-SS-A/Ro Ab
+Anti-SS-B/La Ab
+Anti-Scl-70 Ab
+Anti-Skeletal muscle
+Anti-Sm Ab
+Anti-Smooth muscle Ab
+Anti-Smooth muscle Ab (General)
+Anti-Thrombin
+Anti-Thyroglobulin Ab
+Anti-Thyroid Ab
+Anti-Xa heparin test  (LMWH)
+Anti-Xa heparin test  (UFH)
+Anti-Yo Autoantibody
+Anti-cardiolipin IgG
+Anti-cardiolipin IgM
+Anti-ds-DNA Ab
+Anti-ds-DNA Ab (Titration)
+Anti-ds-DNA Ab IgG
+Anti-nuclear Ab
+Anti-nuclear Ab (역가)
+Anti-ss-DNA Ab IgG
+Anti-ss-DNA Ab IgM
+Anti-β2-GPI Ab(IgG)
+Anti-β2-GPI Ab(IgM)
+Antibiotic-Disk diffusion
+Antibiotic-E test
+Antibiotic-E test (진단검사 전용)
+Antibiotic-MIC
+Antibody Elution test
+Antiplatelet Ab (정밀)
+Apo E genotyping
+ApoLipoprotein A1
+ApoLipoprotein AII
+ApoLipoprotein B
+ApoLipoprotein CII
+ApoLipoprotein CIII
+ApoLipoprotein E
+Aripiprazole
+Arylsulfatase A assay
+As (Arsenic)
+AspergillosAb (General)
+Aspergillus  Ab IgG
+Aspergillus  Ag
+Aspirin (Salicylic acid) (High Quality)
+Aspirin(Salicylic acid)(Quan-General)
+Autohemolysis test
+Autologous serum eye drop(preparation)
+B Ag stain
+B. pertussis PCR
+BAALC Realtime PCR
+BAR(Barbiturate)
+BCR-ABL1 Fusion Gene
+BCR::ABL major PCR 정성
+BCR::ABL minor PCR 정성
+BCR::ABL1 rearrangement PCR 정량(Major)
+BCR::ABL1 rearrangement PCR 정량(Minor)
+BIRC3-MALT1 Fusion Gene, FISH
+BK-Virus Quantification (real time)
+BM aspiration (outside reading)
+BM aspiration (단독처방 불가, BM panel 전용)
+BM biopsy (outside reading)
+BM biopsy (단독처방 불가, BM panel 전용)
+BM clot section (단독처방 불가, BM panel 전용)
+BNP (응급실전용)
+BRAF gene V600E mutation
+BRAF gene V600E mutation melanoma
+BRCA1 gene, del/dup(MLPA)
+BRCA1 mutation
+BRCA1 mutation(family)
+BRCA2 gene, del/dup(MLPA)
+BRCA2 mutation
+BRCA2 mutation(family)
+BSP
+BTA Ag
+BTK gene mutation
+BUN (Blood Urea Nitrogen)
+BZO(Benzodiazepine)
+Bacterial Identification(rDNA Sequencing)
+Barbiturate (General)
+Barbiturate (High Quality)
+Barbiturate(농도)
+Barley(보리)
+Bence-jones proteinuria (정량)
+Bence-jones proteinuria (정성)
+Benzen (General)
+Benzen (High Quality)
+Benzodiazepine (General)
+Benzodiazepine (High Quality)
+Benzodiazepine(농도)
+Bile acid
+Bladder tumor, FISH (UROVYSION)
+Blastomyces  Ab
+Blastomyces Ab (General)
+Bleeding time
+Blood Viscosity Test(WB)
+Blood viscocity test
+Body fluid cell count
+Body fluid stain & microscopy
+Bone specific alkaline phosphatase
+Bordetella pertussis Ab
+Borrelia burgdorferi PCR
+Breakage (sub1)
+Breakage (sub2)
+Buffy Coat,320㎖
+Buffy Coat,400㎖
+C-Peptide(60min)
+C-myc (8q24),FISH
+C. sinensis Ab
+C.difficile toxin B(Real-time PCR)(신속)
+C.difficile toxin B(Real-time PCR,검체의뢰용)
+C.trachomatis Ab,IgG
+C.trachomatis Ab,IgM
+C1 inactivator
+C1q (Complement 1q)
+C282Y
+C3 (Complement 3)
+C3 Proactivator (C3-PA)
+C3a (Complement 3a)
+C4 (Complement 4)
+C4a (Complement 4a)
+C5a (Complement 5a)
+C6 (Complement 6)
+C7 (Complement 7)
+C8 (Complement 8)
+C9 (Complement 9)
+CA 72-4
+CA-125
+CA-15-3
+CA125
+CA19-9
+CA50
+CACNA1S gene mutation(hypokalemic periodic paralysis
+CADASIL (NOTCH3 gene mutation)
+CADASIL(가족검사 1인)
+CAG repeats of androgen receptor
+CAH major mutation
+CALLA (Common ALL Ag)
+CALR gene mutation
+CAR-T 냉동 처리 및 보관
+CAR-T 냉동된 치료제의 해동
+CAR-T 생체외처리-단핵구 농축
+CAR-T 생체외처리-혈장 제거
+CATCH 22(DiGeore & Velocardiofacial), FISH
+CATCH 22, FISH
+CATCH 22, FISH (양수)
+CBFB (inv16),FISH
+CBFB::MYH11 Fusion Gene
+CD10
+CD117 (IHC)
+CD138 (IHC)
+CD15
+CD16+56 (BAL)
+CD19
+CD19 (BAL)
+CD2
+CD20 (IHC)
+CD24
+CD3 (BAL)
+CD3 (IHC)
+CD30
+CD34 (IHC)
+CD34 Count(세포치료)
+CD38 (IHC)
+CD4 (BAL)
+CD4/CD8 ratio (BAL)
+CD45(=LCA) (IHC)
+CD55
+CD59
+CD61 (IHC)
+CD68 (IHC)
+CD79a (IHC)
+CD8 (BAL)
+CDH 1 gene mutation
+CDT (Carbohydrate Deficient Transferrin)
+CDT(Carbohydrate Deficient Transferrin,급여)
+CEBPA gene mutation
+CFTR gene mutation
+CH 50 (Complement hemolytic activity)
+CIC C1q
+CK isoenzymes  (EP)
+CK(CPK)
+CMV (cytomegalovirus) PCR
+CMV Ab (General)
+CMV Quantification (real time)
+CMV Quantitation (real time)
+CMV antigenemia
+CMV-IgG
+CMV-IgM
+COL1A1
+COL1A2
+COVID-19 real-time RT PCR(급여)
+COVID-19 real-time RT PCR(본인부담)
+COVID-19 real-time RT PCR(전액본인부담-보호자,간병인)
+COVID-19/Flu A/Flu B real-time RT PCR(급여)
+COVID-19/Flu A/Flu B real-time RT PCR(전액 본인부담)
+CPE PCR(환자노출조치용)
+CPE PCR(환자노출조치용-급여)
+CRE culture
+CRE culture(환자노출조치용)
+CRP (Qualitative)
+CRP (Titration)
+CRP (정량)
+CS skin test
+CTX (C-telopeptide of collagen type 1)
+CYFRA 21-1 (Cytokeratin 19)
+CYP2C19 genotyping
+Ca
+Cadmium (Cd)
+Cadmium(Cd) (Qual)
+Calcitonin
+Calprotectin(quan)
+Campylobactor culture
+Candida  Ab
+Candida Ab
+Candida Ag
+Candida auris culture
+Cannanoids(대마)
+Carbamazepine (General)
+Carbamazepine (High Quality)
+Carbamazepine 약물농도해석보고서
+Carbamazepine(농도)
+Carbapenemase gene PCR(CPE)
+Carbapenemase 선별 검사(Carba-NP)
+Carbapenemase 확인 검사(효소 5종)
+Carnitine test
+Carotene
+Cefaclor
+Centromere 8
+Centromere probe,FISH
+Ceruloplasmin
+Chemical stone analysis
+Chlamydia Ab
+Chlamydia Ab (General)
+Chlamydia Ag
+Chlamydia pneumoniae Ig G
+Chlamydia pneumoniae Ig M
+Chlamydia pneumoniae PCR
+Chlamydia trachomatis PCR
+Chlorpromazine (Quality General)
+Chlorpromazine (Quality Mass Spectrometry)
+Cholesterol (정량)
+Cholinesterase
+Cholinesterase (Pseudo)
+Chromium(Cr)
+Chromogranin A
+Chromosome 13q
+Chromosome 13q,FISH(위탁)
+Chromosome 20q
+Chromosome 5q
+Chromosome 7q
+Chromosome analysis Malignancy (고형종양)
+Chromosome analysis of Inherited disorders
+Chromosome of malignancy
+Chromosome with FISH(probe21,18),Amniotic fluid
+Chromosome, Other
+Circulation immune complex  (CIC)
+Citric acid
+Cl
+Clarithromycin 내성돌연변이검사
+Clonazepam (Rivotril) (Quality Mass Spectrometry)
+Clonazepam (Rivotril)(Qualitative)
+Clostridium  Difficile cul & ID
+Clostridium difficile toxin assay (A/B), stool
+Clot retraction test
+Clozapine
+Cobalt
+Cobalt(Co)
+Cocaine (General)
+Cocaine (High Quality)
+Cocaine(코카인)
+Coccidiodes  Ab
+Coccidiodes Ab (General)
+Cold agglutinin test
+Collagen stain
+Collagen type Ⅳ
+Collagen type Ⅵ-7s
+Collagen(혈소판 응집능 검사)
+Congo red stain
+Copper (Cu)
+Copper(Cu)
+Copper(Cu)(Qual)
+Copper(Cu)-Tissue
+Copper(Liver tissue)
+Copropophyrine (High Quality)
+Copropophyrine(General)
+Coproporphyrine (정량)
+Coproporphyrine (정성)
+Cortisol (High Quality)
+Coxsackie Gr A (type 10)
+Coxsackie Gr A (type 16)
+Coxsackie Gr A (type 6)
+Coxsackie Gr A (type 7)
+Coxsackie Gr A (type 9)
+Coxsackie Gr A (type4)
+Coxsackie Gr B (type 1)
+Coxsackie Gr B (type 2)
+Coxsackie Gr B (type 3)
+Coxsackie Gr B (type 4)
+Coxsackie Gr B (type 5)
+Coxsackie Gr B (type 6)
+Cr (Chromium)
+Creatinine
+Creatinine(urine-외주)
+Crossmatching
+Cryoglobulin (정성)
+Cryoglobulin(정성)
+Cryoprecipitate,320㎖
+Cryoprecipitate,400㎖
+Cryptococcus Ag
+Crytococcus  Ab
+Crytococcus Ab (General)
+Cul & ID & Disk diffusion  ( 호기성 & 혐기성 배양) Blood, Body fluid
+Cul & ID & Disk diffusion (정량) - BAL
+Cul & ID & Disk diffusion, Blood, body fluid  (호기성 배양)
+Cul & ID & Disk diffusion, Gastrointestinal
+Cul & ID & Disk diffusion, Genitourinary
+Cul & ID & Disk diffusion, Other (drugs)
+Cul & ID & Disk diffusion, Respiratory
+Cul & ID & E test  (정량)-BAL
+Cul & ID & E test, Blood, body fluid  (호기성배양)
+Cul & ID & E test, Gastrointestinal
+Cul & ID & E test, Genitourinary
+Cul & ID & E test, Other (drugs)
+Cul & ID & E test, Respiratory
+Cul & ID & MIC, Blood, Body fluid( 호기성 & 혐기성 배양)
+Cul & ID & MIC, Blood, body fluid  (혐기성배양)
+Cul & ID & MIC, Gastrointestinal
+Cul & ID & MIC, Genitourinary
+Cul & ID & MIC, Other (drugs)
+Cul & ID & MIC, Respiratory
+Culture (BAL colony count)
+Culture (BAL)(Sensitivity와 동시처방)
+Culture (Blood)(Sensitivity와 동시처방)
+Culture (Sensitivity와 동시처방)
+Cy IgG
+Cy Lamda/Cy lamda
+Cyclosporine 약물농도해석보고서
+Cystatin C
+Cysticercus Ab
+Cytomegalovirus IgG Avidity
+Cytospin smear
+D-dimer (Qualitative)
+D-dimer (Semiquantitative)
+D-dimer(Quantitative)
+D.bilirubin
+D1 D. pteronyssinus (유럽집먼지진드기)
+D13S25 (13q14.3),FISH
+D13S319(13q14.3),FISH
+D2 D. farinae (미국진드기)
+D4Z4 locus, mutation(FSHD-Southen blot)
+DHEA-S (Dyhydro-epiandrosterine sulfate)
+DHEAs
+DMD/BMD exon deletion test
+DPD (Deoxypyridinoline)
+DRPLA (Dentatorubral pallidoluysian atrophy) Dx
+DUPAN-2
+Delta-ALA (δ-aminolevulinic acid)
+Desipramine (Quality General)
+Desipramine (Quality Mass Spectrometry)
+Diazepam (Valium) (Quality General)
+Diazepam (Valium) (Quality Mass Spectrometry)
+Digitoxin (General)
+Digitoxin (High Quality)
+Digitoxin Theophylline (High Quality)
+Digitoxin Theophylline(Quan-High Quality)
+Digoxin (General)
+Digoxin (High Quality)
+Digoxin 약물농도해석보고서
+Digoxin(High Quality)
+Digoxin(농도)
+Diluted russel′s viper venom time (dRVVT)
+Diphtheria stain
+Direct Coombs' test, C3d
+Direct Coombs' test, IgG
+Direct Coombs, IgA
+Direct Coombs, IgM
+Direct Coombs′ test (polyvalent)
+Disk diffusion
+Donath-Landsteiner test
+Down syndrome(Trisomy21, FISH)
+Doxepin (Quality General)
+Doxepin (Quality Mass Spectrometry)
+Doxylamine
+Drug abuse screening (기타)
+Duodenal fluid analysis
+Dysmorphic RBC
+E1 Cat epithelium & dander (고양이 상피세포 & 비듬)
+E2A/PBX1 rearrangement
+E5 Dog dander (개비듬)
+EBER ISH
+EBV (Epstein barr virus)-Viral capsid-IgG(정량)
+EBV EA IgG
+EBV EA IgM
+EBV EBNA IgG
+EBV PCR
+EBV Quantification (real time)
+EBV Quantitation (real time)
+EBV VCA IgG
+EBV VCA IgM
+EBV-Early Antigen-IgA
+EBV-Viral capsid Ab (General)
+EBV-Viral capsid-IgA
+EBV-early Ag Ab (General)
+EBV-nuclear Ag -IgM
+EBV-nuclear Ag Ab (General)
+ECP (Eosinophil cationic protein)
+ECP(Eosinophil cationic protein)
+EGFR gene mutation(Real-time PCR)
+EHEC PCR
+EHEC culture ID
+EPS
+ESR
+ETV6::RUNX1(TEL::AML1) rearrangement PCR
+Echinococcus Ab(포충)
+Echo virus type 1
+Echo virus type 10
+Echo virus type 11
+Echo virus type 12
+Echo virus type 13
+Echo virus type 14
+Echo virus type 16
+Echo virus type 18
+Echo virus type 19
+Echo virus type 2
+Echo virus type 21
+Echo virus type 22
+Echo virus type 24
+Echo virus type 3
+Echo virus type 30
+Echo virus type 4
+Echo virus type 5
+Echo virus type 6
+Echo virus type 7
+Echo virus type 8
+Echo virus type 9
+Edward's(trisomy 18) syndrome
+Egg count, EPD
+Egg count, per gram
+Elastase 1
+Endotoxin(정성)
+Entero virus type 70
+Entero virus type 71
+Enterovirus PCR
+Enterovirus Real-time RT-PCR (other-외주)
+Enterovirus real time RT-PCR(CSF용)(신속)
+Eosinophil (secretion)
+Eosinophil count
+Eosinophilia Panel with BCR/ABL, FISH
+Eosinophilia Panel, FISH
+Epinephrine (HPLC)
+Epinephrine(0)
+Epinephrine(120)
+Epinephrine(180)
+Epinephrine(혈소판 응집능 검사)
+Epithelial membrane Ag
+Erythropoietin
+Estradiol (E2)
+Estriol (E3)
+Estrogen
+Ethosuximide (General)
+Ethosuximide (High Quality)
+Euglobulin lysis time
+Everolimus
+Ex1 Animal protein mixes(동물혼합)
+F1 Egg white (계란흰자)
+F11 Buck wheat (메밀)
+F13 Peanut (땅콩)
+F14 Soybean (콩)
+F2 Cow's milk (우유)
+F206 Mackerel(고등어)
+F24 Shrimp(새우)
+F26 Pork(돼지고기)
+F27 Beef(소고기)
+F3 Fish .cod(대구)
+F4 Egg wheat (밀)
+F4 wheat (밀)
+F83 Chicken(닭)
+FDP (Qualitative)
+FDP (Semiquantitative)
+FDP(Quantitative)
+FFP,320㎖
+FFP,400㎖
+FGFR1(8p11),FISH
+FISH BCL6(3q27)rearrangement
+FISH CBFB::MYH11,inv(16)
+FISH CEP 12
+FISH ETV6::RUNX1(TEL::AML1)
+FISH IGH::BCL2
+FISH IGH::CCND1(BCL1)
+FISH IGH::FGFR3
+FISH IGH::MAF
+FISH MYC
+FISH PDGFRA
+FISH PDGFRB
+FISH, Other 3
+FISH, Other 4
+FISH, Other 5
+FLAER
+FLCN gene mutation
+FLT3-ITD mutation(Fragment analysis)
+FLT3/ITD mutation
+FLT3/TKD mutation
+FSH (Follicle stimulating hormone)
+FTA-ABS (Titration)
+FTA-ABS Ig G (Screening)
+FTA-ABS Ig M (Screening)
+Fabry, GLA gene
+Factor IX Gene Mutation
+Factor Ⅴ Leiden (R506Q) mutation
+Factor Ⅷ gene Mutation
+Fasciola hepatica Ab
+Fat (정성)
+Fat stain
+Fatty acid fraction
+Fe
+Fecal leukocytes
+Ferritin
+Fetal fibronectin
+Fibrinogen
+Fibrinogen (Immunological)
+Fibrinopeptide A
+Fibrinopeptide B 베타15-42
+Fibronectin
+Filaria
+Fluoxetine & metabolites
+Fluoxetine(외주)
+Folate
+Fragile X (DNA) PCR
+Fragile X 증후군(FMR1gene PCR)
+Free Cortisol (High Quality)
+Free E3
+Free Kappa light chain (24hrs urine)
+Free Kappa light chain (serum)
+Free Kappa light chain(R/U)
+Free Kappa(κ) light chain(serum)
+Free Lambda light chain (serum)
+Free Lambda light chain(24hrs urine)
+Free Lambda light chain(R/U)
+Free Lambda(λ) light chain(serum)
+Free PSA (Prostate specific Ag)
+Free fatty acid (FFA)
+Free phenytoin
+Free testosterone
+Free-β-HCG
+Fresh Blood
+Fresh Liquid plasma,320㎖
+Fresh Liquid plasma,400㎖
+Fresh amoeba exam
+Frozen Plasma,320㎖
+Frozen Plasma,400㎖
+Fructosamine
+Fungus  Cul & ID & Disk diffusion, Blood, body fluid  (호기성 배양)
+Fungus  Cul & ID & Disk diffusion, Gastrointestinal
+Fungus  Cul & ID & Disk diffusion, Genitourinary
+Fungus  Cul & ID & Disk diffusion, Other (drugs)
+Fungus  Cul & ID & Disk diffusion, Respiratory
+Fungus  Cul & ID & E test, Blood, body fluid  (호기성배양)
+Fungus  Cul & ID & E test, Gastrointestinal
+Fungus  Cul & ID & E test, Genitourinary
+Fungus  Cul & ID & E test, Other (drugs)
+Fungus  Cul & ID & E test, Respiratory
+Fungus  Cul & ID & MIC, Blood, body fluid  (호기성배양)
+Fungus  Cul & ID & MIC, Gastrointestinal
+Fungus  Cul & ID & MIC, Genitourinary
+Fungus  Cul & ID & MIC, Other (drugs)
+Fungus  Cul & ID & MIC, Respiratory
+Fungus Identification(rDNA Sequencing)
+Fungus culture
+Fungus 배양
+Fungus 염색
+Furosemide (Lasix) (Quality General)
+Furosemide (Lasix) (Quality Mass Spectrometry)
+Fya 항원검사
+Fyb 항원검사
+G6PDH (Glucose-6-phosphate dehydrogenase)
+GDH(Clostridioides difficile Glutamate Dehydrogenase Test)
+GOT(AST) (자상조치용)
+GPT(ALT) (자상조치용)
+Galactokinase(W.B)
+Galactose(High Quality)
+Galactose(급여가능)
+Galactose-1-phosphate,quantitative
+Galatose-1-P-UT
+Ganglioside Ab IgG Panel
+Ganglioside Ab IgM Panel
+Gastric juice analysis
+Gastrin
+Gentamycin (General)
+Gentamycin (High Quality)
+Gentamycin 약물농도해석보고서
+Gentamycin(High Quality)
+Gentamycin(Peak)
+Gentamycin(Trough)
+Giardia lamblia
+Giardia lamblia-IgG
+Giardia lamblia-IgM
+Glucagon
+Glucose
+Glucose  (PC 2Hrs)
+Glucose (50g), 120 min
+Glucose (50g), 60 min
+Glucose (Fasting)
+Glucose (제비티용-120min.)
+Glucose (제비티용-30min.)
+Glucose(100g), 120 min
+Glucose(100g), 180 min
+Glucose(100g), 30 min
+Glucose(100g), 60 min
+Glucose(100g), 90 min
+Glucose(12hr)
+Glucose(24hr)
+Glucose(2hr)
+Glucose(2hr)-100g복용시
+Glucose(2hr)-75g복용시
+Glucose(30)
+Glucose(36hr)
+Glucose(3hr)
+Glucose(48hr)
+Glucose(60)
+Glucose(60)-100g복용시
+Glucose(60)-50g복용시
+Glucose(60hr)
+Glucose(72hr)
+Glucose(75g), 120 min
+Glucose(75g), 30 min
+Glucose(75g), 60 min
+Glucose(75g), 90 min
+Glucose(90)
+Glucose(90)-75g복용시
+Glucose, PP (  ) min
+Glucose, PP (  ) min,Urine
+Glucose, PP 120 min
+Glucose, PP 120 min,Urine
+Glucose, PP 180 min
+Glucose, PP 180 min,Urine
+Glucose, PP 30 min
+Glucose, PP 30 min,Urine
+Glucose, PP 60 min
+Glucose, PP 60 min,Urine
+Glucose, PP 90 min
+Glucose, PP 90 min,Urine
+Glucose,Fasting(100g 산전검사용)
+Glucose,Fasting(연속검사용)
+Glucose,fasting,Urine
+Gluten(글루텐)
+Glycated Albumin
+Glycophorin A (IHC)
+Glycoprotein
+Glyserol lysis time
+Gonadotropin
+Gr.B streptococcus Ag
+Gram stain
+Gx2 Grass pollems mixes(식물혼합)
+H 항원검사
+H.influenzae Ag
+H63D
+HAV Ab IgG
+HAV Ab(IgM)
+HBA1 gene mutation(PCR&Sequencing)
+HBA1/HBA2 gene mutation(MLPA)
+HBA2 gene mutation(PCR&Sequencing)
+HBB gene mutation(β-Thalassemia)
+HBD (Hydroxy butyrate dehydrogenase)
+HBV DNA Quantitation (real time)
+HBV DNA 정량 (bDNA assay)
+HBV PCR (정성)
+HBV drug R.mutation(ADV)
+HBV drug R.mutation(ETV)
+HBV drug R.mutation(LMV)
+HBV 약제내성돌연변이 24종
+HBe Ag
+HBe Ag (General)
+HBs Ag
+HBs Ag (General)
+HBs Ag(정량)
+HBsAg 정량
+HCV Ab (General)
+HCV Ab(High Quality)
+HCV NS5A L31/Y93 mutation
+HCV RNA Quantification (Real-time)
+HCV RT-PCR Hybridization
+HCV RT-PCR hybridization
+HCV genotyping
+HDL-cholesterol
+HDL-cholesterol electrophoresis
+HDV Ab(Anti delta Ab)
+HDV RT PCR
+HE4
+HER2 protein
+HEV IgG
+HEV IgM
+HIV Ab (General)
+HIV Ab(Ag/Ab)
+HIV RNA Quantification
+HIV p24 Ag
+HIV 항레트로바이러스 약제내성검사
+HLA Ab (PRA-class Ⅰ )-Identification
+HLA Ab (PRA-class Ⅰ )-screening
+HLA Ab (PRA-class Ⅱ )-Identification
+HLA Ab (PRA-class Ⅱ )-screening
+HLA B27
+HLA B27 (DNA-high resolution)
+HLA B27 real-time PCR
+HLA DQB1
+HLA antibody single Ag ID-class Ⅰ
+HLA antibody single Ag ID-class Ⅱ
+HLA crossmatching-B  (AHG)l
+HLA crossmatching-B (Flow)(외주)
+HLA crossmatching-B Cell(급여가능)
+HLA crossmatching-T (AHG) (외주)
+HLA crossmatching-T (AHG)(100/100가능)
+HLA crossmatching-T (Flow) (외주)
+HLA crossmatching-T (Flow)(100/100가능)
+HLA crossmatching-T Cell
+HLA crossmatching-T Cell(외주)
+HLA-A  (serology)
+HLA-A (DNA)(100/100가능)
+HLA-A (DNA-high resolution)
+HLA-B  (serology)
+HLA-B (DNA)(100/100가능)
+HLA-B (DNA)-Low(100/100가능)
+HLA-B (DNA-high resolution)
+HLA-B 5801(PCR)
+HLA-B 5801(Sequencing)
+HLA-B51 genotyping
+HLA-C  (serology)
+HLA-C (DNA-high resolution)
+HLA-C (DNA-low)
+HLA-DQ typing (DNA)
+HLA-DQ typing (DNA-high resolution)
+HLA-DQ typing (serology)
+HLA-DQB1 High-resolution
+HLA-DR typing (serology)
+HLA-DR(DNA)- low(100/100가능)
+HLA-DR(DNA-low)(100/100가능)
+HLA-DRB1*04 (DNA-high resolution)
+HMGCR Ab IgG
+HPV DNA probe (hybrid capture)
+HPV PCR hybridization
+HPV genotyping
+HPV type 16 PCR
+HPV type 18 PCR
+HSV (Herpes simplex virus) PCR
+HSV Ab (General)
+HSV PCR(typeⅠ/Ⅱ)
+HSV type 1 IgG
+HSV type 2 IgG
+HSV type Ⅰ PCR
+HSV type Ⅱ PCR
+HSV-IgG
+HSV-IgM
+HTLV-Ⅰ/Ⅱ Ab
+Haloperidol(외주)
+Ham's test
+Hantaan Ab (General)
+Hantaan Virus RT-PCR
+Hantaan virus  RT-nested PCR
+Hantaan virus Ab
+Hantaan-IgM
+Haptoglobin
+Hb F stain
+Hb electrophoresis
+Hct
+Heat Instability test
+Heinz body
+Helminth, larva,포르말린에테르
+Helminth, ova, 식염수 부유법
+Helminth, ova,포르말린에테르
+Helminth, ova,황산아연부유법
+Hematogon
+Hemoglobin
+Hemoglobin A1C (당뇨검사)
+Hemoglobin H stain
+Hemophilus Influenza Ab (General)
+Hemophilus influenza Ab
+Heparin neutralization test
+Heparin quantitation
+Heparin-PF4 Ab
+Heroin (General)
+Heroin (High Quality)
+Heterophil Ab (Confirm)
+Heterophil Ab (Screening)
+High molecular weight kininogen
+Hippuric acid (General)
+Hippuric acid (High Quality)
+Hippuric acid (Quality)
+Hippuric acid (Quantity)
+Histoplasma  Ab
+Histoplasma Ab (General)
+Homocysteine (CLIA)
+Homocysteine (HPLC)
+Homocystine
+Human growth hormone
+Human herpes Virus type 6 PCR
+Human herpes virus 8(HHV8) PCR
+Huntington′s ds Dx
+Hyaluronec acid (HA)
+Hydroxyproline,free
+Hydroxyproline,total
+I.Phos (Inorganic phosphorus)
+I6 Cockroach 바퀴벌레)
+ICD (Isocitrate dehydrogenase)
+IGF-1 (Somatomedin-C) (Insulin-Like Growth factor 1)
+IGH & IGK 유전자 재배열 검사(MRD)
+IGH & IGK 유전자 재배열 검사(screen)
+IGH Gene
+IGH Gene,FISH(위탁)
+IGRA(직원검진전용)
+IGRA(환자노출조치용)
+IRF (Immature reticulocyte fraction)
+Ig E (PRIST)
+Ig Kappa gene rearrangement
+IgA
+IgA (소아)
+IgD
+IgE
+IgF-BPⅢ(Insulin Growth-binding protein Ⅲ)
+IgG
+IgG subclass1 (Immunoglobulin 정량)
+IgG subclass2 (Immunoglobulin 정량)
+IgG subclass3 (Immunoglobulin 정량)
+IgG subclass4 (Immunoglobulin 정량)
+IgG(CSF)
+IgH gene rearrangement
+IgK gene rearrangement
+IgM
+IgM(소아)
+Imatinib(TKI) 약제내성(major BCR:::ABL1)
+Imipramine
+Imipramine (Quality General)
+Imipramine (Quality Mass Spectrometry)
+Immuno Fixation (요,체액)
+Immuno Fixation (혈청)
+Immuno Fixation IgD,IgE (요,체액)
+Immuno Fixation IgD,IgE (혈청)
+Immunoblot assay(Food,Allergy screening)
+Immunoblot assay(Inhalant,Allergy screening)
+Immunoelectorophoresis (IEP) (요,체액)
+Immunoelectorophoresis(IEP) (혈청)
+Immunofixation EP(면역고정전기영동)-위탁
+India ink
+Indirect Coombs, C3
+Indirect Coombs, IgA
+Indirect Coombs, IgG
+Indirect Coombs, IgM
+Indirect Coombs′test (polyvalent)
+Indocyanine green test (ICG) R15
+Influenza A (CF)
+Influenza Ag(ER,ICU전용/선별급여)
+Influenza Ag(ER,ICU전용/선별급여/일반)
+Influenza Antigen test (A)
+Influenza Antigen test (B)
+Influenza V. A&B Ag
+Influenza virus Real-time PCR
+Inhibin A
+Insulin Ab
+Insulin receptor Ab
+Insulin(60min)
+Intact PTH (Parathyroid Hormone)
+Integrated test(초기)(PAPP-A)
+Iodine
+Iron stain (단독처방 불가, BM panel 전용)
+Irradiation
+Islet cell Ab
+Isoagglutinin titer
+Isopropanol precipitation
+JAK2 gene V617F
+JAK2 gene exon12
+JCV PCR
+Jka 항원검사
+Jkb 항원검사
+Juvenile Parkinsonism,PARK2 Gene Mutation
+K
+K-ras gene mutation
+K-ras p12,13
+KIT gene mutation
+KL-6
+KMT2A Gene
+KOH Mount
+Kallmann syndrome,FISH
+Kappa ISH
+Kappa(Immunostain)
+Ketone body 분획검사
+LAP (Leucine aminopeptidase)
+LAP (Leukocyte alkaline phosphatase) score
+LDH isoenzymes  (EP)
+LDH(혈액)
+LDL-cholesterol
+LDLR gene,mutation(Familial hypercholesterolemia),sequencing
+LE cell
+LH (Leuteinizing hormone)
+LHON 11778 (Leber's Hereditary Optic Neuropathy)
+LHON 14484 (Leber's Hereditary Optic Neuropathy)
+LHON 3460 (Leber's Hereditary Optic Neuropathy)
+LHON 4171 (Leber's Hereditary Optic Neuropathy)
+LHON type(MT-ND4,MT-ND6,MT-ND1 gene)
+LSD 6종 (2회차)
+LSI 21, FISH
+LSI BCL 6,FISH
+Lacosamide
+Lactic acid (CSF)
+Lactic acid (Lactate)
+Lambda ISH
+Lambda(Immunostain)
+Lamella body count
+Lamotrigine
+Lamotrigine (Quality General)
+Lamotrigine (Quality Mass Spectrometry)
+Latex specific IgE
+Lead  (Pb)
+Lead  (Pb) blood
+Lead (Pb) blood (Qual)
+Lead(Pb)
+Legionella Ab
+Legionella Ag
+Legionella culture
+Legionella pneumophila PCR
+Leptospira Ab
+Leptospira Ab (General)
+Leptospira PCR
+Leu
+Leucine (MSUD)(high quality)(급여가능)
+Leucine(NST-유료)
+Leukapheresis
+Leukapheresis ,Therapeutic
+Leukocyte Filtered Packed Plt (백혈구 여과 제거 혈소판),400㎖
+Leukocyte Filtered Packed Plt(백혈구 여과 제거 혈소판 ),320㎖
+Leukocyte common Ag
+Levetiracetam
+Lidocain(외주)
+Lipase
+Lipid total
+Lipoprotein (a)
+Lipoprotein electrophoresis
+Lipoprotein lipase
+Lithium (Li)
+Lithium(Li)(Quan-ICP-ES법 또는 원자흡광광도법)
+Lupus anticoagulant (선별)
+Lupus anticoagulant (확진)
+Lymphocyte culture
+Lymphocyte culture (other stimulant; specify)
+M 항원검사
+M. tuberculosis  Ab
+M.tuberculosis  nested PCR
+M.tuberculosis PCR
+MAST (118종)
+MAST (Food)
+MAST (Inhalant)
+MBP (Myelin basic protein) 해외수탁
+MELAS major mutation(MT-TL1 gene)
+MET(Methamphetamine)
+MIC
+MLH1 mutation
+MODY3(HNF1A) gene mutation
+MOTT PCR-hybridization
+MPL gene W515 mutation
+MPO (IHC)
+MRSA culture
+MSH2 mutation
+MTB/NTM real-time PCR
+MTHFR major mutation
+Macrophage stain
+Malaria Ag test
+Malaria smear
+Mandelic acid (Qual)
+Mandelic acid (Quantity)
+Marfan,FBN1 Gene Mutation
+Masson's Trichrome stain
+Mastocheck(유방암 선별보조 혈장단백검사)[액체크로마토그래피-탠덤질량분석법]
+Measles Ab (General)
+Measles-IgG
+Measles-IgM
+Meningitis/Encephalitis(ME) panel(14종)
+Mercury (Hg)
+Mercury(Hg)(Qual)
+Metanephrine
+Metanephrine total
+Methamphetamine (GC)
+Methamphetamine(외주)
+Methamphetamine(필로폰)
+Methanol (urine)
+Methemoglobin  (Met-Hb)
+Methionine
+Methionine(NST-유료)
+Methotrexate
+Methotrexate (General)
+Methotrexate (High Quality)
+Methyl hippuric acid (Quality)
+Methyl hippuric acid (Quantity)
+Methylmalonic acid 정량
+Methylmalonic acid 정량 (EDTA)
+Methylmalonic acid 정성 (Random Urine)
+Mg
+Microbial killing of neutrophils
+Microdeletion,Other, FISH
+Microoganism fluorescence
+Miller-Dieker syndrome,FISH
+Mixed lymphocyte cultere
+Mixing test, PT(2hrs-incubation)
+Mixing test, PT(pre-incubation)
+Mixing test, aPTT(2hrs-incubation)
+Mixing test, aPTT(pre-incubation)
+Mn
+Mn(Qual)
+Modified Hodge 시험 (진검처방)
+Monoethylglycinexylididde (General)
+Monoethylglycinexylididde (High Quality)
+Monoethylglycinexylididde(High Quality)
+Morphine (General)
+Morphine (High Quality)
+Morphine(Quan-High Quality)
+Mucin clot test for Joint fluid
+Mucopolysaccharidosis (MPS) 정량
+Mucopolysaccharidosis (MPS) 정성
+Mucormyces  Ab
+Mucormyces Ab (General)
+Mumps Ab (General)
+Mumps RT-PCR
+Mumps-IgG
+Mumps-IgM
+Mx1 Fungus mixes(곰팡이혼합)
+Myco / Ureaplasma culture
+Mycophenolic Acid(MPA)
+Mycoplasma Ab
+Mycoplasma Ab IgG
+Mycoplasma Ab IgM
+Mycoplasma genitalium PCR
+Mycoplasma hominis PCR
+Mycoplasma pneumoniae PCR
+Myeloperoxidase
+Myoglobin
+Myoglobin (Qual)
+Myoglobin(정량)
+Myotonic dystrophy
+N 항원검사
+N-Methylformamide (Quality)
+N-Methylformamide (Quantity)
+N-myc(2p23-P24),FISH
+N. meningitis Ag  (B/E coli K1)
+N. meningitis Ag (ACY W135)
+N.gonorrhoeae culture ID
+NBT (Nitroblue tetrazolium)
+NF1 gene Mutation(MLPA)
+NF1 gene Mutation(PCR & sequencing)
+NF2 gene mutation
+NGS-Anemia panel(유전성 빈혈 유전자 패널)
+NGS-Congenital neutropenia panel(선천성 호중구감소증 유전자 패널)
+NGS-Hemophagocytic lymphohistiocytosis panel(혈구탐식성 림프조직구증 유전자패널)
+NGS-Inherited bone marrow failure syndrome panel(유전성골수부전증후군유전자 패널
+NGS-Inherited thrombocytopenia panel(유전성 혈소판감소증 유전자 패널)
+NGS-nephrotic syndrome panel
+NGS-renal tubulopathies panel
+NIPBL gene mutation
+NK (natural killer) cell
+NK 세포활성유발인터페론감마
+NMP22 Ag
+NPM1 gene Mutation
+NSE (Neuron specific enolase)
+NST 82종 (2회차)
+NT-ProBNP (N-terminal probrain natriuretic peptide)
+NTM 동정검사
+NTM 동정검사(분자진단 전용코드)
+NTX(N-telopeptide of collagen type1)
+NUDT15 genotyping
+Na
+Nalbuphine
+Neisseria Ab
+Neisseria Ab (General)
+Neisseria gonorrhoeae PCR
+Nonspecific esterase stain
+Norepinephrine (HPLC)
+Norepinephrine(0)
+Norepinephrine(120)
+Norepinephrine(180)
+Normetanephrine
+Norovirus Ag
+Nortriptyline (Quality General)
+Nortriptyline (Quality Mass Spectrometry)
+O. tsutsugamushi Ab
+Olanzapine
+Oligoclonal band (IEF & immunofixation)
+Oligoclonal band in CSF
+Omega(w)-5 Gliadin
+Opiates screening (General)
+Opiates screening (High Quality)
+Opiates screening(Quan-High Quality)
+Opiates(아편)
+Optic atrophy type1, OPA1 gene mutation
+Organic acid
+Osmotic fragility test
+Osmotic fragility test (24hrs)
+Osteocalcin
+Other (drugs)
+Other (drugs) (General)
+Other (drugs) (High Quality)
+Other (drugs) (Qual)
+Other gene rearrangement
+Other infectious agent Ab (General)
+Other infectious agent Ab-IgG
+Other infectious agent Ab-IgM
+Other infectious agent Ag
+Other infectious agent Ag (General)
+Other(drugs) (Quan-General)
+Other(drugs) (Quan-High Quality)
+Other- PCR
+Other-RT-PCR
+Other-RT-PCR Hybridization
+Oxalic acid
+Oxcarbazepine metabolite (MHD)
+P.Falciparum nested PCR
+P.vivax nested PCR
+P.westermani Ab
+P1NP(Procollagen 1 N-terminal)
+P53 mutation analysis.major
+PABPN1 gene
+PAP (Prostatic acid phosphatase)
+PAPP-A
+PAS
+PB Morphology
+PB Morphology (단독처방 불가, BM panel 전용)
+PCP(Phencyclidine)
+PDW
+PEG Coombs′ Test
+PHI (Phosphohexose isomerase)
+PIK3CA Companion Diagnostic test [Real-Time PCR]
+PIVKA Ⅱ test (Protein induced by Vit.K absence)
+PKAN;PANK2 gene Mutation
+PLT
+PML-RARA  Fusion Gene
+PML::RARA rearrangement PCR 정량
+PML::RARA rearrangement PCR 정성
+PMP 22 gene (MLPA) (Peripheral myelin protein)
+PMP 22 gene(Sequencing)(Peripheral myelin protein)
+PNH 검사 (Gel 검사)
+PPD skin test
+PRF1 gene mutation
+PROS1 mutation (sequencing)
+PRRT2 gene mutation
+PSA (Prostate specific Ag)
+PSEN1 gene Mutation
+PTEN gene mutation
+PTH related peptide (PTH-rP)
+PTPN 11 gene mutation
+PW skin test
+Para influenza Ag
+Para influenza type 1 (HI)
+Para influenza type 2 (HI)
+Para influenza type 3 (HI)
+Para influenza type 4 (HI)
+Paracoagulation test
+Parainfluenza virus Real-time PCR
+Paraquot (Gramoxone) (Quality Mass Spectrometry)
+Paraquot (Gramoxone)(Quality General)
+Paraseite specific Ab Ig G
+Parasite Exam,Direct
+Parvo virus B19 IgG
+Parvo virus B20 IgM
+Parvovirus B19 PCR
+Parvovirus B19 Quantification (real-time)
+Patau(trisomy 13) syndrome
+Penicilloyl G
+Penicilloyl V
+Pepsinogen I
+Pepsinogen II
+Perampanel
+Phadiatop
+Phadiatop infant
+Phagocytosis of neutrophils
+Phencyclidine (General)
+Phencyclidine (High Quality)
+Phenobarbital (General)
+Phenobarbital (High Quality)
+Phenobarbital 약물농도해석보고서
+Phenobarbital(농도)
+Phenol
+Phenol (General)
+Phenol (High Quality)
+Phenyketonuria(PKU)(NST-유료)
+Phenylalanine(급여가능)
+Phenylgyoxylic  acid
+Phenytoin (General)
+Phenytoin (High Quality)
+Phenytoin 약물농도해석보고서
+Phenytoin(농도)
+Phlebotomy
+Phospholipid
+Physical stone analysis
+Plasma Hemoglobin
+Plasma porphyrin 정성
+Plasmapheresis
+Plasmapheresis, Therapeutic
+Plasmin/α2-plasmin inhibitor complex
+Plasminogen activator inhibitor-1  (Immunlogical)
+Plasminogen activator inhibitor-1(Immunological)
+Plasminogen 항원
+Plasminogen(Functional)
+Plasmodium
+Plasmodium falciparum PCR
+Plasmodium malariae PCR
+Plasmodium nested PCR
+Plasmodium ovale PCR
+Plasmodium vivax PCR
+Plasmodium-IgG
+Plasmodium-IgM
+Platelet -Leukapheresis
+Platelet Concentrate (PC),320㎖
+Platelet Concentrate (PC),400㎖
+Platelet Rich Plasma,320㎖
+Platelet Rich Plasma,400㎖
+Platelet associated Ab (High Quality)
+Platelet associated Ab (flow)
+Platelet factor 4
+Platelet function test (Collagen)
+Platelet function test (Pre-OP)-TRAP
+Platelet function test (Ristocetin)
+Platelet function test (TRAP)
+Platelet function test(Aspirin)
+Platelet function test(P2Y12)
+Plateletapheresis (본원)
+Plateletapheresis (혈액원)
+Plateletpheresis ,Therapeutic
+Pletelet factor 3
+Pneumococcal Ag
+Pneumocystis jirovecii PCR
+Pneumocystis jirovecii(carinii) Real Time PCR
+Polio virus type 1
+Polio virus type 2
+Polio virus type 3
+Polybrene Coombs' Test
+Porphobilinogen (Qual)
+Porphobilinogen (Quan)
+Porphobilinogen (Quantitative)
+Porphobilinogen(Quan-High quality)
+Posaconazole(농도)
+Post-Transplant STR
+Prader-Willi /Angelman, FISH
+Prader-Willi/Angelman FISH(양수)
+Prader-Willi/Angelman syndrome PCR
+Pre-Transplant STR
+Pre-Transplant STR(donor)
+Prealbumin
+Pregnanediol (P2)
+Prekallikrein (Qualitative)
+Prekallikrein (Quantitative)
+Presepsin
+Primidone (General)
+Primidone (High Quality)
+Procalcitonin 정량
+Progesterone (P4)
+Proinsulin
+Prolactin
+Propranolol
+Prostaglandin E2
+Protein C Ag
+Protein C activity
+Protein EP(단백분획측정)-위탁
+Protein Electrophoresis(PEP) (요,체액)
+Protein Electrophoresis(PEP) (혈청)
+Protein S Ag (Total)
+Protein S activity
+Protein S free (유리형)
+Prothrombin G20210A mutation
+Prothrombin Time
+Prothrombin Time (채혈실전용)
+Prothrombin consumption test
+Prothrombin fragment 1+2
+Protopophyrine (Generall)
+Protopophyrine (High Quality)
+Protopophyrine (Qual)
+Protozoa
+Pyrimidine 5'-nucleotidase
+Pyrogen
+Pyruvate kinase
+Pyruvic acid (Pyruvate)
+Quetiapine
+Quinidine (General)
+Quinidine (High Quality)
+R.typhi (Murine typhus) (High)
+RA (Quantiation)
+RA (Screening)
+RA (Titration)
+RA factor IgA
+RA factor IgG
+RBC
+RBC (LD),320㎖
+RBC (LD, 본원),400㎖
+RBC Membrane Protein Analysis
+RBC,320㎖
+RBC,400㎖
+RDW
+RET gene mutation
+RET, MEN2 (FMTC)
+RET, MEN2 (MEN2A)
+RET, MEN2 (MEN2B)
+RETT syndrome, MECP2 gene Analysis
+RF (Rheumatoid factor,RA)
+RNF213 gene,R4810K mutation
+RPR (syphilis)-screening
+RPR (syphilis)-titer
+RPR (syphilis)-정밀
+RSV Ab (General)
+RSV Ag (심장수술용)
+RSV virus Real-time PCR
+RSV-IgG
+RSV-IgM
+RUNX1-RUNX1T1 Fusion Gene
+RUNX1::RUNX1T1(AML1::ETO) rearrangement PCR
+RUNX1::RUNX1T1(AML1::ETO) rearrangement PCR 정량
+Rapid blood culture ID
+Recalcification time
+Renin Activity[PRA:Plasma Renin Activity](LC/MS)
+Renin Activity[PRA:Plasma Renin Activity](RIA)
+Reptilase test
+Reti. count (소아용)
+Reticulin stain (단독처방 불가, BM panel 전용)
+Reticulin stain(원내수탁용)
+Reverse T3
+Rh Ab titer
+Rh(D) typing (자동화법)
+Rh-Phenotype (C,c.E,e)
+Rickettasia Ab
+Rickettasia Ab (General)
+Risperidone & metabolites
+Ristocetin(혈소판 응집능 검사)
+Ristocetin,diluted(혈소판 응집능 검사)
+Rota Ab (General)
+Rota virus Ag
+Rota-IgG
+Rota-IgM
+Rubella  Ab (General)
+Rubella -IgG
+Rubella -IgM
+Rubella IgG
+Rubella IgG avidity test
+Rubella IgM
+Rubella RT-PCR
+Rye(호밀)
+S 항원검사
+S.pneumoniae urinary Ag test
+SARS-CoV-2 Ab (S 항원), total
+SBMA (Spinobulbar muscular atrophy)
+SCA1 (Spino cerebella ataxia type 1)
+SCA2 (Spino cerebella ataxia type 2)
+SCA3 (Spino cerebella ataxia type 3)
+SCA6 (Spino cerebella ataxia type 6)
+SCA7 (Spino cerebella ataxia type 7)
+SCC (Squamous cell cancer Ag)
+SCN4A gene mutation
+SDHB gene Mutation
+SDHD gene Mutation
+SFTS-혈액 (급여)
+SHBG (Sex hormone binding globulin)
+SLC12A3 gene mutation
+SOD 1 gene mutation
+SRY, FISH
+STD multiplex PCR (6종)
+STD multiplex Real-time PCR
+STD multiplex Real-time PCR(12종)
+Salmonella Ab
+Salmonella Ab (General)
+Scotch tape test
+Screen test for PKU (Phenyketonuria), (Ferric Chloride test)
+Se (Selenium)
+Secretor test
+Selectivity Index
+Semen analysis
+Semen fructose
+Serotonin (5a-Hydroxy tryptamine)
+Sertraline
+Shake test
+Sialic acid
+Simple stain
+Sirolimus (Rapamycin)
+Sm IgA
+Sm IgA/Cy IgA
+Sm IgD
+Sm IgD/Cy IgD
+Sm IgG
+Sm IgG/Cy IgG
+Sm IgM
+Sm IgM/Cy IgM
+Sm Kappa/Sm lamda
+Sm kappa/Cy kappa
+Sm lamda/Cy lamda
+Smith-Magenis syndrome,FISH
+Soluble Interleukin 2 receptor
+Sparganum Ab
+Specific esterase stain
+Spinal muscular atrophy
+Spirochaeta dark field
+Sputum exam for P.W.
+Stool Fat  (정량)
+Stool Hb (정량)
+Stool WBC
+Stool chloride (CL)
+Stool occult blood  (chemical method)
+Stool occult blood,Hb
+Stool occult blood,Hb & Transferrin
+Stool pH
+Stool potassium  (K)
+Stool sodium (Na)
+Stool urobilinogen
+Styrene (General)
+Styrene (High Quality)
+Sucrose hemolysis test
+Sudan Black B
+Sulfhemoglobin (Sulf-Hb)
+Swine influenza A virus H1N1 (외주)
+Synovial fluid viscosity/Turbidity test
+Syphilis Ab
+T Ag stain
+T-SPOT.TB
+T. protein
+T.bilirubin
+T.cholesterol
+T3 Uptake
+TB(Tuberculosis) drug 정량
+TB/RIF 내성검사(Real-time Nested PCR)
+TBG (Thyroxine binding globulin)
+TBPE (General)
+TBPE (Tetrabromophenolphthalin) (General)
+TBPE (Tetrabromophenolphthalin) (High Quality)
+TCF3(E2A), FISH
+TIBC
+TNFα (Tumor necrosis factor α)
+TP53 (17p13.1)gene-외주
+TP53 Gene
+TP53 Gene,FISH(위탁)
+TPA (Tissue polypeptide Ag)
+TPA/PAI-1 complex
+TPHA (Titration)
+TPHA(정성)
+TPLA(syphilis)
+TPMT genotyping,major (Thiopurine methyltransferase)
+TRAK Ag
+TRAP stain
+TRB & TRG 유전자 재배열 검사(MRD)
+TRB & TRG 유전자 재배열 검사(screen)
+TS Ab (Throid stimulating Ab)
+TSH Receptor Ab
+TTR gene mutation
+Tacrolimus 약물농도해석보고서
+TcRβ gene rearrangement
+TcRγgene rearrangement
+TdT
+TdT (IHC)
+Testosterone
+Theophylline
+Theophylline (General)
+Theophylline (High Quality)
+Theophylline 약물농도해석보고서
+Theophylline(High Quality)
+Thorn test
+Thrombin time
+Thromboelastograph
+Thrombomodulin
+Thromboplastin generation test
+Thromboxane B2
+Thyroglobulin
+Thyroxine binding
+Tissue-type plasminogen activator (TPA)
+TnI
+Tobramycin (General)
+Tobramycin (High Quality)
+Tobramycin 약물농도해석보고서
+Tobramycin(Peak)
+Tobramycin(Trough)
+Tobramycin(농도)
+Toluene (General)
+Toluene (High Quality)
+Toluidne blue stain
+Topiramate
+Torsion A (DYT1)
+Total CO₂
+Total Galactose(NST-유료)
+Total Ig E (Unicap)
+Total ketone
+Total porphyrine (General)
+Total porphyrine (High Quality)
+Total porphyrine (Qual)
+Total porphyrine (Quan)
+Toxocariasis Ab IgG
+Toxoplasma
+Toxoplasma DNA PCR
+Toxoplasma- IgG
+Toxoplasma-IgM
+Transferrin
+Trazodone(외주)
+Trematodes examination
+Treponema pallidum PCR
+Trichinella  Ab
+Trichinella Ab (General)
+Trichloroacetic acid (TCA) (Quantity)
+Trichloroacetic acid (TCA)(Qual)
+Trichloroethanol (Qual)
+Trichloroethanol (Quantity)
+Trichomonas vaginalis PCR
+Trichroride (Qual)
+Trichroride (Quantity)
+Triglyceride
+Trisomy 13 FISH with Chromosome analysis(양수)
+Trisomy 13,18,21 FISH with chr.analysis
+Trisomy 13,FISH(양수)
+Trisomy 18 FISH with Chromosome analysis(양수)
+Trisomy 18,FISH(양수)
+Trisomy 21 FISH with Chromosome analysis
+Trisomy others,FISH(양수)
+Troponin T
+Tryptase
+Tx1 Tree pollens mixes(수목혼합)
+Tzank test
+UDP-galactose epimerase
+UGT1A1 genotyping(hyperbilirubinemia)
+UGT1A1 genotyping(irinotecan)
+UIBC
+UNC13D gene mutation
+Unexpected Ab Identification test
+Unexpected Ab screening
+Urea breath test (요소호흡)
+Ureaplasma urealyticum PCR
+Uric acid
+Urine 17-OHCS(0)(내분비내과)
+Urine 17-OHCS(2d)(내분비내과)
+Urine 17-OHProgesterone1
+Urine Creatinine(0)
+Urine Creatinine(0)-덱사메타손 억제시
+Urine Creatinine(2d)
+Urine Creatinine(2d)-덱사메타손 억제시
+Urine Hemosiderin
+Urine WBC stick test
+Urine hCG (정성)
+Uroblinogen (Qual)
+Uroblinogen (Quan)
+Urokinase type plasminigen activator
+Uropophyrine (High Qualityl)
+Uroporphyrine (정성)
+Uroporphyrine(General)
+VDRL (정량)
+VHL gene mutation
+VIP (Vasoactive Intestinal Polypeptide)
+VLCFA (Very long chain fatty acid)
+VMA (Vanilly mandelic acid) (Quan)
+VRE culture
+VZV IgG
+VZV IgM
+Valproic Acid(농도)
+Valproic acid (General) (Orfil,Depakene)
+Valproic acid (High Quality)
+Valproic acid (High Quality) (Orfil,Depakene)
+Valproic acid 약물농도해석보고서
+Vancomycin (General)
+Vancomycin (High Quality)
+Vancomycin 약물농도해석보고서
+Vancomycin(농도)
+Varicella zoster virus (VZV) Ab (General)
+Varicella zoster virus PCR
+Venlafaxine
+Vi-IFAT (Salmonella.Vi Ag)
+Virus Serum HI Test
+Viscosity
+Vitamin B1 (Thyamine)
+Vitamin B12 (Cyanocobalamin)
+Vitamin B2 (Riboflavin)
+Vitamin B6 3분획(Phyridoxal)
+Vitamin BT (L-Carnitine)
+Vitamin D Total
+Vitamin E (α-Tocopherol)
+Vitamin E fraction
+Vitamin K
+Vitamin K ,plasma
+Vitamin K total (HPLC)
+Voriconazole(농도)
+W6 Mugwort (쑥)
+WBC
+WBC Differential Count (Donor)
+WBC differential count
+WT1 Realtime PCR
+Washed RBC(WRBC),320㎖
+Washed RBC(WRBC),400㎖
+Weak D test (Du test)
+Weil-Felix Test
+Wet smear
+Whole Blood,320㎖
+Whole Blood,400㎖
+Widal test
+Williams syndrome, FISH (양수)
+Williams syndrome,FISH
+Wilson disease, ATP7B gene mutation (Full Sequencing)
+Wilson major mutant(Sequencing)
+Wx1 Weed pollens mixes(잡초혼합)
+X/Y,FISH
+X/Y,FISH (양수)
+Xylene (General)
+Xylene (High Quality)
+Xylose absorption test
+Yersinia Ab (General)
+Yersinia culture
+Yersinia enterocolitica Ab
+Yersinia pseudotuberculosis Ab
+ZTT (Zinc turbidity test)
+Zika virus (임산부,의심환자-급여)
+Zinc
+Zinc(Qual)
+Zn protoporphyrin
+Zonisamide
+Zonisamide (Exegran) (Quality General)
+Zonisamide (Exegran) (Quality Mass Spectrometry)
+[선별선택80](1-3)-β-D-Glucan 정량
+[선별선택80]Chlamydia culture
+[선별선택80]Leptospira culture
+[선별선택80]M. hominis culture
+[선별선택80]QuantiFERON-TB
+[선별선택80]QuantiFERON-TB Gold Plus
+[선별선택80]Ureaplasma urealiticum culture
+[선별선택90](100/100가능) CLO test (Urease test)
+[선별선택90](응급면역)C-Peptide(30min)
+[선별선택90](응급면역)C-Peptide(AC)
+[선별선택90](응급면역)C-Peptide(PC 2hrs)
+[선별선택90](응급면역)CEA (Carcinoembryonic Ag)
+[선별선택90](응급면역)Free T4
+[선별선택90](응급면역)Insulin(30min)
+[선별선택90](응급면역)Insulin(AC)
+[선별선택90](응급면역)Insulin(PC 2hrs)
+[선별선택90](응급면역)T3 (Triiodothyronine)
+[선별선택90](응급면역)T4(Thyroxin)
+[선별선택90](응급면역)TSH(Throid stimulating hormone)
+[선별선택90](입원전)C-Peptide(AC)
+[선별선택90](입원전)C-Peptide(PC 2hrs)
+[선별선택90](입원전)CEA (Carcinoembryonic Ag)
+[선별선택90](입원전)Free T4
+[선별선택90](입원전)T3 (Triiodothyronine)
+[선별선택90](입원전)T4(Thyroxin)
+[선별선택90](입원전)TSH(Throid stimulating hormone)
+[선별선택90](진료전) Insulin (AC)
+[선별선택90](진료전)C-Peptide(30min)
+[선별선택90](진료전)C-Peptide(AC)
+[선별선택90](진료전)C-Peptide(PC 2hrs)
+[선별선택90](진료전)CEA
+[선별선택90](진료전)Free T4
+[선별선택90](진료전)Insulin(30min)
+[선별선택90](진료전)Insulin(PC 2hrs)
+[선별선택90](진료전)T3
+[선별선택90](진료전)T4
+[선별선택90](진료전)TSH
+[선별선택90]Adenovirus culture
+[선별선택90]Anti helicobactor pylori Ig G
+[선별선택90]Anti helicobactor pylori IgM
+[선별선택90]Anti-CCP (Cyclic citrullinated peptide) Ab
+[선별선택90]Beta-2- microglobulin
+[선별선택90]C-Peptide (AC)
+[선별선택90]C-Peptide (PC 2hrs)
+[선별선택90]C-Peptide(30min)
+[선별선택90]CD10
+[선별선택90]CD117
+[선별선택90]CD11c
+[선별선택90]CD13
+[선별선택90]CD138
+[선별선택90]CD14
+[선별선택90]CD15
+[선별선택90]CD16+56(Nk cell) (Subset用)
+[선별선택90]CD19
+[선별선택90]CD19(B cell)
+[선별선택90]CD19(ZAP70 profile)
+[선별선택90]CD2
+[선별선택90]CD20
+[선별선택90]CD22
+[선별선택90]CD25
+[선별선택90]CD3
+[선별선택90]CD3 (Subset用)
+[선별선택90]CD3(ZAP70 profile)
+[선별선택90]CD33
+[선별선택90]CD34
+[선별선택90]CD38
+[선별선택90]CD38(ZAP70 profile
+[선별선택90]CD4
+[선별선택90]CD4 (Subset用)
+[선별선택90]CD45
+[선별선택90]CD5
+[선별선택90]CD56
+[선별선택90]CD61
+[선별선택90]CD64
+[선별선택90]CD65
+[선별선택90]CD7
+[선별선택90]CD79a
+[선별선택90]CD8
+[선별선택90]CD8 (Subset用)
+[선별선택90]CEA (Carcinoembryonic Ag)
+[선별선택90]CMV culture
+[선별선택90]Coxsackievirus culture
+[선별선택90]Cyclosporin (General)
+[선별선택90]Cyclosporin (High Quality)
+[선별선택90]Cyclosporine
+[선별선택90]Cyclosporine(LC-MS)
+[선별선택90]Cytospin
+[선별선택90]Echovirus culture
+[선별선택90]Enterovirus rapid Culture
+[선별선택90]Foxp3
+[선별선택90]Free T3
+[선별선택90]Free T4
+[선별선택90]Glycophorin A (CD235a)
+[선별선택90]HLA-DR-유세포 분석
+[선별선택90]HSV culture
+[선별선택90]Influenza A virus culture
+[선별선택90]Influenza B virus culture
+[선별선택90]Insulin (PC 2hrs)
+[선별선택90]Insulin(30min)
+[선별선택90]Insulin(AC)
+[선별선택90]Kappa
+[선별선택90]Lambda
+[선별선택90]MPO
+[선별선택90]Mumps virus culture
+[선별선택90]Neonatal FT4
+[선별선택90]Neonatal TSH
+[선별선택90]Neonatal TSH(NST-유료)
+[선별선택90]Neutrophil respiratory Burst test DHR (Flow)
+[선별선택90]Parainfluenza virus culture
+[선별선택90]RSV culture
+[선별선택90]Respiratory syncytial V. culture
+[선별선택90]Rhinovirus culture
+[선별선택90]T3 (Triiodothyronine)
+[선별선택90]T4 (Thyroxin)
+[선별선택90]TSH (Throid stimulating hormone)
+[선별선택90]Tacrolimus(FK 506)(농도)
+[선별선택90]Tarcolimus (FK 506) (General)
+[선별선택90]Tarcolimus (FK 506) (High Quality)
+[선별선택90]VZV (Varicella zoster virus) culture
+[선별선택90]ZAP-70
+[선별선택90]ZAP70 profile
+[선별선택90]cCD3
+[선별선택90]cyclin D1
+[선별선택90]기타 CD Marker
+[선별선택90]기타 CD Marker(외주)
+[선별전용50]AFP-L3(%)
+[선별전용50]NGS-Solid tumor panel II, 비유전성
+[선별전용50]sFlt-1/PlGF quantitative
+[선별전용80](응급면역)HE4
+[선별전용80](응급면역)UNGAL(urineneutrophil gelatinase associated lipocalin)
+[선별전용80]M2BPGi [정밀면역검사]
+[선별전용80]N-acetyl-β-D-glucosamide
+[선별전용80]NGAL(Neutrophil Gelatinase Associated Lipocalin)
+[선별전용80]NGAL(Neutrophil Gelatinase Associated Lipocalin)(POCT)
+[선별전용80]NGAL- plasma
+[선별전용80]NGAL- urine
+[선별전용80]NGS-Solid tumor panel II, 비유전성
+[선별전용90]Interleukin VI (IL-6)
+[선별전용90]ST2 quantitative
+[선별전용90]비유전성 고형암 유전자패널II검사(액체생검)(NGS-Solid tumor panel II
+[응3]Phlebotomy
+a1-Antitrypsin clearance
+aPTT
+acid fast stain
+acid phosphatase stain
+alizarin red S stain
+cAMP (Cyclic adenosine monophosphate)
+culture (진단검사 전용)
+factor II  (Functional)
+factor II (Immunological)
+factor IX  (Funtional)
+factor IX (Immunological)
+factor IX Ab(inhibitor)
+factor V  (Functional)
+factor V (Immunological)
+factor VII  (Funtional)
+factor VII (Immunological)
+factor VIII  (Funtional)
+factor VIII (Immunological)
+factor VIII Ab(inhibitor)
+factor X  (Funtional)
+factor X (Immunological)
+factor X I (Funtional)
+factor XI (Immunological)
+factor XII  (Funtional)
+factor XII (Immunological)
+factor XIII (Immunological)
+factor XⅢ (Funtional)
+neutrophil Chemotaxis test
+neutrophil H2O2 test
+p16 deletion,FISH
+p16 deletion,FISH(위탁)
+proGRP
+s 항원검사
+sd-LDL-cholesterol
+sdLDL cholesterol(small dense LDL cholesterol)
+t (2;5)2p23 rearrangement,FISH
+trisomy 1q,FISH
+trisomy 1q,FISH(위탁)
+vWF Ag (von willebrand factor, Ag)
+vWF Multimeric analysis(von willebrand factor)
+vWF Rco (von willebrand factor, ristocetin cofactor)
+ß-Lipoprotein
+α-Galactosidase(Fabry disease)
+α-Subunit (Free)
+α2-antiplasmin (Immunological)
+α2-antiplasmin (funtional)
+β HCG
+β-Hydrobutyric acid
+β-TG (β-thromboglobulin)
+β-glucocerebrosidase
+β-lactamase 억제시험 (진검처방)
+γ-GT
+γ-Sm (Semino protein)
+가족 유전자 검사
+결핵 약제 내성검사 (INH,RPF)
+결핵균(MTB) 약제감수성
+결핵약제내성 유전자검사 (INH)
+결핵약제내성 유전자검사 (RFP)
+결핵약제내성 유전자검사(RIF)
+골수형성이상,골수증식종양유전자패널검사(NGS-MDS, MPN panel)
+교환수혈 [검사비용 포함, 혈액비용제외]
+급성 림프구성 백혈병 유전자 패널검사(NGS-Acute Lymphoblastic Leukemia panel)
+급성골수성백혈병 유전자 패널검사(NGS-Acute Myeloid Leukemia panel)
+기타 기생충-IgM
+기타 바이러스 Ab (General)
+기타 바이러스 IgG
+기타 바이러스 IgM
+기타 세균 항체
+기타 세균 항체 (General)
+기타 진균  Ab
+기타항원검사
+누난증후군 유전자 패널검사(NGS-Rasopathies panel)
+다낭성 신장질환 유전자 패널 검사(NGS-Polycystic Kidney Disease gene
+다발성 골수종 유전자 패널검사(NGS-Multiple Myeloma panel)
+라이소좀 축적 질환 유전자 패널검사(NGS-Lysosomal storage disease)
+배양검사 (동정제외)
+백혈구여과제거 성분채집 혈소판(250ml)-(본원)
+백혈구여과제거 성분채집 혈소판(250ml)-(적십자혈액원)
+비결핵항산균(NTM) 약제감수성
+비정형 용혈성 요독 증후군 유전자 패널검사(NGS-Atypical Hemolytic Uremic Syndrome
+샤르코 마리 투스병 유전자 패널검사(NGS-Charcot-Marie-Tooth disease)
+선종성결장용종증, APC 유전자검사
+선천성 대사이상 유전자 패널검사(NGS-Inborn error of metabolism)
+선천성대사이상검사(NST 82종+LSD 6종)
+설사 원인 바이러스검사(5종)
+설사 원인 세균검사(8종)
+세균성뇌수막염 PCR 5종
+세척혈소판 (W-PLT)
+세포수집 Cell Collection (CAR-T)
+신생아교환수혈용-(FFP,320ml)
+신생아교환수혈용-(FFP,400㎖)
+신생아교환수혈용-(RBC,320ml)
+신생아교환수혈용-(RBC,400㎖)
+신생아교환수혈용-(Whole Blood,320ml)
+신속 항균제 감수성 검사(혈액배양)
+악성 림프종 유전자 패널검사(NGS-Lymphoma panel)
+알츠하이머병 유전자 패널검사(NGS-Alzheimer's disease panel)
+알포트 증후군 유전자 패널 검사(NGS-Alport Syndrome gene panel)
+연소자 성인발증형 당뇨 유전자 패널검사 (NGS-Maturity-Onset Diabetes
+염색체 마이크로어레이(CMA)(산후)
+와파린약물유전학검사(VKORC1 & 2C9)
+유전성 갑상선기능저하증 유전자 패널검사(NGS-Hypothyroidism panel)
+유전성 골격이형성증 유전자 패널검사(NGS-Skeletal dysplasia panel)
+유전성 근긴장이상 유전자 패널 검사(NGS-Dystonia panel)
+유전성 근육병증 유전자 패널검사(NGS-Myopathy panel)
+유전성 근육퇴행위축질환 유전자 패널검사(NGS-Muscular dystrophy panel)
+유전성 난청 유전자 패널검사(NGS-Hearing loss panel)
+유전성 뇌전증 유전자 패널검사(NGS-Epilepsy panel)
+유전성 뇌졸중 유전자 패널검사(NGS-Hereditary Stroke gene panel)
+유전성 망막색소변성 유전자 패널검사(NGS-Retinitis pigmentosa panel)
+유전성 부정맥 유전자 패널검사(NGS-Arrhythmia panel)
+유전성 성분화이상 유전자패널검사(NGS-Disorders of sexual development
+유전성 소두증 유전자 패널검사(NGS-Hereditary Microcephaly gene panel)
+유전성 수포성 표피박리증 및 어린선 패널검사(NGS-Dermatology panel)
+유전성 신경 내분비종양 패널검사(NGS-Neuroendocrine tumor panel)
+유전성 신경퇴행성질환 유전자 패널검사(NGS-Neurodegenerative disease panel)
+유전성 심근병증 유전자 패널검사(NGS-Cardiomyopathy panel)
+유전성 안질환 유전자 패널검사(NGS-Hereditary retinopathy panel)
+유전성 암 유전자 패널검사(NGS-Hereditary cancer syndrome panel plus)
+유전성 암 유전자 패널검사(NGS-Hereditary cancer syndrome panel)
+유전성 운동실조증 유전자 패널검사(NGS-Ataxia panel)
+유전성 원발성 섬모운동이상증 유전자(NGS-Hereditary Primary Ciliary Dyskinesia)
+유전성 이상지질혈증 유전자 패널검사(NGS-Hereditary Dyslipidemia gene
+유전성 자폐증 유전자 패널검사(NGS-Hereditary Autism gene panel)
+유전성 저성선자극호르몬 성선 저하증 유전자 패널검사(NGS-Hypogonadotr
+유전성 저신장증 유전자 패널검사(NGS-Proportionate short stature panel)
+유전성 혈액응고장애 유전자 패널검사(NGS-Coagulation panel)
+유전성강직성하반신마비유전자패널검사(NGS-Hereditary spastic)
+유전성결합조직질환유전자패널검사(NGS-Connective tissue disorder)
+유전성일차성면역결핍증유전자패널검사(NGS-Primary immune deficiency)
+응급용 COVID-19(급여,신속가산)
+응급용 COVID-19(전액 본인부담)
+응급용 COVID-19/Flu A/Flu B(급여)
+응급용 COVID-19/Flu A/Flu B(전액 본인부담)
+인도싸이아닌그린검사(ICG 15분 정체율검사)
+인도싸이아닌그린검사(ICG Rmax)
+인지장애 유전자 패널검사 (NGS-Dementia panel)
+자가조혈모세포이식시 냉동된 조혈모세포의 해동
+자가조혈모세포이식시 냉동처리 및 보관
+자가혈액 수집 후 미사용(1회째)
+자가혈액 수집 후 미사용(2회째 이상)
+자가혈액출고(1회째)
+자가혈액출고(2회째 이상)
+조혈모세포수집(Bone Marrow Allogenic)
+조혈모세포수집(Bone Marrow Autologous)
+조혈모세포수집(Peripheral Blood Allogenic)
+조혈모세포수집(Peripheral Blood Autologous)
+조혈모세포의 생체외처리( Red Cell Removal)
+조혈모세포의 생체외처리(Plasma Depletion)
+조혈모세포의 생체외처리(T-Cell Depletion)
+조혈모세포의 생체외처리(Tumor Cell Depletion)
+조혈모세포의 생체외처리(단핵구 농축)
+조혈전구세포(CD34)
+조혈전구세포검사(HPC)
+종합인증
+직원검진전용 잠복결핵검사
+진균 감수성검사(Mold)
+진드기 매개질환 PCR (SFTS)
+진드기 매개질환 PCR (쯔쯔가무시)
+질염 분자 진단검사(3종)
+질염 분자 진단검사(5종)
+콩팥 황폐증 유전자 패널 검사(NGS-Nephronophthisis gene panel)
+파킨슨병 유전자 패널검사(NGS-Parkinson's disease panel)
+편광현미경검사
+폐렴 panel 33종(세균/바이러스/내성유전자)(ICU/급여)
+폐렴원인균 선별검사 7종
+피부 기생충검사
+항 PLA2R IgG 항체검사
+혈액점도검사(콘플레이트회전법)
+혈전탄성묘사법-특수_내인계 or 외인계
+혈전탄성묘사법-특수_피브리노겐
+혈전탄성묘사법-특수_헤파린효과
+호흡기 바이러스 Real-time PCR(16종)(ICU/급여)
+호흡기 병원체 검사20종(비급여)
+호흡기 병원체 검사23종(비급여)
+호흡기병원체 검사(20종) (ICU/급여)
+호흡기병원체 검사(23종) (ICU/급여)
+환경배양
+환자노출조치용 잠복결핵검사
