@@ -1568,7 +1568,7 @@ function renderCommTreemap() {
     const rows = allComm.map((p, i) => {
       const cfg = CAT_CONFIG[p.cat];
       const badgeColor = p._group === 'Commutable' ? commColor : partColor;
-      const badgeLabel = p._group === 'Commutable' ? 'Commutable' : 'Partial';
+      const badgeLabel = p._group === 'Commutable' ? 'Commutable' : 'Partially Commutable';
       const testList = p.tests.slice(0, 5).map(t => t.n).join(', ') + (p.tests.length > 5 ? ` <span style="color:var(--text2);">(+${p.tests.length - 5} more)</span>` : '');
       const commDetail = (p.comm.match(/\(([^)]+)\)/) || ['', ''])[1] || p.comm;
       return `<tr>
